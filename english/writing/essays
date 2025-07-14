@@ -1,1 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essays - Notes From Over There</title>
+    <meta name="description" content="Critical essays and analytical pieces by Ismail Fayed">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../index.html">English</a>
+                <a href="../../arabic/index.html">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../portfolio.html">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../../index.html">Home</a> > 
+            <a href="../index.html">English</a> > 
+            <a href="../index.html">Writing</a> > 
+            <span>Essays</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Essays</h1>
+            <p class="section-description">Critical essays and analytical pieces on politics, queerness, art, and culture</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="essays-grid">
+                
+                <!-- Essay 1 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">01</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>On Failure and Despair: What I did for love</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">5 February 2024</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An attempt to understand what thinking through failure and despair might mean for a generation that witnessed radical political change, including a revolution and its savage counter-revolutionary backlash, and a world order rapidly running toward its own demise and the possibility of love as resistance.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/on-failure-and-despair.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 2 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">02</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Letter (5)</h2>
+                        <div class="essay-meta">
+                            <span class="date">27 January 2023</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            Part of a series of the project, "Letters to a Young Lover", an epistolary publication on queerness, ecological anxiety, and possibilities of relatedness in a post-apocalyptic world.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/letter-5.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 3 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">03</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>The Glow of What Could be: Hannah Arendt, Love and Saint Augustine</h2>
+                        <div class="essay-meta">
+                            <span class="date">2022</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An essay reflecting on Hannah Arendt's dissertation, Love and Saint Augustine, trying to think about how the notion of love can also bring the notion of possibility.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/hannah-arendt-love-augustine.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 4 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">04</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Queerness as Unknowing</h2>
+                        <div class="essay-meta">
+                            <span class="publication">DAAD (with the support of AFAC)</span>
+                            <span class="date">2022</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            Text contribution for A Book On A Proposed House Museum for the Unknown Crying Man.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/queerness-as-unknowing.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 5 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">05</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Cerebral Narratives</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Text commission</span>
+                            <span class="date">25 January 2021</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            Part of a collaboration with artist Yvonne Buchheim, looking at the nature of migraines, the body in pain and family histories that manifest themselves through genetic and physical experiences and conditions. The essay uses the process of migraines itself as a dramaturgy to understanding what is going through our brains during a migraine.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/cerebral-narratives.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 6 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">06</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>On Queerness and the Jargon of Authenticity</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">22 July 2020</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An exploration of queerness and authenticity in contemporary discourse.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/queerness-jargon-authenticity.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 7 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">07</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Seven Exercises in Disappearing</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">9 October 2019</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            Part of the anthology, Encounter/تلاقي in November 2019. The text explores queerness as a constant process of disappearing and reappearing, across time and space. The translation was commissioned by Outburst Festival for Queer Arts, with the support of the British Council.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/seven-exercises-disappearing.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 8 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">08</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Waiting for apocalypse: Egypt at a crossroads</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">22 July 2019</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An analysis of Egypt's political situation and future possibilities.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/waiting-for-apocalypse.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 9 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">09</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>How state intellectuals responded to 1967: Silence, propaganda and conspiracy</h2>
+                        <div class="essay-meta">
+                            <span class="date">5 June 2017</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An analysis of how state intellectuals in Egypt responded to the 1967 defeat.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/state-intellectuals-1967.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 10 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">10</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Symbols, Perversity and the Enemy within</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">3 October 2017</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            This essay reflects on the aftermath of the rainbow flag incident, when a rainbow flag was waived at a concert, by the Lebanese band, Mashrou Leila in Cairo in 2017. The subsequent arrests and persecution of members of the LGBT+ community in Egypt remains unprecedented.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/symbols-perversity-enemy.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 11 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">11</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Om Kalthoum: Appropriation so sexy?</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">10 July 2016</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            A critical examination of the appropriation of Om Kalthoum's legacy.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/om-kalthoum-appropriation.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 12 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">12</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>The ambivalent hybridity of pre-independence Arab societies</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">23 January 2016</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An analysis of the complex cultural dynamics in pre-independence Arab societies.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/ambivalent-hybridity.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 13 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">13</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>To be Genuine, Uncompromising and Black</h2>
+                        <div class="essay-meta">
+                            <span class="date">2015</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            This essay reflects on the legacy of Nina Simone, both as musician, activist and a black icon. The essay was written after the release of Simone's daughter, Lisa Simone's documentary (she was the executive producer), What Happened, Miss Simone? (2015) raising questions about motherhood, representations of mental illness and the problematics of doing political art while being constantly radicalized.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/nina-simone-genuine-black.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 14 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">14</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Notes on Belly Dance</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">22 October 2014</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            Critical notes on belly dance as cultural performance and representation.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/notes-belly-dance.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 15 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">15</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Death of a hegemon: Mid-century Egyptian music in Beirut</h2>
+                        <div class="essay-meta">
+                            <span class="publication">Mada Masr</span>
+                            <span class="date">3 April 2015</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An examination of Egyptian musical influence in Beirut during the mid-20th century.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/death-hegemon-egyptian-music.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 16 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">16</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>Reconstituting Identities: Performing Propaganda 1958-1965</h2>
+                        <div class="essay-meta">
+                            <span class="publication">ArteEast quarterly</span>
+                            <span class="date">Winter 2014</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            An analysis of identity performance and propaganda during a crucial period in Arab political history.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/reconstituting-identities.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Essay 17 -->
+                <article class="essay-card">
+                    <div class="essay-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <span class="essay-number">17</span>
+                        </div>
+                    </div>
+                    <div class="essay-content">
+                        <h2>The Dramaturgy of Affect: Towards a different Paradigm in Understanding Political Uprisings</h2>
+                        <div class="essay-meta">
+                            <span class="date">2012</span>
+                        </div>
+                        <p class="essay-excerpt">
+                            The essay examines the 25 January Revolution in Egypt and the ensuing political protest that took place from 2011 on, through the lens of performance studies and the concept of the affect. The text tries to shed the light on the important of performing political symbols as potential and reaction to conditions of oppression and marginalization.
+                        </p>
+                        <div class="essay-actions">
+                            <a href="essays/dramaturgy-of-affect.html" class="read-more-btn">Read Essay</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 Ismail Fayed. All rights reserved.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FCD8C7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: transparent;
+            padding: 1rem 0;
+            margin-top: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .breadcrumb a {
+            color: #FA8072;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #666;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 3rem 0;
+        }
+
+        .essays-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .essay-card {
+            display: flex;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border-left: 4px solid #FA8072;
+        }
+
+        .essay-card:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .essay-thumbnail {
+            width: 120px;
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FA8072, #E55B4D);
+        }
+
+        .thumbnail-placeholder {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .essay-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .essay-content {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .essay-content h2 {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .essay-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+            flex-wrap: wrap;
+        }
+
+        .publication {
+            background: #FA8072;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-style: italic;
+        }
+
+        .essay-excerpt {
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .essay-actions {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .read-more-btn {
+            background: #FA8072;
+            color: white;
+            padding: 0.7rem 1.3rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .read-more-btn:hover {
+            background: #E55B4D;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .breadcrumb {
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-card {
+                flex-direction: column;
+            }
+
+            .essay-thumbnail {
+                width: 100%;
+                min-width: auto;
+                height: 100px;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .essay-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .essay-content {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .essay-content h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</body>
+</html>
