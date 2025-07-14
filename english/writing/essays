@@ -53,9 +53,7 @@
                 <!-- Essay 1 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">01</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-01.jpg" alt="On Failure and Despair" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>On Failure and Despair: What I did for love</h2>
@@ -75,9 +73,7 @@
                 <!-- Essay 2 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">02</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-02.jpg" alt="Letter (5)" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Letter (5)</h2>
@@ -96,9 +92,7 @@
                 <!-- Essay 3 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">03</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-03.jpg" alt="Hannah Arendt, Love and Saint Augustine" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>The Glow of What Could be: Hannah Arendt, Love and Saint Augustine</h2>
@@ -117,9 +111,7 @@
                 <!-- Essay 4 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">04</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-04.jpg" alt="Queerness as Unknowing" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Queerness as Unknowing</h2>
@@ -139,9 +131,7 @@
                 <!-- Essay 5 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">05</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-05.jpg" alt="Cerebral Narratives" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Cerebral Narratives</h2>
@@ -161,9 +151,7 @@
                 <!-- Essay 6 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">06</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-06.jpg" alt="On Queerness and the Jargon of Authenticity" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>On Queerness and the Jargon of Authenticity</h2>
@@ -183,9 +171,7 @@
                 <!-- Essay 7 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">07</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-07.jpg" alt="Seven Exercises in Disappearing" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Seven Exercises in Disappearing</h2>
@@ -205,9 +191,7 @@
                 <!-- Essay 8 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">08</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-08.jpg" alt="Waiting for apocalypse" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Waiting for apocalypse: Egypt at a crossroads</h2>
@@ -227,9 +211,7 @@
                 <!-- Essay 9 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">09</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-09.jpg" alt="How state intellectuals responded to 1967" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>How state intellectuals responded to 1967: Silence, propaganda and conspiracy</h2>
@@ -248,9 +230,7 @@
                 <!-- Essay 10 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">10</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-10.jpg" alt="Symbols, Perversity and the Enemy within" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Symbols, Perversity and the Enemy within</h2>
@@ -270,9 +250,7 @@
                 <!-- Essay 11 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">11</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-11.jpg" alt="Om Kalthoum: Appropriation so sexy?" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Om Kalthoum: Appropriation so sexy?</h2>
@@ -292,9 +270,7 @@
                 <!-- Essay 12 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">12</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-12.jpg" alt="The ambivalent hybridity of pre-independence Arab societies" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>The ambivalent hybridity of pre-independence Arab societies</h2>
@@ -314,9 +290,7 @@
                 <!-- Essay 13 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">13</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-13.jpg" alt="To be Genuine, Uncompromising and Black" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>To be Genuine, Uncompromising and Black</h2>
@@ -335,9 +309,7 @@
                 <!-- Essay 14 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">14</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-14.jpg" alt="Notes on Belly Dance" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Notes on Belly Dance</h2>
@@ -357,9 +329,7 @@
                 <!-- Essay 15 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">15</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-15.jpg" alt="Death of a hegemon" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Death of a hegemon: Mid-century Egyptian music in Beirut</h2>
@@ -379,9 +349,7 @@
                 <!-- Essay 16 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">16</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-16.jpg" alt="Reconstituting Identities" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>Reconstituting Identities: Performing Propaganda 1958-1965</h2>
@@ -401,9 +369,7 @@
                 <!-- Essay 17 -->
                 <article class="essay-card">
                     <div class="essay-thumbnail">
-                        <div class="thumbnail-placeholder">
-                            <span class="essay-number">17</span>
-                        </div>
+                        <img src="../../../assets/images/essays/essay-17.jpg" alt="The Dramaturgy of Affect" class="thumbnail-image">
                     </div>
                     <div class="essay-content">
                         <h2>The Dramaturgy of Affect: Towards a different Paradigm in Understanding Political Uprisings</h2>
@@ -565,22 +531,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #FA8072, #E55B4D);
+            background: #f8f8f8;
+            overflow: hidden;
         }
 
-        .thumbnail-placeholder {
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(10px);
-        }
-
-        .essay-number {
-            font-size: 1.5rem;
+        .thumbnail-image {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            object-position: center;
+        }5rem;
             font-weight: bold;
             color: white;
         }
