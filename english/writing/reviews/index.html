@@ -1,1 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews & Interviews - Notes From Over There</title>
+    <meta name="description" content="Reviews and interviews by Ismail Fayed on visual arts, film, and literature">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../index.html">English</a>
+                <a href="../../arabic/index.html">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../../index.html">Home</a> > 
+            <a href="../index.html">English</a> > 
+            <a href="../index.html">Writing</a> > 
+            <span>Reviews & Interviews</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Reviews & Interviews</h1>
+            <p class="section-description">Critical reviews and interviews across visual arts, film, and literature</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="categories-grid">
+                
+                <!-- Visual and Performing Arts -->
+                <section class="category-section">
+                    <div class="category-card">
+                        <h2>Visual and Performing Arts</h2>
+                        <p>Reviews and interviews on visual arts, theater, dance, and performance</p>
+                        <div class="articles-list">
+                            <a href="visual-performing-arts/hannah-arendt-st-augustine.html" class="article-link">
+                                <h3>Hannah Arendt and St Augustine</h3>
+                                <p class="article-meta">Published: August 5, 2022</p>
+                            </a>
+                            <!-- Add more articles as needed -->
+                            <div class="placeholder-article">
+                                <p><em>More articles in this category will be added here...</em></p>
+                            </div>
+                        </div>
+                        <a href="visual-performing-arts/index.html" class="view-all-link">View All Visual & Performing Arts</a>
+                    </div>
+                </section>
+
+                <!-- Film -->
+                <section class="category-section">
+                    <div class="category-card">
+                        <h2>Film</h2>
+                        <p>Film reviews, interviews, and critical analysis</p>
+                        <div class="articles-list">
+                            <div class="placeholder-article">
+                                <p><em>Film reviews and interviews will be added here...</em></p>
+                            </div>
+                        </div>
+                        <a href="film/index.html" class="view-all-link">View All Film Reviews</a>
+                    </div>
+                </section>
+
+                <!-- Literature -->
+                <section class="category-section">
+                    <div class="category-card">
+                        <h2>Literature</h2>
+                        <p>Book reviews, author interviews, and literary criticism</p>
+                        <div class="articles-list">
+                            <div class="placeholder-article">
+                                <p><em>Literature reviews and interviews will be added here...</em></p>
+                            </div>
+                        </div>
+                        <a href="literature/index.html" class="view-all-link">View All Literature Reviews</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 Ismail Fayed. All rights reserved.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: white;
+            padding: 1rem 0;
+            margin-top: 60px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .breadcrumb a {
+            color: #FA8072;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #666;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-section {
+            background: transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .category-card {
+            padding: 2rem;
+        }
+
+        .category-card h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #FA8072;
+            padding-bottom: 0.5rem;
+        }
+
+        .category-card > p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .articles-list {
+            margin-bottom: 2rem;
+        }
+
+        .article-link {
+            display: block;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            border-left: 4px solid #FA8072;
+        }
+
+        .article-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        .article-link h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .article-meta {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .placeholder-article {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 4px solid rgba(250, 128, 114, 0.5);
+            margin-bottom: 1rem;
+        }
+
+        .placeholder-article p {
+            color: #999;
+            font-style: italic;
+        }
+
+        .view-all-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #FA8072;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .view-all-link:hover {
+            background: #E55B4D;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .breadcrumb {
+                margin-top: 100px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .category-card {
+                padding: 1.5rem;
+            }
+
+            .article-link {
+                padding: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
