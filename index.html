@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes From Over There - Ismail Fayed</title>
+    <meta name="description" content="Overview of the work of writer, dramaturg and artist Ismail Fayed">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Home Page - Bilingual Entry Point -->
+    <main class="home-container">
+        <section class="hero-section">
+            <div class="content-wrapper">
+                <h1 class="site-title">NOTES FROM OVER THERE</h1>
+                <h2 class="site-subtitle">OVERVIEW OF THE WORK OF WRITER, CRITIC AND CURATOR ISMAIL FAYED</h2>
+                
+                <div class="main-navigation">
+                    <div class="language-section">
+                        <div class="language-buttons">
+                            <a href="english/index.html" class="nav-btn english-btn">English</a>
+                            <a href="arabic/index.html" class="nav-btn arabic-btn">العربية</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-section">
+                        <a href="blog/index.html" class="nav-btn blog-btn">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background-color: #FCD8C7;
+        }
+
+        .home-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .hero-section {
+            text-align: center;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .content-wrapper {
+            background: white;
+            padding: 4rem 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .site-subtitle {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #666;
+            margin-bottom: 3rem;
+            line-height: 1.4;
+        }
+
+        .main-navigation {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .language-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: #FA8072;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            background-color: #E55B4D;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .arabic-btn {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+        }
+
+        .blog-btn {
+            background-color: #FA8072;
+            font-size: 1.2rem;
+            padding: 1.2rem 3rem;
+        }
+
+        .blog-btn:hover {
+            background-color: #E55B4D;
+        }
+
+        .blog-section {
+            margin-top: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 3rem 2rem;
+            }
+
+            .site-title {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+
+            .site-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .language-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .nav-btn {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .home-container {
+                padding: 1rem;
+            }
+
+            .content-wrapper {
+                padding: 2rem 1.5rem;
+            }
+
+            .site-title {
+                font-size: 1.5rem;
+            }
+
+            .site-subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
