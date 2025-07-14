@@ -1,1 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القسم العربي - ملاحظات من هناك</title>
+    <meta name="description" content="كتابات إسماعيل فايد باللغة العربية - مراجعات ومقالات">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">ملاحظات من هناك</a>
+            <div class="nav-links">
+                <a href="../index.html">الرئيسية</a>
+                <a href="../english/index.html">English</a>
+                <a href="index.html" class="active">العربية</a>
+                <a href="../blog/index.html">Blog</a>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>القسم العربي</h1>
+            <p class="section-description">مراجعات ومقالات إسماعيل فايد</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="sections-grid">
+                
+                <!-- Reviews Section -->
+                <section class="content-section">
+                    <div class="section-card">
+                        <h2>المراجعات</h2>
+                        <p>مراجعات نقدية للأعمال الفنية والأدبية والسينمائية</p>
+                        <div class="subsections">
+                            <a href="reviews/index.html" class="subsection-link">
+                                <h3>عرض جميع المراجعات</h3>
+                                <p>المراجعات النقدية والتحليلية</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Essays Section -->
+                <section class="content-section">
+                    <div class="section-card">
+                        <h2>المقالات</h2>
+                        <p>مقالات نقدية وتحليلية في الأدب والفنون</p>
+                        <div class="subsections">
+                            <a href="essays/index.html" class="subsection-link">
+                                <h3>عرض جميع المقالات</h3>
+                                <p>المقالات النقدية والأكاديمية</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 إسماعيل فايد. جميع الحقوق محفوظة.</p>
+            <p><a href="../index.html">ملاحظات من هناك</a></p>
+        </div>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .content-section {
+            background: transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .content-section:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-card {
+            padding: 2rem;
+        }
+
+        .section-card h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .section-card > p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .subsections {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .subsection-link {
+            display: block;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border-right: 4px solid #FA8072;
+        }
+
+        .subsection-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+
+        .subsection-link h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .subsection-link p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 100px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .sections-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-card {
+                padding: 1.5rem;
+            }
+
+            .subsection-link {
+                padding: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
