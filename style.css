@@ -1,16 +1,15 @@
 
 body {
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
-    margin: 20px;
-    background-color: #f4f4f4;
     color: #333;
+    background: #FDE5D6;
 }
 
 .container {
     max-width: 800px;
     margin: auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 5px;
 }
@@ -29,12 +28,19 @@ h1 {
 }
 
 a {
-    color: #337ab7;
+    color: #FA8072;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures image takes up its own line */
+    margin: 10px auto; /* Centers the image and adds some vertical spacing */
 }
 
 
