@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -20,6 +19,9 @@
                 <a href="../index.html">English</a>
                 <a href="../../arabic/index.html">العربية</a>
                 <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../portfolio.html">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -38,7 +40,7 @@
     <header class="section-header">
         <div class="container">
             <h1>Reviews & Interviews</h1>
-            <p class="section-description">Critical reviews and interviews across visual arts, film, and literature</p>
+            <p class="section-description">This section showcases highlights of the reviews and interviews of modern & contemporary visual and performing arts, as well as cinema & literature.</p>
         </div>
     </header>
 
@@ -49,48 +51,52 @@
                 
                 <!-- Visual and Performing Arts -->
                 <section class="category-section">
-                    <div class="category-card">
-                        <h2>Visual and Performing Arts</h2>
-                        <p>Reviews and interviews on visual arts, theater, dance, and performance</p>
+                    <div class="category-content">
+                        <h2>Visual & Performing Arts</h2>
+                        <p>This section features highlights of interviews and conversations with dancers, choreographers and artists as well as a wide range of reviews of exhibitions and events.</p>
                         <div class="articles-list">
-                            <a href="visual-performing-arts/hannah-arendt-st-augustine.html" class="article-link">
-                                <h3>Hannah Arendt and St Augustine</h3>
-                                <p class="article-meta">Published: August 5, 2022</p>
-                            </a>
-                            <!-- Add more articles as needed -->
-                            <div class="placeholder-article">
-                                <p><em>More articles in this category will be added here...</em></p>
+                            <div class="sample-article">
+                                <p><strong>36 reviews and interviews</strong> covering contemporary art exhibitions, theater festivals, dance performances, and gallery shows from Egypt and internationally.</p>
                             </div>
                         </div>
-                        <a href="visual-performing-arts/index.html" class="view-all-link">View All Visual & Performing Arts</a>
+                        <a href="visual-performing/index.html" class="view-all-link">View All Visual & Performing Arts</a>
+                    </div>
+                    <div class="category-thumbnail">
+                        <img src="../../assets/images/reviews/visual-performing-thumb.png" alt="Visual & Performing Arts" class="thumbnail-image">
                     </div>
                 </section>
 
                 <!-- Film -->
                 <section class="category-section">
-                    <div class="category-card">
+                    <div class="category-content">
                         <h2>Film</h2>
-                        <p>Film reviews, interviews, and critical analysis</p>
+                        <p>This is a collection of some of the reviews that were written as part of Mada Masr's 'Cinematic Gems' series, in addition to a few essays on modern Egyptian cinema.</p>
                         <div class="articles-list">
-                            <div class="placeholder-article">
+                            <div class="sample-article">
                                 <p><em>Film reviews and interviews will be added here...</em></p>
                             </div>
                         </div>
                         <a href="film/index.html" class="view-all-link">View All Film Reviews</a>
                     </div>
+                    <div class="category-thumbnail">
+                        <img src="../../assets/images/reviews/film-thumb.png" alt="Film" class="thumbnail-image">
+                    </div>
                 </section>
 
                 <!-- Literature -->
                 <section class="category-section">
-                    <div class="category-card">
+                    <div class="category-content">
                         <h2>Literature</h2>
-                        <p>Book reviews, author interviews, and literary criticism</p>
+                        <p>This series of reviews covers mainly contemporary and modern Arabic literature.</p>
                         <div class="articles-list">
-                            <div class="placeholder-article">
+                            <div class="sample-article">
                                 <p><em>Literature reviews and interviews will be added here...</em></p>
                             </div>
                         </div>
                         <a href="literature/index.html" class="view-all-link">View All Literature Reviews</a>
+                    </div>
+                    <div class="category-thumbnail">
+                        <img src="../../assets/images/reviews/literature-thumb.png" alt="Literature" class="thumbnail-image">
                     </div>
                 </section>
 
@@ -146,7 +152,7 @@
         }
 
         .nav-logo {
-            color: white;
+            color: #333;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: bold;
@@ -154,13 +160,15 @@
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
 
         .nav-links a {
-            color: white;
+            color: #333;
             text-decoration: none;
             transition: opacity 0.3s;
+            font-size: 0.9rem;
         }
 
         .nav-links a:hover {
@@ -169,10 +177,10 @@
 
         /* Breadcrumb */
         .breadcrumb {
-            background: white;
+            background: transparent;
             padding: 1rem 0;
             margin-top: 60px;
-            border-bottom: 1px solid #e9ecef;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .breadcrumb a {
@@ -215,22 +223,46 @@
 
         .categories-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
 
         .category-section {
+            display: flex;
             background: transparent;
             border-radius: 8px;
             overflow: hidden;
             border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
         }
 
-        .category-card {
-            padding: 2rem;
+        .category-section:hover {
+            transform: translateY(-2px);
         }
 
-        .category-card h2 {
+        .category-thumbnail {
+            width: 138px;
+            min-width: 138px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-left: 2rem;
+        }
+
+        .thumbnail-image {
+            width: 100%;
+            height: 138px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+        }
+
+        .category-content {
+            flex: 1;
+        }
+
+        .category-content h2 {
             font-size: 1.8rem;
             color: #333;
             margin-bottom: 1rem;
@@ -238,7 +270,7 @@
             padding-bottom: 0.5rem;
         }
 
-        .category-card > p {
+        .category-content > p {
             color: #666;
             margin-bottom: 2rem;
         }
@@ -247,36 +279,7 @@
             margin-bottom: 2rem;
         }
 
-        .article-link {
-            display: block;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
-            text-decoration: none;
-            color: #333;
-            margin-bottom: 1rem;
-            transition: all 0.3s ease;
-            border-left: 4px solid #FA8072;
-        }
-
-        .article-link:hover {
-            background: rgba(255, 255, 255, 0.5);
-            transform: translateX(5px);
-        }
-
-        .article-link h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-
-        .article-meta {
-            color: #666;
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-
-        .placeholder-article {
+        .sample-article {
             padding: 1.5rem;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 5px;
@@ -284,8 +287,8 @@
             margin-bottom: 1rem;
         }
 
-        .placeholder-article p {
-            color: #999;
+        .sample-article p {
+            color: #666;
             font-style: italic;
         }
 
@@ -330,18 +333,33 @@
 
             .nav-links {
                 gap: 1rem;
+                justify-content: center;
             }
 
             .breadcrumb {
-                margin-top: 100px;
+                margin-top: 120px;
             }
 
             .section-header h1 {
                 font-size: 2rem;
             }
 
-            .categories-grid {
-                grid-template-columns: 1fr;
+            .category-section {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .category-thumbnail {
+                width: 100%;
+                min-width: auto;
+                height: 120px;
+                margin-left: 0;
+                margin-top: 1rem;
+                order: 2;
+            }
+
+            .category-content {
+                order: 1;
             }
 
             .container {
@@ -354,12 +372,18 @@
                 font-size: 1.5rem;
             }
 
-            .category-card {
-                padding: 1.5rem;
+            .category-section {
+                padding: 1rem;
             }
 
-            .article-link {
-                padding: 1rem;
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .category-content h2 {
+                font-size: 1.5rem;
             }
         }
     </style>
