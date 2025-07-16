@@ -8,6 +8,284 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: transparent;
+            padding: 1rem 0;
+            margin-top: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .breadcrumb a {
+            color: #FA8072;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #666;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 3rem 0;
+        }
+
+        .reviews-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .review-card {
+            display: flex;
+            background: transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border-left: 4px solid #FA8072;
+            padding: 1.5rem;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .review-thumbnail {
+            width: 138px;
+            min-width: 138px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-right: 2rem;
+        }
+
+        .thumbnail-image {
+            width: 100%;
+            height: 138px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+        }
+
+        .review-content {
+            flex: 1;
+        }
+
+        .review-content h2 {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            font-weight: normal;
+        }
+
+        .review-content h2 a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .review-content h2 a:hover {
+            color: #FA8072;
+        }
+
+        .essay-publication {
+            color: #888;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .review-excerpt {
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .review-actions {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .read-more-btn {
+            background: #FA8072;
+            color: white;
+            padding: 0.56rem 1.04rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+            font-size: 0.72rem;
+        }
+
+        .read-more-btn:hover {
+            background: #E55B4D;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .breadcrumb {
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .review-card {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .review-thumbnail {
+                width: 100%;
+                min-width: auto;
+                height: 120px;
+                margin-right: 0;
+                margin-top: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .review-card {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .review-content h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -287,284 +565,5 @@
             <p><a href="../../index.html">Notes From Over There</a></p>
         </div>
     </footer>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #FDE5D6;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Navigation */
-        .main-nav {
-            background: transparent;
-            padding: 1rem 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-logo {
-            color: #333;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            transition: opacity 0.3s;
-            font-size: 0.9rem;
-        }
-
-        .nav-links a:hover {
-            opacity: 0.7;
-        }
-
-        /* Breadcrumb */
-        .breadcrumb {
-            background: transparent;
-            padding: 1rem 0;
-            margin-top: 60px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .breadcrumb a {
-            color: #FA8072;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .breadcrumb span {
-            color: #666;
-        }
-
-        /* Header */
-        .section-header {
-            background: transparent;
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        .section-header h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .section-description {
-            font-size: 1.2rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Main Content */
-        .main-content {
-            padding: 3rem 0;
-        }
-
-        .reviews-grid {
-            display: grid;
-            gap: 2rem;
-        }
-
-        .review-card {
-            display: flex;
-            background: transparent;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            border-left: 4px solid #FA8072;
-            padding: 1.5rem;
-        }
-
-        .review-card:hover {
-            transform: translateY(-2px);
-        }
-
-        .review-thumbnail {
-            width: 138px;
-            min-width: 138px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            margin-right: 2rem;
-        }
-
-        .thumbnail-image {
-            width: 100%;
-            height: 138px;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 8px;
-        }
-
-        .review-content {
-            flex: 1;
-        }
-
-        .review-content h2 {
-            font-size: 1.4rem;
-            color: #333;
-            margin-bottom: 1rem;
-            line-height: 1.3;
-            font-weight: normal;
-        }
-
-        .review-content h2 a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        .review-content h2 a:hover {
-            color: #FA8072;
-        }
-
-        .essay-publication {
-            color: #888;
-            font-size: 0.85rem;
-            margin-bottom: 0.5rem;
-            font-style: italic;
-        }
-
-        .review-excerpt {
-            color: #555;
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .review-actions {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        .read-more-btn {
-            background: #FA8072;
-            color: white;
-            padding: 0.56rem 1.04rem;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-            font-weight: 500;
-            font-size: 0.72rem;
-        }
-
-        .read-more-btn:hover {
-            background: #E55B4D;
-        }
-
-        /* Footer */
-        .main-footer {
-            background: rgba(0, 0, 0, 0.1);
-            color: #333;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .main-footer a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        .main-footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem;
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-                justify-content: center;
-            }
-
-            .breadcrumb {
-                margin-top: 120px;
-            }
-
-            .section-header h1 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
-            .review-card {
-                flex-direction: column;
-                padding: 1rem;
-            }
-
-            .review-thumbnail {
-                width: 100%;
-                min-width: auto;
-                height: 120px;
-                margin-right: 0;
-                margin-top: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .section-header h1 {
-                font-size: 1.5rem;
-            }
-
-            .review-card {
-                padding: 1rem;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                text-align: center;
-                gap: 0.5rem;
-            }
-
-            .review-content h2 {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
 </body>
 </html>
