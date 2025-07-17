@@ -5,38 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes From Over There - Ismail Fayed</title>
     <meta name="description" content="Overview of the work of writer, dramaturg and artist Ismail Fayed">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Home Page - Bilingual Entry Point -->
-    <main class="home-container">
-        <!-- Side Navigation -->
-        <nav class="side-nav">
-            <a href="about.html" class="side-nav-link">About</a>
-            <a href="portfolio.html" class="side-nav-link">Portfolio</a>
-            <a href="contact.html" class="side-nav-link">Contact</a>
-        </nav>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="english/index.html">English</a>
+                <a href="arabic/index.html">العربية</a>
+                <a href="blog/index.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-        <section class="hero-section">
-            <div class="content-wrapper">
-                <h1 class="site-title">NOTES FROM OVER THERE</h1>
-                <h2 class="site-subtitle">OVERVIEW OF THE WORK OF WRITER, CRITIC AND CURATOR ISMAIL FAYED</h2>
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Notes From Over There</h1>
+            <p class="section-description">Overview of the work of writer, critic and curator Ismail Fayed</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="sections-grid">
                 
-                <div class="main-navigation">
-                    <div class="language-section">
-                        <div class="language-buttons">
-                            <a href="english/index.html" class="nav-btn english-btn">English</a>
-                            <a href="arabic/index.html" class="nav-btn arabic-btn">العربية</a>
+                <!-- English Section -->
+                <section class="content-section">
+                    <div class="section-card">
+                        <h2>English</h2>
+                        <p>Essays, reviews, interviews, teaching materials, and creative projects</p>
+                        <div class="subsections">
+                            <a href="english/index.html" class="subsection-link">
+                                <h3>English Section</h3>
+                                <p>Writing • Teaching • Projects</p>
+                            </a>
                         </div>
                     </div>
-                    
-                    <div class="blog-section">
-                        <a href="blog/index.html" class="nav-btn blog-btn">Blog</a>
+                </section>
+
+                <!-- Arabic Section -->
+                <section class="content-section">
+                    <div class="section-card">
+                        <h2>العربية</h2>
+                        <p>مراجعات ومقالات باللغة العربية</p>
+                        <div class="subsections">
+                            <a href="arabic/index.html" class="subsection-link">
+                                <h3>القسم العربي</h3>
+                                <p>مراجعات • مقالات</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                <!-- Blog Section -->
+                <section class="content-section">
+                    <div class="section-card">
+                        <h2>Blog</h2>
+                        <p>Personal reflections, updates, and ongoing thoughts</p>
+                        <div class="subsections">
+                            <a href="blog/index.html" class="subsection-link">
+                                <h3>Blog Entries</h3>
+                                <p>Personal writing and reflections</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-        </section>
+        </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 Ismail Fayed. All rights reserved.</p>
+            <p><a href="index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
 
     <style>
         * {
@@ -48,202 +103,217 @@
         body {
             font-family: 'Noto Sans', sans-serif;
             line-height: 1.6;
-            background-color: #FDE5D6;
+            color: #333;
+            background: #FDE5D6;
         }
 
-        .home-container {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            position: relative;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
-        /* Side Navigation */
-        .side-nav {
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
             position: fixed;
-            left: 2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            z-index: 100;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
 
-        .side-nav-link {
-            padding: 0.8rem 1.5rem;
-            background: rgba(255, 255, 255, 0.9);
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
             color: #333;
             text-decoration: none;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid transparent;
-            text-align: center;
-            min-width: 80px;
-        }
-
-        .side-nav-link:hover {
-            background: #FA8072;
-            color: white;
-            transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(250, 128, 114, 0.3);
-        }
-
-        .hero-section {
-            text-align: center;
-            max-width: 900px;
-            width: 100%;
-        }
-
-        .content-wrapper {
-            max-width: 800px;
-            width: 100%;
-            padding: 2rem;
-        }
-
-        .site-title {
-            font-size: 2.5rem;
-            font-weight: normal;
-            letter-spacing: 2px;
-            margin-bottom: 1.5rem;
-            color: #333;
-            text-transform: uppercase;
-        }
-
-        .site-subtitle {
             font-size: 1.2rem;
-            font-weight: normal;
-            color: #666;
-            margin-bottom: 3rem;
-            line-height: 1.4;
+            font-weight: bold;
         }
 
-        .main-navigation {
+        .nav-links {
             display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .language-buttons {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
+            gap: 1.5rem;
             flex-wrap: wrap;
         }
 
-        .nav-btn {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background-color: #FA8072;
-            color: white;
+        .nav-links a {
+            color: #333;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            min-width: 120px;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
             text-align: center;
         }
 
-        .nav-btn:hover {
-            background-color: #E55B4D;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        .section-header h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 1rem;
         }
 
-        .arabic-btn {
-            font-family: 'Arial', sans-serif;
-            direction: rtl;
+        .section-description {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .blog-btn {
-            background-color: #FA8072;
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
         }
 
-        .blog-btn:hover {
-            background-color: #E55B4D;
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
         }
 
-        .blog-section {
-            margin-top: 1rem;
+        .content-section {
+            background: transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .content-section:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-card {
+            padding: 2rem;
+        }
+
+        .section-card h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .section-card > p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .subsections {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .subsection-link {
+            display: block;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border-left: 4px solid #FA8072;
+        }
+
+        .subsection-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        .subsection-link h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .subsection-link p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .side-nav {
-                position: static;
-                transform: none;
-                flex-direction: row;
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
                 justify-content: center;
-                margin-bottom: 2rem;
-                gap: 1rem;
             }
 
-            .side-nav-link {
-                min-width: 70px;
-                font-size: 0.8rem;
-                padding: 0.6rem 1rem;
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
             }
 
-            .home-container {
-                flex-direction: column;
-                padding: 1rem;
-            }
-
-            .content-wrapper {
-                padding: 2rem;
-            }
-
-            .site-title {
+            .section-header h1 {
                 font-size: 2rem;
-                letter-spacing: 1px;
             }
 
-            .site-subtitle {
-                font-size: 1.1rem;
+            .sections-grid {
+                grid-template-columns: 1fr;
             }
 
-            .language-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .nav-btn {
-                width: 200px;
+            .container {
+                padding: 0 1rem;
             }
         }
 
         @media (max-width: 480px) {
-            .side-nav {
-                gap: 0.5rem;
-            }
-
-            .side-nav-link {
-                min-width: 60px;
-                font-size: 0.7rem;
-                padding: 0.5rem 0.8rem;
-            }
-
-            .home-container {
-                padding: 1rem;
-            }
-
-            .content-wrapper {
-                padding: 1.5rem;
-            }
-
-            .site-title {
+            .section-header h1 {
                 font-size: 1.5rem;
             }
 
-            .site-subtitle {
-                font-size: 1rem;
+            .section-card {
+                padding: 1.5rem;
+            }
+
+            .subsection-link {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
             }
         }
     </style>
