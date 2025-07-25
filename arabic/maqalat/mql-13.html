@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بعض الملاحظات حول الرقص الشرقي - Notes From Over There</title>
+    <meta name="description" content="مقال عن الرقص الشرقي كظاهرة فنية واجتماعية وتطوره التاريخي">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation - Keep LTR for consistency */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #333;
+            border-bottom: 2px solid #FA8072;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-right: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-right: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-right: 3px solid #FA8072;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../english/index.html">English</a>
+                <a href="../../arabic/index.html" class="active">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../Portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>بعض الملاحظات حول الرقص الشرقي</h1>
+            <p class="section-description">مقال • <em>نُشر في 20 أكتوبر 2014 في موقع مدى مصر</em></p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Naima Akef Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mql-13-1.jpg" alt='لقطة من فيلم "تمر حنة" (1957) بطولة نعيمة عاكف وإخراج حسين فوزي'>
+                            <p class="image-caption">لقطة من فيلم "تمر حنة" (1957) بطولة نعيمة عاكف وإخراج حسين فوزي</p>
+                        </div>
+                    </div>
+
+                    <p>في أقل من أسبوع تطل علينا ثلاث مقالات مختلفة، وليست مختلفة في الوقت نفسه، عن الرقص الشرقي وممارسيه من الراقصات الحاليات (وتحتل صافينار المساحة الأكبر ما بين هؤلاء) والراحلات، وهؤلاء الأخيرات هن "الأيقونات" كما أطلق عليهن أحد الكتاب في محاولة للتعاطي مع ذلك الفن وتقديم وجهات نظر عكست جميعها وضع الأزمة التي تمر بها النخبة مع ذلك الفن.</p>
+
+                    <div class="highlight-text">
+                        وفي قراءة سريعة للثلاثة نصوص يظهر لنا بوضوح غياب أي تناول موضوعي، ولا أقول علمي حتى أو نقدي، لتلك الظاهرة وانحصارها في خطاب أخلاقيات ركيك وسطحي مغرق في المحافظة الاجتماعية وانفصال تام عن الواقع مع مزجه بسردية "الفن الهادف" وأصداء ضمنية تكاد تكون عنصرية في وقعها.
+                    </div>
+
+                    <p>وتبقى الأسئلة والأفكار المطروحة كلها تدور في فلك أزمة جسد المرأة، فهو جسد مأزوم بتعريفه، من يمتلكه ومن يمتلك حق الوصول إليه و"استخدامه"؟، ولا تخرج هذه الأسئلة عن وضعية هذا الجسد والذي يتم حصره كموضع نزاع للسلطة الأبوية بأشكالها الفردية (سلطة الزوج، أو الأب أو الأخ أو….) وأشكالها المجردة، الدولة التي تراعى وتحافظ على الآداب العامة فيما يخص علاقات المجتمع ككل بجسد المرأة من خلال تنظيم تلك العلاقات عن طريق قوانين الآداب العامة وما يخالفها حسب التعريف (الدعارة، الفجور، الأفعال الفاضحة، المجون،….) وقوانين الأحوال الشخصية (الزواج، الطلاق، الميراث،….)</p>
+
+                    <blockquote>
+                        وفي فوضى الهلع حول جسد المرأة وكيف يمكن الاستيلاء عليه أو الوصول إليه أو قمعه أو قهره أو خطفه أو انتهاكه أو استباحته أو الاستمتاع به.. يضيع تماما أي ملمح من الرقص كظاهرة آدائية أولا وأخيرا.
+                    </blockquote>
+
+                    <p>وبالطبع لا يمكن تجاهل تلك الأزمة وهي تلقي بظلالها على أي محاولة لفهم الرقص الشرقي كظاهرة اجتماعية ولكن كظاهرة فنية تستحق التأمل والتدبر فيما أنتجته من ميراث شديد الثراء، فلا يصح ولا يجوز أن يبقى الرقص رهينة خيالات شبق المراهقين أو تعنت السلطة الأخلاقية للنظام الأبوي وولايته الأخلاقية. فبعيدا عن الاختيارات الأخلاقية لكل من المؤديات والمشاهدين، تبقى هناك عناصر معينة تخلق تلك الظاهرة والتي من الممكن جدا تتبعها وتحليلها للوصول لفهم أوسع وأعمق من "الرقص فن هادف" أو وصف نعيمة عاكف بـ"الفراشة".</p>
+
+                    <p>يكاد يكون الشاغل الأوحد لكل من تناول ظاهرة الرقص الشرقي بممارسيه هو رفض الجانب الإيروسي المحتمل في أي فعل جسدي (فليس الرقص فقط الذي من الممكن أن يكون له جانب إيروسي – يكاد أي فعل يخص الجسد أن يقع على شفا الإيروسية) أو تمجيده بشكل ساذج ومراهق لا يخرج عن شبق شعب محروم من تكوين أي علاقة بجسد المرأة لا تخرج عن إطار التملك الجنسي (فحتى إدوارد سعيد لم يسلم من تصورات المراهق حينما تناول مسيرة تحية كاريوكا الفنية فأسرد في كتاباته عن شغفه بها كمراهق كأول ملمح أو مدخل لفهم واستعياب الرقص الشرقي).</p>
+
+                    <p>وبعيدًا عن رفض ذلك المبدأ أو ذاك، أود أن أسجل عدة ملاحظات حول طبيعة النظر إلى ظاهرة الرقص الشرقي بعيدًا عن الجدل الأخلاقي لتبريره كفعل غير جنسي أو تمجيده كتعبير حقيقي عن الرغبات الدفينة للشعب المقهور.</p>
+
+                    <h2 class="section-heading">أولا نسق خارج المأسسة؟</h2>
+
+                    <p>تطور الرقص الشرقي في القرن التاسع عشر والقرن العشرين في تلك الثنائية العجيبة بين تبني ذلك التعبير الجسدي الأدائي المُحَمّل بمعانٍ كثيرة وبين عدة إشكاليات مرتبطة بعلاقة المرأة وجسدها بالسلطة الأبوية وتجسدها في الدولة الحديثة. وترتب على ذلك تجاهل الدول في أحسن حالاتها لتلك الظاهرة أو تقنينها تحت عناوين غريبة وغير مفهومة (تسجيل الكباريهات تحت رخصة "الملاهي" وليس ضمن فنون الآداء على سبيل المثال).</p>
+
+                    <div class="highlight-text">
+                        وفي تلك المساحة التي تتغير أبعادها بتغير تلك العلاقات تطور الرقص الشرقي كنوع من فنون الآداء خارج مؤسسات الدولة الحديثة. على سبيل المثال لم يتم إدراج الرقص الشرقي ضمن منهج الفنون المسرحية عند إنشاء المعهد في1930، وحتى عند إنشاء أكاديمية الفنون في 1959 لم يتم إدراجه حتي في مادة الفنون الشعبية على سبيل المثال (اللهم إلا في أشكاله "الفولكلورية").
+                    </div>
+
+                    <p>ظل الرقص خارج سلطة مؤسسات الدولة والتي كانت (لم تعد كذلك وإن ظل هناك ارتباط معين بجماليات معينة عند شرائح معدودة في المجتمع) تنتج الخطاب الأوحد في تعريف ما هو الفن "المقبول" وما هو الفن "الأصيل"، (حتى فريدة فهمي لم تُعَرف نفسها أنها "رقاصة" بالمعنى المتعارف عليه ولكن تم تجاوز تلك الأزمة بربط كل مساهمات فرقة رضا تحت ما يسمى "الحفاظ على التراث" أو إحياؤه أو تجديده).</p>
+
+                    <blockquote>
+                        وذلك التهميش الذي قد يبدو لنا سلبيًا أو فيه نوع من التجاهل عن عمد، ويشي أيضا بصراع حول مكانة ومعنى الرقص الشرقي، إلا أنه أعطى ذلك الفن هامش كبير من الحرية. فلم يكن في يوم من الأيام مجلس أعلى للرقص الشرقي يحدد ما هو الأسلوب الأوحد المقبول. ولم تقنن أساليب ومناهج معينة لتعليمه أو تعريفه أو تأريخه كظاهرة فنية.
+                    </blockquote>
+
+                    <p>بالطبع كانت هناك "أسطوات" ولهن "مدارس" ومريدات ولكن ظلت تلك السلطة "غير رسمية" وغير ملزمة لكل محترفات الرقص. فظهرت أساليب و"مقتربات" في الرقص شديدة التباين والاختلاف: بين استعارات سامية جمال للباليه ورقصات أمريكا اللاتينية والكلاسيكية المستجدة لتحية كاريوكا والتزامن المثالي بين الموسيقى والآداء لنعيمة عاكف وغيرهن كثيرات.</p>
+
+                    <p>وإذا كانت هناك راقصة وصلت لتلك المكانة في تعريف ما هو الرقص ومن هي الراقصة "الحقيقية" فهي بديعة مصابني، التي استحقت بجدارة لقب "أم الرقص الشرقي" لإسهاماتها ليس فقط في إعادة تعريفه كنوع من فنون الأداء ولكن لأن جميع من احترفن الرقص الشرقي لمدة ثلاثين عاما أو أكثر، في بدايات القرن العشرين، تعلمن أو تأثرن بها بشكل أو بآخر.</p>
+
+                    <h2 class="section-heading">ممارسة لا تاريخية</h2>
+
+                    <p>الجانب الثاني في إشكالية تناول الرقص الشرقي هو تناوله كظاهرة "لا تاريخية" أو أسوأ من ذلك كظاهرة متجاوزة للتاريخ. بمعنى أن الرقص الشرقي كظاهرة فنية واجتماعية ليس بمعزل عن مجمل التطورات التي تحدث في السياق الذي هو جزء منه.</p>
+
+                    <div class="highlight-text">
+                        فعلى سبيل المثال: صعود البرجوازية المصرية المتعلمة وطبيعة التركيبة السياسية في مصر في أواخر القرن التاسع عشر وبدايات القرن العشرين والتي فرضت عليها إعطاء مزايا اقتصادية واجتماعية لفئة كبيرة من الأجانب، خلق طبقة كوزموبوليتانية طورت ذوق وتصور معين للفنون واستهلكتها أيضا، وكان أبرز ملمح لهذا هو صعود المسرح بشتى أنواعه (الغنائي والكلاسيكي و……) كمنتج ثقافي "جديد" بجانب صعود فكرة الـ"revue" أو فقرات الترفيه أو التسلية في إطار الكازينو أو الكباريه (وكازينو بديعة هو أكبر مثال على ذلك).
+                    </div>
+
+                    <p>وإدماج الرقص الشرقي ضمن تلك التطورات غيّر تماما، ليس فقط من محتواه (فقدمت بديعة لأول مرة "كورال راقصات" خلفها هي، كراقصة أولى، مستعيرة تلك الفكرة من الباليه)، ولكن أيضًا في شكل تقديمه (فاخترعت بديعة بدلة الرقص كما نعرفها الآن حيث لم يكن لها وجود قبل ذلك)، وكيف يتم استقباله (لم يعد حكرًا على المناسبات أو المجال العام أو حتى الخاص ولكن أصبح جزء من صناعة الترفيه والتسلية بعيدًا عن أصوله التي ارتبطت بالمجموعات المهمشة مثل الغوازي والغجر على سبيل المثال).</p>
+
+                    <blockquote>
+                        إن تغير الرقص الشرقي بهذا الشكل الجذري كان نتيجة طبيعية لتأثره بالسياق المحيط به وبالتالي لا يمكننا الآن وبعد عدة عقود من وفاة بديعة أن نفترض أن هذا الشكل من الرقص الشرقي هو الشكل الأزلي الذي لا يقبل التغيير والذي يمكن أن نتعامل معه كمنتج لحقبة معينة لها خصائص ثقافية واجتماعية واقتصادية شكّلت الاختيارات العملية والفنية التي انتهجتها شخصية مثل بديعة أو أيا من تلاميذها.
+                    </blockquote>
+
+                    <h2 class="section-heading">منطق الآداء</h2>
+
+                    <p>لعل من أكثر النقاط إثارة للجدل هي فكرة "منطق الآداء". وأقصد بمنطق الآداء مجموع العلاقات التي تحكم عناصر الآداء مع بعضها البعض. وفي هذه الحالة، على سبيل المثال لا الحصر، عناصر الرقص الشرقي هي المؤدية، والحركة، والجمهور، والموسيقى والإيقاع، والمجال الحركي.</p>
+
+                    <div class="highlight-text">
+                        ولا يفترض منطق الآداء أن هناك تصور مثالي لتلك العلاقات أو أن هناك تصورات مسبقة عما ينبغي أن تكون عليه تلك العلاقات، ولكن يفترض أنه لمحاولة فهم أي ظاهرة آدائية يجب تتبع ملامح تلك العلاقات وعدم إغفال أو تجاهل أحد تلك العناصر وعلاقاته بالعناصر الأخرى في مجملها.
+                    </div>
+
+                    <p>ولأن الرقص الشرقي هو آداء مبني أساسا على الارتجال فهو بتعريفه يضع احتمالات تقريبا لا نهائية لتلك العناصر وعلاقاتها ببعضها البعض. وفي حين أن تلك الطبيعة "المرنة" تعطي الرقص الشرقي درجة من التشاركية الحقيقية بين جميع العناصر (المؤدية مع الموسيقى أو الجمهور مع المؤدية أو المؤدية مع الفراغ الحركي و…..) يتم إغفال كل هذا التعقيد من أجل اختزاله في مجادلات الأصالة الثقافية أو فكرة الفن الهادف أو أيا من تلك المصطلحات التي تغطي على أي ملمح يعبر عن حجم هذا التعقيد.</p>
+
+                    <h2 class="section-heading">آداء حي مرتجل</h2>
+
+                    <p>في حين أن معظم فنون الرقص والموسيقى هي فنون آداء حي، ينفرد الرقص الشرقي بأنه آداء يعتمد على الجمهور المتواجد في لحظة إنتاجه. بمعنى أنه من الممكن للموسيقي أن يؤلف لجمهور متَخَيل، إلا أن المؤدية لا تقوم بالحركة إلا للجمهور المتواجد في تلك اللحظة، وبالتالي هو آداء لا يمكن فهم حقيقته خارج سياقه. لأنه آداء مرتجل، فهو وليد تلك اللحظة حين تلتقي عناصره مع بعضها البعض و "يشترك" الجميع في خلق ذلك المنتج المركب.</p>
+
+                    <blockquote>
+                        وبناء على ذلك لا يمكن تمييز المؤدية بأنها هي التي تخلق المنتج الفني أو الأسلوب. بل وبالعكس تماما، وهذا هو المثير للبكاء والضحك في الوقت نفسه، أن طبيعة الرقص الشرقي كعلاقة مشاهدة بين مؤدية وجمهور هي التي تحدد حدود تلك العلاقة وما يتوقعه الجمهور من المؤدية.
+                    </blockquote>
+
+                    <p>فعلى سبيل المثال كلما طالب الجمهور المؤدية بنوع الآداء الذي يعلي من الوقع الجنسي للحركة لا يمكننا أن نفترض أن هذا قرار المؤدية بمفردها. فهؤلاء الذين ينعون ببالغ الأسى "راقصات الزمن الجميل" يتناسون أن الراقصة لا ترقص في فراغ اجتماعي أو سياسي أو اقتصادي.</p>
+
+                    <div class="highlight-text">
+                        إن كل تلك الأساليب المعاصرة على اختلافها، والراقصات اللاتي يقمن بها، هي نتاج تلك العلاقة المأزومة بين نوع من الفنون الآدائية شديد الثراء في تركيبه وعناصره ولكن حبيس تصورات عقيمة عن الأصالة والمعاصرة وهواجس مراهق شبق يجري وراء صافينار لأنها تجيد هز ثدييها بشكل مثير، متناسيا تماما أن كيتي اليونانية كانت لديها ثديين أصغر وكانت أيضا مثيرة ولكنها أعطت الرقص شيء لم ولن تستطيع صافينار وأخريات كثيرات أن يعطوه: التعقيد الذي يستحقه.
+                    </div>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="../index.html" class="back-link">← العودة إلى المقالات</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2014 إسماعيل فايد. جميع الحقوق محفوظة.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>

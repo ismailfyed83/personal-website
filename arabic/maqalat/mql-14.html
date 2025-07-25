@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن الختيارة اللي عم تختير - Notes From Over There</title>
+    <meta name="description" content="مقال عن صباح وتحديها للمعايير الاجتماعية المتعلقة بالشيخوخة وجسد المرأة">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation - Keep LTR for consistency */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #333;
+            border-bottom: 2px solid #FA8072;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-right: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-right: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-right: 3px solid #FA8072;
+        }
+
+        /* Footnotes */
+        .footnotes {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(250, 128, 114, 0.3);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footnotes h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footnotes p {
+            margin-bottom: 1rem;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../english/index.html">English</a>
+                <a href="../../arabic/index.html" class="active">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../Portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>عن الختيارة اللي عم تختير</h1>
+            <p class="section-description">مقال • <em>نُشر في 3 ديسمبر 2014 في موقع معازف</em></p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Sabah Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mql-14-1.jpg" alt="صباح">
+                            <p class="image-caption">صباح - الشحرورة اللبنانية</p>
+                        </div>
+                    </div>
+
+                    <p>جانيت فغالي المولودة العام 1927 (حسب معظم المصادر) هي من آخر المغنيات اللاتي عاصرن عصر التحديث الموسيقي وتنوّع وتطوّر العديد من أشكاله وأساليبه. ولعلها كانت من هؤلاء اللائي ساهمن في ذلك التطوّر والتنوّع بتقديمها وتمكّنها في القيام بأنواع عديدة من الغناء تتراوح بين أغاني الأفلام، الاستعراض، المسرحيات الغنائيّة، المواويل (المصريّة واللبنانيّة) وغيرها. وكانت على وعي بهذا الدور، ولأنّها بنت هذا الجيل وشاهدة على تلك الظاهرة. فنرى مثلاً في مقابلة لها مع التليفزيون السعودي تشرح ذلك (ولو بشكل سطحي)، وتؤكّد تفضيلها مواكبة ذلك التطوير والإساهم فيه على استحضار الماضي والتمسك به.</p>
+
+                    <p>ولكن لا تنتهي قصة صباح ببراعتها في تقديم مختلف أنواع الغناء والأداء بكثير من الخصوصيّة والتفرّد أحياناً، وبشكل فيه كثير من الشخصنة في أحيان أخرى. ولكن المثير في قصة صباح، بالنسبة لهذا المقال، وكما أشار العديد من الكتّاب من قبل، هو خلقها صورة معيّنة للـ"مؤديّة" أو "المغنّية" في السياق السياسي والاجتماعي للمنطقة العربيّة في القرن العشرين– والتي كانت تمرّ بمرحلة شديدة الشبه بما حدث للموسيقى التي تكلّمت هي عنها.</p>
+
+                    <div class="highlight-text">
+                        فكما أثارت صباح الكثير من ردود الأفعال المتباينة لمزجها عناصر من الأغنية الشعبيّة اللبنانيّة وفن الموال مع شخصيّتها الأدائيّة، أثارت أيضاً الكثير من الجدل حول جمالها وجاذبيّتها، وبأنّها على علم بذلك التأثير، مصرّة على استخدامه في تحدٍّ وتكسير لأنماط التعامل مع، واستقبال فكرة المطربة وما ينبغي أن تفعله أو لا تفعله في إطار حاكميّة أخلاقيّة شديدة المحافظة، ومعادية للنسويّة بشكل صريح.
+                    </div>
+
+                    <p>ولعل من أهم ملامح الميراث الفني والإنساني الذي تركته صباح هو إثارتها الكثير من الأسئلة عن فكرة "العجز"، وجسد المرأة، وكيفية استقبال وإدراك المرأة العجوز، وكيفيّة تقبّل تلك الفكرة في ظل عداء واضح لمبدأ المرأة التي أصابها العجز، ولكنّها مع ذلك تصر على تشبّثها بالحياة: وفي حالة صباح استمرارها في الغناء والأداء رغم ظهور أعراض السن والشيخوخة عليها بشكل لا يمكن إغفاله.</p>
+
+                    <blockquote>
+                        يكشف لنا ظهور صباح المتكرّر على مر الثلاثة العقود الأخيرة، واستغلال الإعلام للنزعات الأخلاقيّة للكثيرين– والتي تتعلّق بما هو مقبول ولائق من سيدة عجوز، عن علاقة المجتمع العربي بالعجز، واستقباله وتعامله مع جسد المرأة وشيخوخته.
+                    </blockquote>
+
+                    <h2 class="section-heading">الشيخوخة وجسد المرأة</h2>
+
+                    <p>توضح "بيفرلي سكجز" أن "الأنوثة المقبولة تقتضي قدراً كبيراً من "العمل" على تهذيب وتغيير الجسد– والذي يفرض على المرأة التكيّف مع تلك المعايير التي يفرضها المجتمع لما هو مقبول ومرغوب. ولكن لا يتوقف ذلك فقط على القيام بذلك "العمل"، بل يجب أن يظل ذلك التغيير "مستتراً"، وإلا تم اعتباره سوقيّ ورخيص".</p>
+
+                    <p>وينسحب ذلك بشكل أكبر على جسد المرأة في مرحلة الشيخوخة، فيُظهر لنا النزعات الأخلاقيّة لشيطنة ما يسمى بـ"المسخ الأنثوي" – وهو حالة تلك السيدة التي تحاول أن تخفي علامات الشيخوخة والسن، ولكن تظل مع ذلك آثاره ملحوظة. فليست المشكلة هنا في محو آثار العمر من الناحية الجماليّة فقط، فلسنا بصدد جماليات السن، ولكن الحكم الأخلاقي المرتبط بمثل تلك المعايير الجماليّة، والذي لا يتوقف عن تعريف البشاعة من منظور مرئي/ نظري، ولكن يتخذ بعداً أخلاقيّاً – قيميّاً.</p>
+
+                    <div class="highlight-text">
+                        فتصبح سيدة مثل صباح ليست فقط "مسخاً أنثويّاً" شكلاً، ولكن موضوعاً: فتصبح اختياراتها وشخصيتها محل مساءلة أخلاقيّة غاية في القسوة والعنف في بعض الأحيان تمنّي موتها على سبيل المثال.
+                    </div>
+
+                    <h2 class="section-heading">هل أصاب العجز صباح فقط؟</h2>
+
+                    <p>والسؤال هنا هل اختُصت صباح بفكرة العجز مع الإصرار على الظهور أو الغناء والتمثيل رغم دخولها في مرحلة الشيخوخة؟ نجد أن الإجابة: لا. فإذا عقدنا مقارنة بين أعمار أم كلثوم و صباح، نجد أن أم كلثوم أصرّت على الغناء حتى بعد أن جاوزت السبعين من عمرها. ولم تكتف فقط بأنها ظلّت تغني، ولكنّا غنّت أغانٍ من شأنها إثارة سخرية المستمعين في حالة قيام أي مغنية أخرى في عمر أم كلثوم بغنائها.</p>
+
+                    <p>فالمجتمع العربي المحافظ لا يرضى بقبول فكرة أن تقف سيدة في الخامسة وسبعين من عمرها على مسرح تغنّي عن شوقها لحبيبها، ساردةً قصّة حبهما لمدة ساعة أو يزيد (ليلة حب، 1973). ولكن هذا المجتمع تقبّل تلك الفكرة من أم كلثوم، ولم يجرؤ أحد على اتهام أم كلثوم بالعجز والخرف مع ظهور آثار الشيخوخة بوضوح على صوت أم كلثوم من غلاظة وانعدام المرونة والانسيابيّة: والتي هي من أهم إمارات العجز (على الرغم من أنه ظل صوتاً مميّزاً حتى وفاتها، ولكن أصبح من الجلي أنه صوت سيدة عجوز) ولم ينتقدها أحد على اختيار موضوعات أغانيها والتي من الممكن اعتبرها غير "ملائمة" لسيدة جاوزت السبعين.</p>
+
+                    <h2 class="section-heading">ما ذنب صباح؟</h2>
+
+                    <p>ليس الموضوع هو "صوت السيدة العجوز" ولا موضوعات الأغاني. فنرى مثلاً أن كثيرين امتدحوا أداء صباح لأغنية "ساعات ساعات" (كلمات عبد الرحمن الأبنودي وتلحين جمال سلامة) في فيلم "ليلة بكى فيها القمر" (1980)، مع اعتراضهم الشديد على القصّة ودور صباح كسيّدة ترتبط برجل يصغرها في السن. وهنا تظهر بوضوح إشكاليّة ما تمثّله صباح: امرأة تحدّت مقتضيات السن، وعبّرت عن رغبتها (سواءً في أعمالها أو في حياتها الشخصيّة) في، ليس فقط بالارتباط، ولكن في الارتباط برجل يصغرها في العمر مع استمرارها في تقديم نفسها كسيدة جميلة مرغوبة (سواء تم ذلك عن طريق عمليات التجميل أو بالأصباغ وأدوات التزيين).</p>
+
+                    <blockquote>
+                        لم تكن صباح المغنية الوحيدة التي لجأت إلى عمليات التجميل أو ممّن استمرن في الغناء عن الحب والغرام رغم تهالك صوتها وشيخوخته، لكن ما تفرّدت به صباح هو رفضها لما هو مفروض ومتوقّع من سيدة عجوز من إعلانها الزهد في الرجال والجنس، حتى إذا ظلت تغنّي للعشق والهوى.
+                    </blockquote>
+
+                    <p>ولعل مقارنة أخرى مع مطربة مثل وردة، والتي لجأت أيضا لعمليات التجميل واعترفت بذلك صراحة والتي ظلت تغني للحب والمحبين حتى وفاتها. إذ لم تتعرّض لمثل الانتقاد الذي تعرّضت له صباح. وفي لقاء لها أكدّت أنها تخشى العجز وتخشى الموت وأنها "مقيّدة" بجسدها الوهن. ولكن ما أنقذ وردة من حس العقاب الجماعي الذي أصاب صباح هو زهدها في الرجال وإعلانها الوفاء لذكرى بليغ حمدي (حتى أن تكاثرت الشائعات عن زواجها سرّاً، لأنها أصرت حتى وفاتها على عدم الإفصاح أو الإعلان عن إعجابها أو تعلقها بشخص أو دخولها في علاقات أخرى).</p>
+
+                    <p>ورغم أن صباح أكدت في العديد من المواضع أنها تنوي الاعتزال والانسحاب من الحياة العامة عند نقطة ما (فنراها مثلاً في لقائها مع سلوى حجازي عام 1966 تؤكد رغبتها لتفرغها لأسرتها وأبنائها في المستقبل) ولكن ما حدث أنّها استمرّت في الغناء والأداء حتى آخر فيلم قامت بالتمثيل فيه "أيام اللولو" (1986) عندما قاربت الستين. بينما نجد أن عمر صباح عندما توقفت عن التمثيل أو الأداء ليس كبيراً، ولا يمكن لأحد الادّعاء بأن 60 عاماً تشكل فكرة "المسخ الأنثوي" بأيّة حال.</p>
+
+                    <h2 class="section-heading">"عجوز شمطاء"</h2>
+
+                    <p>حتى بدايات التسعينيّات، لم تكن صباح بالفعل قد تجاوزت السبعين من عمرها بعد، ولكن الخطاب العام تصاعد ضد "العجوز الشمطاء" التي تضع مساحيق التجميل، والتي تزوجت برجل (فادي لبنان) في عمر أولادها، مصرّة على الغناء وأداء الحفلات. ومنذ ذلك الوقت، أصبحت زيجات صباح وظهورها المستمر عنصراً أساسيّاً من تغطية الإعلام لأخبار الفنانين وأعمالهم. وظاهرة كاشفة لكيفيّة تعاطي المجتمع العربي مع تقدّم في العمر والرغبة في الحياة والظهور.</p>
+
+                    <div class="highlight-text">
+                        وأصبحت صباح كبش فداء لحالة الهلع التي أصابت الجميع بأن عجوز شمطاء لا زالت شقراء وتحب وتتزوج. بل ظهرت شائعة "موت صباح" مراراً وتكراراً كتأكيد من قطاع واسع من المجتمع العربي على رفضه لأن تجرؤ سيدة متقدمة في السن على فعل ما تفعله صباح.
+                    </div>
+
+                    <p>لم تكتف صباح فقط بالظهور وإجراء اللقاءات، ففي العام 2009 قامت بإعادة تصوير وغناء أغنية "يانا يانا"، من فيلم "كانت أيام" (1970)، من تلحين بليغ حمدي وكلمات مرسي جميل عزيز. كانت صباح قد بلغت من العمر حوالي 82 سنة عندما غنت مع المطربة رولا سعد أغنيّتها "يانا يانا". وتظهر صباح مرتدية فستاناً أحمر، شقراء كعادتها وبكامل زينتها وحليها. والأمر الذي لا يثير الدهشة هو ضعف ووهن صوتها والذي تم التلاعب به رقميّاً لكي لا يسمع كما هو.</p>
+
+                    <p>وأدت تصوير الأغنية لترسيخ فكرة "المسخ" بحق، إذ طالب الكثيرون صباح بـ"احترام ماضيها" وتدبّر حالها كسيّدة جاوزت الثمانين من عمرها. وكأن السرديّة المفترضة للعجز هي اعتزال الحياة العامة، وهجر الرغبة في الحياة وإظهار إمارات العجز وتبني الزهد والترك المتدرج للحياة تمهيداً للموت.</p>
+
+                    <p>وعلى عكس ما هو متوقّع، لم تأبه صباح بما قيل عنها، وظلّت تظهر إعلاميّاً، وتتكلّم بصراحة شديدة عمّا تفعله الشيخوخة وكيف تتعامل معها مع إصرارها واستمرارها على الظهور دائماً بالشعر المصبوغ والحلي ومساحيق التجميل. ففي العام 2010، وبعد إصابتها بجلطة، أجرت لقاءً مع المذيعة نضال الأحمديّة تتكلم فيه عن روتينها اليومي في الإستيقاظ ووضع المكياج وارتداء الحلي وغيرها.</p>
+
+                    <blockquote>
+                        يكشف جسد صباح العجوز المطلي بالأصباغ والمساحيق عن المأزق المزدوج لمعنى العجز من ناحية، ومعنى العجز حين يرتبط بجسد المرأة من ناحية أخرى. فلا يمكن لأحد أن يدعي أن سنين العمر باختيار الإنسان، فالإنسان لا يعرف إلى أي سن سيعيش، والمسؤوليّة الأخلاقيّة التي تم إلقاؤها على صباح لأنها عاشت 87 سنة ليس فقط درباً من العبث، بل موقفاً واضحاً من رغبتها في أن تعيش مستمعة بحياتها حسبما ارتأته هي من معاني المتعة.
+                    </blockquote>
+
+                    <p>والامتعاض والحنق الأخلاقي الذي أثارته طريقة صباح في إعلان تمسكها بالحياة، ورغبتها ألّا تختفي أو تتوراى عن الأنظار لأنها "كبرت" أو لأنها في "خريف العمر" جاء في تناقض واضح للحيّز والدور الذي يلعبه السن في تحديد ما هي الاختيارات والطرق المقبولة للتعبير عن تلك الاختيارات، ذلك بالنسبة للمرأة في ظل سردية الاعتزال والزهد كاستنتاج طبيعي ومتوقع في مرحلة العجز والشيخوخة.</p>
+
+                    <div class="highlight-text">
+                        يكاد ميراث صباح الإنساني أن يطغى على ميراثها الفني وصوتها الذي غطّى مساحات ومساحات من الموسيقى والتعبير. ولكن ربما يجب علينا أن نقرأ الاثنان معا. فلا يمكننا قراءة اختيارات وانجازات صباح الفنيّة بمعزل عن اختياراتها الشخصيّة في كسر التوقعات والحدود المقبولة لما يمكن أن تفعله المرأة بعد سن معين. وابتداعها أسلوب في الأداء و الغناء يعبر عن تلك الشخصية بطريقة آسرة وبصوت يباري أعظم أصوات معاصريها.
+                    </div>
+
+                    <!-- Footnotes Section -->
+                    <div class="footnotes">
+                        <h3>المراجع</h3>
+                        
+                        <p>كتب المؤرخ وجيه ندي أن صباح ولدت 1925. ولكن في معظم الصحف و الجرائد ذكرت سنة ميلادها 1927 <a href="http://pulpit.alwatanvoice.com/articles/2014/11/26/349225.html">المصدر</a></p>
+                        
+                        <p>بيفرلي سكجز، "التكوين في الطبقة و النوع: لتكون محترم"، سايدج، 1997</p>
+                        
+                        <p>نيال ريتشدسون و آدم لوكس (محرران)، "دراسات الجسد: الأساسيات"، روتلدج، 2014</p>
+                    </div>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="../index.html" class="back-link">← العودة إلى المقالات</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2014 إسماعيل فايد. جميع الحقوق محفوظة.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>

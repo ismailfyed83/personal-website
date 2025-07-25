@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موت الهيمنة: ما تبقى من إرث عبدالناصر الثقافي - Notes From Over There</title>
+    <meta name="description" content="مقال عن الإرث الثقافي لعبد الناصر وتأثيره على الثقافة العربية المعاصرة من خلال عرض هشك بشك المسرحي">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation - Keep LTR for consistency */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #333;
+            border-bottom: 2px solid #FA8072;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-right: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-right: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-right: 3px solid #FA8072;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../english/index.html">English</a>
+                <a href="../../arabic/index.html" class="active">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../Portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>موت الهيمنة: ما تبقى من إرث عبدالناصر الثقافي</h1>
+            <p class="section-description">مقال • <em>نُشر في 23 يوليو 2015 في موقع مدى مصر</em></p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                 
+
+                    <!-- Nasser Statue or Performance Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mql-09-1.jpg" alt="عرض هشك بشك المسرحي">
+                            <p class="image-caption">من عرض "هشك بشك شو" المسرحي في بيروت</p>
+                        </div>
+                    </div>
+
+                       <div class="source-note">
+                        <strong>ترجمة أميرة المصري</strong>
+                    </div>
+
+                    <p>عند الطرف الشمالي الشرقي من كورنيش بيروت نجد تمثالًا بارزًا للرئيس المصري السابق جمال عبد الناصر. وإذا عبرت الشارع للوصول إلى جانب البحر سوف تجده يقف خلفك شاهقًا كتذكرة بعصور أخرى.</p>
+
+                    <p>يرمز تمثال عبد الناصر إلى العلاقة شديدة الاضطراب بين مشروع مصر العربي القومي وإرثه الثقافي. وعلى الرغم من أن عبد الناصر لم يخترع القومية العربية—حيث نجد أثارها في جهود وكتابات قديمة لكتاب من الشام تعود إلى الستينيات من القرن التاسع عشر—إلا أن رؤيته في مرحلة ما بعد الاستقلال للجبهة العربية الموحدة أمام القوى الاستعمارية والإمبريالية كانت شرارة ألهمت آمال وطموحات الملايين في أنحاء العالم العربي.</p>
+
+                    <div class="highlight-text">
+                        لا تستثنى لبنان من ذلك. فمشروع عبد ناصر لم يركز فقط على توطيد الروابط السياسية مع الدول العربية الصاعدة، بل قام أيضًا ببناء آليات متقنة للدعاية الإعلامية تنتج بشكل فعال خطابًا يتسم بالمبالغة وإنتاجًا ثقافيًا يسعى إلى غرس الأيدولوجية الناصرية في أذهان العرب.
+                    </div>
+
+                    <h2 class="section-heading">عرض "هشك بشك شو": محاكاة ساخرة للتراث المصري</h2>
+
+                    <p>من أكثر الأشياء الدالة على طبيعة تلك العلاقة وكيفية إعادة إنتاجها العرض المسرحي "<a href="https://www.youtube.com/watch?v=QxdTsoPc7kI&list=UU9XhRDLQr3Holp6h5836tew">هشك بشك شو</a>،" الذي قدمه وأنتجه <a href="http://metromadina.com/">مترو المدينة</a> في بيروت. قدم هذا العرض للسنة الثانية وهو منسوب إلى عروض الكباريهات ("عرض غنائي موسيقي يحاكي موسيقى الأفراح والكاباريهات التي كانت منتشرة في مصر في النصف الأول من القرن الماضي. أربع لوحات تتضمّن عشرات الأغنيات يؤديها عشرة فنانين موزعين بين موسيقيين، مغنين، ممثلين وراقصين يأخذوننا إلى تلك الحقبة من الزمن الجميل.")، وقد جال وطاف في العديد من الأماكن، وخلال الفترة التي قضيتها في بيروت قبل بضعة أسابيع كان العدد كاملًا كل ليلة.</p>
+
+                    <blockquote>
+                        والحقيقة إني عندما حاولت حضور العرض كانت جميع الأماكن محجوزة واضطررت إلى الجلوس على الدرج بجوار الممر طوال العرض.
+                    </blockquote>
+
+                    <p>"هشك بشك" عبارة مصرية (وهي على الأغلب تحريف لكلمة مستعارة من التركية) تشير إلى العروض المشابهة لعروض الكباريهات، خصوصًا تلك التي تعد خليعة أو بذيئة. وانطلاقًا من هذا المصطلح يقدم عرض "هشك بشك" على مدار ساعتين إعادة تمثيل للأغاني المصرية الرائجة من الأفلام المصرية، بدءًا من "<a href="https://www.youtube.com/watch?v=PH498yJAJyM">قل لي ولا تخبيش يا زين</a>" لأم كلثوم من فيلم "سلامة" (1944) ومرورًا بأغنية "<a href="https://www.youtube.com/watch?v=Gb4GT_Qed2o">يا حسن يا خولي الجنينة</a>" لشادية من فيلم "ليلة الهنا" (1951)، وصولًا إلى "<a href="https://www.youtube.com/watch?v=uygWPrPgkeI">حبيبي يا رقة</a>" لهند رستم من فيلم "اعترافات زوج" (1951)، وحتى أغاني ليلى نظمي التي أحيت فيها التراث المصري الشعبي في السبعينيات.</p>
+
+                    <p>لا تتبع الفقرات المعاد تمثيلها التسلسل الزمني ولا أي تسلسل منطقي. وبدا أن ترتيب الأغاني يعتمد على الحالة المزاجية والتقارب الموسيقي.</p>
+
+                    <h2 class="section-heading">جمهور متحمس وافتتان مشؤوم بالماضي</h2>
+
+                    <p>الأمر الذي وجدته خارجًا عن المألوف ومحيرًا كان شدة حماس الجمهور في استقباله للموسيقى والعرض (وهم يحفظون كلمات الأغاني عن ظهر قلب) رغم أن العرض لا يقتصر على إعادة التقديم. فهو عبارة عن إعادة تأويل محاكية تهكمية تسخر من الأعمال الأصلية وتسخر من ذاتها لسخريتها من الأعمال الأصلية. ويلجأ المؤديون إلى المبالغة والحركات الهزلية وكل أنواع الإيحاءات البذيئة والعبثية.</p>
+
+                    <div class="highlight-text">
+                        شعرت في "هشك بشك" ورد فعل الجمهور بتجلي افتتان مشؤوم بماضٍ يأبى التخلي عنه. ماضٍ قد أخذنا جميعًا، مصريين ولبنانيين ومن سائر الجنسيات العربية، رهائن لخيالات فترة ما بعد الاستعمار متكلفة في عظمتها وقد فشلت فشلًا ذريعا.
+                    </div>
+
+                    <p>ربما تظهر تلك الإشارة المستمرة إلى الماضي في أوضح صورها في إعادة تقديم أغاني ليلى نظمي في عرض "هشك بشك." لم يكتفِ العرض بتقليد طريقة غنائها وصوتها فحسب، بل قدم أيضًا إعادة تصور وتمثيل للزي المصري "التقليدي" وحركات الرقص المصرية. حتى التعليقات الموجهة ردًا على الجمهور كانت باللهجة المصرية.</p>
+
+                    <h2 class="section-heading">ليلى نظمي وتحويل الهوية القومية إلى ولع</h2>
+
+                    <p>تخرجت نظمي من المعهد العالي للموسيقى في عام 1968، وعملت على جمع الأغاني الشعبية كجزء من رسالتها عن الموسيقى المصرية الشعبية في أوائل السبعينيات. أطلقت بعدها ألبومًا يحتوي على جزء من <a href="https://www.youtube.com/watch?v=p0thXZhj0EI">تلك الأغاني</a>، استخدم فيه العديد من التعابير والمصطلحات الشعبية. نجح الألبوم وتفوق في مبيعاته في وقت ما حتى على مبيعات أم كلثوم.</p>
+
+                    <div class="highlight-text">
+                        لم تداعب الأغاني حس القومية العربية بالتحديد، بل لعبت على إعلاء "الموسيقى الشعبية،" موسيقى الشعب. وعلى مدار الألبوم ظهرت بشكل واضح عملية تحويل الهوية القومية إلى نوعٍ من الولع.
+                    </div>
+
+                    <p>بعد عقود من ذلك قامت المغنية اللبنانية مروة <a href="https://www.youtube.com/watch?v=bB62IHRk8YY">بالسطو على موسيقى ليلى نظمي</a> وإعادة توزيعها بشكل أكثر إثارة (ما أصاب <a href="http://www.almasryalyoum.com/news/details/101357">نظمي بصدمة شديدة وأثار استيائها</a>). عكست طريقة غناء مروة ورقصها المليئة بالإيحاءات تغيرًا في استقبال وفهم الموسيقى في عالم ما بعد القومية العربية. كان ذلك نوعًا مختلفًا من الولع، تشير ظواهره إلى الهوس بالهوية القومية المصرية: فبدلًا من استعراضها أو ترويجها بشكل شعبي كما حاولت نظمي أن تفعل، أصبح الغرض عدم أخذها بجدية بالغة، بل والسخرية منها أيضًا.</p>
+
+                    <p>وكان ذلك توجهًا اتبعته مغنيات لبنانيات أخريات، مثل هيفاء وهبي عندما غنت أغنية "<a href="https://www.youtube.com/watch?v=5UQ8oCIBviY">رجب</a>" في ألبوم "بدي عيش" (2005) من إنتاج شركة روتانا.</p>
+
+                    <h2 class="section-heading">بين الافتتان والسخرية: تناقضات الحاضر العربي</h2>
+
+                    <p>يأتي هذا التهميش للمثل الناصرية والصدارة العربية بعيدًا كل البعد عن ما شهدته الحقبة الناصرية من هوس بكل ما هو مصري، ليصب في قلب إعادة التقديم وإعادة الاستيلاء الثقافي بهذا الشكل. ويبدو أن تحطيمها أو إظهارها بشكل هزلي أو جنسي يبدد سحرها. لكن البعض قد يرى أن هذه الظاهرة تكشف أيضًا عن تدهور الذوق العام وعدم قدرة الجمهور على التمييز.</p>
+
+                    <p>في تلك الأثناء لم يكف المشهد الصوتي في بيروت عن إدهاشي—نجد أم كلثوم ومحمد عبد الوهاب حاضرين طوال الوقت، حيث تذاع أغانيهما في كل مقهى بالحمراء تقريبًا. كما رأيت صور عبد الناصر معلقة في إجلال وتقدير واضح في الكثير من المطاعم والمقاهي التي زرتها. وخلال أحاديثي مع العديد من اليساريين هناك لم تخلُ جملهم من الإشارة إلى الخطاب الناصري العربي القومي بمختلف تعبيراته الاصطلاحية.</p>
+
+                    <blockquote>
+                        يقع عرض "هشك بشك" تحديدًا عند نقطة تقاطع هاذين الواقعين—واقع مفتون بالمشروع الناصري وما زال هائمًا في عالمه، لا ينفك عن استفراغ مثله وأقواله المأثورة، وواقع آخر أكثر سئمًا، يعيد تقديم ما أنتجته الحقبة الناصرية ثقافيًا بشكل أقرب إلى الكيتش ويحمل قدرًا من الافتعال والوعي الزائد بالذات.
+                    </blockquote>
+
+                    <h2 class="section-heading">تراث باهر وحاضر بائس</h2>
+
+                    <p>بصفتي مصري أوجه أقصى درجات النقد لما فعله ناصر ببيعه وهم وطن عربي لشعب فخور ومزدهر. فالفخر والازدهار لا يأتيان من خلال الحكومات الفاسدة والمستبدة. لكني في الوقت نفسه شعرت بالإنزعاج من إعادة الاستيلاء الثقافي بهذا الشكل المتبجح. ما الذي يمكن فعله بتراث باهر وحاضر بائس؟ كيف سيتعامل سائر العرب مع انقضاء الهيمنة؟</p>
+
+                    <div class="highlight-text">
+                        إذا وضعنا نشوتنا القومية الحالية "لزعامة" مصر وكون مصر "قلب الوطن العربي" جنبًا إلى جنب مع حاضر مصر غير المستقر بصورة استثنائية—فهذا البلد قد شارف على الإفلاس بضعة مرات على مدار الأربع سنوات الماضية—واعتمادها على سخاء مجلس التعاون الخليجي والمصالح السياسية، سوف نجد أنفسنا مجبورين على إعادة النظر في هذه المكانة وإعادة التدقيق في الإرث الناصري.
+                    </div>
+
+                    <p>لا يعني ذلك أن نقلل من شأن الجانب الباهر والطموح منه، بل علينا أن نوفق بيه وبين واقعنا الحاضر.</p>
+
+                    <p>تطرح العلاقة الإشكالية بين المشروع الناصري في لبنان وما يمثله من خلال العروض المحاكية رؤية لاذعة لما تبقى وسبب بقائه. كما تسلط الضوء على الحاجة إلى تجاوز ولعنا وهوسنا. إذا لم نتمكن من أخذ الأمر على محمل الجد، بوسعنا على الأقل أن نستمتع بالضحك والسخرية منه.</p>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="../index.html" class="back-link">← العودة إلى المقالات</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2015 إسماعيل فايد. جميع الحقوق محفوظة.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>
