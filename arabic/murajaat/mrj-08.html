@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيورك | «فالنيكورا» والمشاعر في زمن المتكررات الاصطناعيّة - Notes From Over There</title>
+    <meta name="description" content="مراجعة لألبوم بيورك Vulnicura (2015) - اسطوانة الانفصال">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation - Keep LTR for consistency */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .review-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .review-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .review-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .review-text p strong {
+            font-weight: 700;
+        }
+
+        .review-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .review-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #333;
+            border-bottom: 2px solid #FA8072;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-right: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-right: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Links Section */
+        .links-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .links-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .links-section ol {
+            padding-right: 2rem;
+        }
+
+        .links-section li {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .review-content {
+                padding: 2rem;
+            }
+
+            .review-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .review-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../english/index.html">English</a>
+                <a href="../../arabic/index.html" class="active">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../Portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>بيورك | «فالنيكورا» والمشاعر في زمن المتكررات الاصطناعيّة</h1>
+            <p class="section-description">مراجعة موسيقية • <em>نشرت هذه المقالة لأول مرة على موقع معازف 14 مارس 2015</em></p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="review-content">
+                <div class="review-text">
+                    <p>بقلم إسماعيل فايد</p>
+
+                    <!-- Featured Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-08-1.jpg" alt="غلاف ألبوم بيورك Vulnicura">
+                            <p class="image-caption">غلاف ألبوم بيورك "Vulnicura" (2015)</p>
+                        </div>
+                    </div>
+
+                    <p>"هي اسطوانة انفصال"- تصف "بيورك" اسطوانتها الأخيرة "فالنيكورا": أحد أكثر أعمالها ارتباطاً بها بعد انفصالها عن شريكها الفنان البصري "ماثيو بارني" العام 2013.</p>
+
+                    <p>يعود بنا "فالنيكورا" إلى أهم فترات إنتاجها (1997 – 2004) عندما أصدرت (بالترتيب) "Homogenic" (1997)، و"Vespertine" (2001)، و"Medúlla" (2004). حيث نلاحظ في "هوموجنك"، على سبيل المثال، بداية اهتمامها في مزج الوتريّات بالموسيقى الإلكترونيّة، وبتقديم الإيقاعات المجرّدة، لتنتقل في "فسبرتين" إلى استخدام الوتريّات بشكل غير تقليدي (خاصة الهارب مع العازفة "زينا باركنز")، واستخدام الآت تم تصنيعها خصّيصاً من أجل العمل.</p>
+
+                    <p>هذا ما يتّضح في حديثها عن العمل: إذ أرادت صناعة نسيج من إيقاعات الحياة اليوميّة (مثل صوت النقر على الطاولة، مزج أوراق، أو الوشوشة) وتجميعها ومزجها ثم تضخيمها بشكل مبالغ فيه. وذلك كجزء من رؤيتها لخلق حالة حميميّة (أصوات الداخل (الوشوشة) أو أصوات المنزل أو المساحة الشخصية – أصوات النقر على أثاث على سبيل المثال). لتحقيق ذلك، استعانت "بيورك" بمبرمجي الصوت ومهندسي الصوت للتلاعب الرقمي وخلق ذلك النسيج السلس باستخدام تكنولوجيا التلاعب الصوتي، والذي دفع البعض لتصنيف العمل تحت اسم الموسيقى الإلكترونيّة رغم اختلاف خصائص الموسيقى والغناء. وفي إحدى المقابلات، دافعت "بيورك" عن استخدام التكنولوجيا في صنع موسيقاها، مؤكّدةً أنّها أداة وليست هدفاً أو فكرة تحكم العمل.</p>
+
+                    <div class="highlight-text">
+                        وفي خط موازٍ لتلك الأصوات الحميميّة، جاءت كلمات "فسبرتين" لتتناول الجزء الشخصي والحميمي في حياة "بيورك" (وكان ذلك في بداية علاقتها بالفنان "ماثيو بارني"). ولكن المثير للاهتمام أنّه رغم تجلّي الجانب الشخصي لبيورك في "فسبرتين"- سواء ذلك في الموسيقى والإيقاعات أو في الكلمات، إلّا أّنها استخدمت استعارات ورموز غير تقليديّة لتنقل ذلك (مثل أغنية "Cocoon"، وأغنية "Pagan Poetry").
+                    </div>
+
+                    <p>ومن مجازيّة نسج إيقاعات متناهية الصغر من الأصوات الحياتيّة، انتقلت "بيورك" لفكرة أكثر راديكاليّة في "مديولا" لخلق عمل كامل من أصوات بشريّة مختلفة (مغنّي البيت–بوكسينغ، الغناء الحلقي، جوقة من مغنّيي "الأنويت" وغيرها). لتسجّل أرشيفاً من أصوات متنوّعة للغاية (تنهّد، نخر، عويل، وغيرها)، مع استخدام بسيط جدا للكيبورد، والاعتماد، بدلاً منه، على التلاعب الرقمي والإيقاع والغناء المصاحب وصوت الطبول والطبقة الموسيقيّة المصاحبة، مستعيضةً عن جميع الآت الموسيقيّة بالتسجيلات المختلفة للمغنيين والموسيقيين المشاركين معها. حتى قيل أنها نحتت من مجّرد أصوات بشريّة مجالاً صوتيّاً متكاملاً.</p>
+
+                    <h2 class="section-heading">العودة إلى الجذور في "فالنيكورا"</h2>
+
+                    <p>بالعودة إلى "فالنيكورا": يتّضح أن العمل نتاج التجارب الثلاث في "هموجنك" و"فسبرتين" و"مديولا". إذ تتّضح هنا أصداء استخدام الوتريّات بشكل رئيسي، لتشكّل أول ثلاث أغانٍ أصداءً لـ"هموجنك" (وخاصة أغنية مثل "Unravel" من "هموجنك") بشكل أو بآخر. تدرج "بيورك" في رسم مسار انهيار علاقتها مع "ماثيو بارني" حتى تصل لأطول أغنية في الألبوم "Black Lake"، والتي تتكشّف موسيقيّاً على فترة زمنية مدتها عشرة دقائق تتخلّلها نغمات تستمر لدقيقة أو أكثر مع إيقاعات المنتج والدي جاي "أركا" المضطربة.</p>
+
+                    <p>وتظهر استخدام عدة تسجيلات صوتيّة (بدون موسيقى) فوق بعضها البعض بشكل يخلق تناغماً أو تنافراً مثيراً سمعيّاً مثلما فعلت في "مديولا" (في أغنية "Lionsong" وأغنيتها مع "Anthony Hayes" "Atom Dance"). وتتجلى أصداء "فسبرتين" في الإيقاعات الإليكترونيّة الخافتة لأول خمسة أغان والتي تركز بشكل أكبر على صوت "بيورك" ومحتوى ما تغنيه.</p>
+
+                    <p>تصف بيورك الأغاني وعلاقاتها بانفصالها عن طريق تسمية الأغاني الستّة الأولى بتوصيفات مثل "11 شهراً بعد الانفصال"، "خمسة أشهر بعد الانفصال" وهكذا. ثم تتيح المجال لتأثير "أركا" كشريك فنّي وزّع وأنتج الأربع أغان المتبقية، ويظهر ذلك بوضوح في تغير التأثير العام للتناغمات والإيقاع (ففي أول خمسة أغانٍ، والتي كتبتها وأنتجتها بيورك بشكل فردي تقريباً، تظهر تناغمات تتنافر موسيقيّاً وإيقاعات إلكترونيّة مضطربة– لكنّها متكتّمة بدرجة كبيرة. على عكس توزيعات "أركا" في باقي الأغاني).</p>
+
+                    <h2 class="section-heading">عمل كاتب–أغنية في قالب طليعي</h2>
+
+                    <p>يمكن تصنيف "فالنيكورا" على أنّه "عمل كاتب–أغنية". ومن خلال تتبّع هذا التصنيف، نشأ هذا النوع من الإنتاج الموسيقي في بداية الستينيّات في الولايات المتحدة وبعض دول أوروبا مع ظهور جيل من الموسيقيين الذين استخدموا موسيقى بسيطة، وركّزوا بالأساس على محتوى وأداء الكلمات مع بدايات حركة الحقوق المدنيّة والحركات الطلابية آنذاك وأشهر هؤلاء "بوب ديلان"، "جوني ميتشل"، "كارلي سايمون"، وغيرهم، والذي غالباً ما يركز على جانب شخصي في حياة المغني/ المؤلف.</p>
+
+                    <p>ولكن في حالة "بيورك"، ورغم اتخاذها موضوعاً غاية في الحميميّة (مثل انفصالها عن شريكها الشخصي)، إلا أنها لم تتخلّى عن مجمل تجاربها الموسيقيّة واستخدامها البارز لتكنولوجيات التلاعب والإعداد الصوتي من أول دمجها للتنافر البسيط للوتريات إلى تدرجها في استخدام الإيقاعات الإلكترونيّة إلى حد التشويه غير المكتمل للصوت والإيقاع لآخر أغنية في الاسطوانة، "Quicksand".</p>
+
+                    <h2 class="section-heading">صوت بيورك والتعبير عن الألم</h2>
+
+                    <p>لعل الجزء الأكثر إبهاراً في "فالنيكورا" هو صوت "بيورك" وعلاقته بالموسيقى. إذ تنجح بيورك في استخدام صوتها بشكل يظهر قدرتها الفريدة في التعبير، فيتهدّج تارة، ويئن تارة أخرى، ويصيح ويتباكى. منوّعاً ما بين الخفوت والإلقاء، وما بين العويل والاختناق على تلك الخلفية من من الوتريّات الباكية البطيئة وإيقاعات خفيفة مضطربة (في الخمس أغانٍ الأولى).</p>
+
+                    <p>وكلما تقاربت بيورك موسيقيّاً مع موضوع العمل (الانفصال أو الفقد) كلّما ظهر التعبير الصادق (حتى في اختيار الكلمات). وكلما جافت ذلك التوجه وتبنّت وجهة النظر الإيجابيّة (التنمية البشريّة قاتلها الله) ظهرت تلك التعبيرات التي تشبه عظات ابراهيم الفقي في تنميّة المهارات المهنيّة (مثل: "ففي الحب نكون أبديين، خالدين آمنين من الموت").</p>
+
+                    <blockquote>
+                        هناك شيء من السذاجة في هذا من النوع من الوعظ الذي يذكّرنا بخطاب حركات العصر الجديد والروحانيّات اللادينيّة. ولعل دافع بيورك وراء ذلك هو تقديم الجانب الآخر من تجربة، مثل الفقد أو الانفصال، ولكن الدقّة والتعقيد الذي التزمت به في الأغاني التي تناولت الجانب المؤلم والتعيس في أول خمس أغانٍ تم التخلّي عنه بشكل أو بآخر.
+                    </blockquote>
+
+                    <p>ورغم ابتعاد بيورك تماماً من حيث الموضوع والأسلوب عن عملها السابق "بايوفيليا"، إلا أن آثار موضوعات هذه الاسطوانة (من التركيز على علاقة الطبيعة بالموسيقى وبجسم الإنسان والصوت) ظهرت في اختيارها لبعض التشبيهات المجازيّة ("إنّني أضبط روحي بدقّة طبقاً لطول الموجة الكونيّة"، "صفّف هذا الظلام، نحو الضوء، حيث يطرّز الأوكسجين الراقص الهواء").</p>
+
+                    <h2 class="section-heading">إنجاز نسوي في الموسيقى الطليعية</h2>
+
+                    <p>يمكن ربط ما فعلته بيورك في "فالنيكورا" من سرد تطوّر علاقتها بشكل صريح ومؤلم في كثير من الأحيان (ويظهر ذلك في اختيارها للكلمات مثل: "لحظات الصفاء الذهنية نادرة جداً، فيجب علي أن أسجّل تلك"، "كل جماع فعلناه سوّياً، [يظهر] في هفوات زمنيّة مدهشة"، "لقد سئمت من وساوسك الآخراويّة"، "كيف أغنّينا من هذا الأسى") بتاريخ طويل من أساطير الغناء مثل "جوني ميتشل" على سبيل المثال، ويصبغ على اسطوانتها صبغة نسويّة نوعاً ما، كمؤلّفة وملحّنة ومنتجة من صنف الطليعيّة الموسيقيّة (Avant-Garde)، والتي فرضت على دوائر صناعة الموسيقى وجهة نظر وتجربة كانت محورها امرأة لم تستعمل كليشيهات العلاقات الشخصيّة، أو لم تنجر إلى تعبيرات سطحيّة أو اختزاليّة لتجربة إنسانيّة غاية في التعقيد لا يمكن فهمها وتحليلها بسهولة.</p>
+
+                    <p>لعل هذا يكون أهم إنجاز صنعته بيورك في هذا العمل، وذلك عبر تقديم شكل بديل للحديث عن المشاعر والعواطف الإنسانيّة، ولكن بطريقة تتحدّى ما هو متوقّع ومألوف، وباستخدام صوتيّات ومتكرّرات اصطناعيّة ورقميّة يفترض أنّها تحد من الجانب الإنساني والروح الإنسانيّة– إلا أنّها استطاعت قلب تلك الآية، لينسجم الاثنان ولو بشكل مؤقت وبصيغة، أقل ما يمكن وصفها، أنها مبهرة.</p>
+
+                    <!-- Links Section -->
+                    <div class="links-section">
+                        <h3>روابط</h3>
+                        <ol>
+                            <li><a href="https://www.youtube.com/watch?v=1iW8hvcIAJQ">https://www.youtube.com/watch?v=1iW8hvcIAJQ</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=NHz1j1RVm6M">https://www.youtube.com/watch?v=NHz1j1RVm6M</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=wKNGL3ab-3k">https://www.youtube.com/watch?v=wKNGL3ab-3k</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=MjpciqKoNdY">https://www.youtube.com/watch?v=MjpciqKoNdY</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=WgBbJKiRxmc">https://www.youtube.com/watch?v=WgBbJKiRxmc</a></li>
+                            <li><a href="http://www.vbox7.com/play:6a888e4287">http://www.vbox7.com/play:6a888e4287</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=R7MTU_VVsnA">https://www.youtube.com/watch?v=R7MTU_VVsnA</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=E2nxCSTAq9c">https://www.youtube.com/watch?v=E2nxCSTAq9c</a></li>
+                        </ol>
+                    </div>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="../index.html" class="back-link">← العودة إلى المراجعات</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 إسماعيل فايد. جميع الحقوق محفوظة.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>

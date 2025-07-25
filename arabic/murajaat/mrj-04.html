@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض «مُغمر»: الارتباك أمام تدفق الأنهار الذي قد ينتهي - Notes From Over There</title>
+    <meta name="description" content="مراجعة لمعرض «مُغمر: عن الأنهار وتدفقها المنقطع» في مركز الصورة المعاصرة بالقاهرة 2018">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation - Keep LTR for consistency */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .review-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .review-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .review-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .review-text p strong {
+            font-weight: 700;
+        }
+
+        .review-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .review-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        /* Poetry Quote */
+        .poetry-quote {
+            background: rgba(250, 128, 114, 0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            font-style: italic;
+            border: 1px solid rgba(250, 128, 114, 0.2);
+        }
+
+        .poetry-quote p {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .poetry-attribution {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: normal;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #333;
+            border-bottom: 2px solid #FA8072;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-right: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-right: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .review-content {
+                padding: 2rem;
+            }
+
+            .review-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .review-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../english/index.html">English</a>
+                <a href="../../arabic/index.html" class="active">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../Portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>معرض «مُغمر»: الارتباك أمام تدفق الأنهار الذي قد ينتهي</h1>
+            <p class="section-description">مراجعة • <em>نشرت هذه المقالة لأول مرة على موقع منشور 7 نوفمبر 2018</em></p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="review-content">
+                <div class="review-text">
+                    <p>بقلم إسماعيل فايد</p>
+
+                    <!-- Featured Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-04-1.jpg" alt="معرض مُغمر">
+                            <p class="image-caption">معرض «مُغمر: عن الأنهار وتدفقها المنقطع» - الصورة: مركز الصورة المعاصرة</p>
+                        </div>
+                    </div>
+
+                    <!-- Poetry Quote -->
+                    <div class="poetry-quote">
+                        <p>والناس في حبه سكارى &nbsp; &nbsp; &nbsp; هاموا على شطه الرحيبِ</p>
+                        <p>آهٍ علي سرك الرهيب &nbsp; &nbsp; &nbsp; &nbsp; وموجك التائه الغريبِ</p>
+                        <p>يا نيل يا ساحر الغيوبِ</p>
+                        <div class="poetry-attribution">- قصيدة النهر الخالد، محمود حسن إسماعيل</div>
+                    </div>
+
+                    <p>لم يتفرَّد محمود حسن إسماعيل بالتغني بالنيل، فقد كتب أحمد شوقي قصيدة غناها محمد عبد الوهاب أيضًا، بعنوان «النيل نجاشي». بل بالأحري، فإن إسماعيل «خلَّد» لنا ذلك الخيال عن شكل النيل وحركته وتأثيره في ساكني ضفافه ومرتاديه. يدفعنا ذلك إلى التساؤل عن علاقتنا الحالية بـ«النهر الخالد»، وهل ما زالت تحكمها تلك «الشاعرية» التي تغنَّى بها إسماعيل وشوقي؟</p>
+
+                    <p>اليوم، لم تعد حياة المصريين كما كانت لأزمنة طويلة مضت، تنتظم بحركات النهر ومواسمه، وذلك بفضل مشروع دولة الاستقلال «السد العالي»، وما تضمَّنه ذلك من وعد بالتنمية والتقدم. ذلك المشروع الذي أنهى تلك العلاقة الحيوية الأساسية للمصريين بالنهر.</p>
+
+                    <div class="highlight-text">
+                        نهر النيل في حالة أزمة لا ندرك أبعادها، وربما تغير موقعه من حياة المصريين بشكل جوهري دون أن يصاحب ذلك تفكير حقيقي حول التراكم الإنساني، المادي والمعنوي، للنهر، ومعنى أن يصبح النهر مجرد مجرى مائي راكد للنفايات والمياه الآسنة، وخطر ذلك على المصريين.
+                    </div>
+
+                    <p>فإضافة إلى انصراف بعض المصريين عن الزراعة، أو على الأقل تحويل الأراضي الزراعية التقليدية في الدلتا إلى أحزمة حضرية ذات مسطحات زراعية محدودة، وبعيدًا عن التباكي على عنفوان النهر و«تمرده»، فالواقع أن النيل في حالة أزمة لا ندرك أبعادها، وربما تغير موقعه من حياة المصريين بشكل جوهري دون أن يصاحب ذلك تفكير حقيقي حول أن يصبح مجرى مائي راكد للنفايات والمياه الآسنة، وخطر ذلك على المصريين.</p>
+
+                    <div class="section-heading">عن الأنهار وتدفقها المنقطع</div>
+
+                    <p>يأتي معرض «مُغمر: عن الأنهار وتدفقها المنقطع» في مركز «الصورة المعاصرة» بالقاهرة، ليطرح تلك الأسئلة الشاعرية والعملية جدًّا في الوقت نفسه عن صراع بقاء النهر، وما يعني ذلك للأمن الغذائي (احتمال تناقص حصة مصر من مياه النيل أو على الأقل عدم القدرة على الاستفادة القصوى من المياه وتأثير ذلك في الزراعة)، ولمصادر الشرب الصالحة للاستخدام الآدمي، لتأثير ذلك في الثروة السمكية أو حتى في المناخ.</p>
+
+                    <p>ورغم أن الفن المعاصر في كثير من تجلياته البصرية والمادية، يتمحور حول «القضايا السياسية»، غالبًا ما يكون ذلك بشكل أدائي (التعريف المبالَغ فيه للفن كفعل أدائي يتجاوز منفعة مباشرة أو هدف مباشر، ولكن يخلق مساحة لإعادة التفكير ورؤية الأشياء)، يكون التحدي الأكبر للفن المعاصر، في السياق المصري بخاصة، هو محاولة إيجاد تلك المساحة الوسيطة بين الاشتباك مع قضايا سياسية تمس الواقع بشكل مباشر من جانب، وممارسات فنية تبدع أشكالًا جديدة من وسائطها المختلفة، سواء كانت فوتوغرافيا أو فيديو أو تجهيزات في الفراغ.. إلخ، بما يعكس اهتمام صانعيها.</p>
+
+                    <p>في ظل ندرة المعلومات عن ما يحدث لنهر النيل يصبح معرض «مُغمر» محاولة هامة لخلق مساحة للحديث دون موقف سياسي مباشر ومحدد.</p>
+
+                    <div class="highlight-text">
+                        من ذلك المنطلق يصبح المعرض مثل «مختبر» للتجريب حول كيفية التعامل أو حتى إعادة تصور ظاهرة شديدة الأهمية مثل علاقتنا بالنيل.
+                    </div>
+
+                    <p>لا يُعرِّف مركز «الصورة المعاصرة» نفسه بالضرورة مركزًا بحثيًّا أو هيئة استشارية، لكن ربما فرصة لخلط ما هو شاعري بما هو مادي وموضوعي، وما هو مفاهيمي/مجرد. ذلك التداخل يزيل تلك الحدود الرمزية بين المباحث المختلفة (علوم الزراعة والجيولوجيا والمناخ على سبيل المثال) ومدى اختصاصها من ناحية، واهتمامنا نحن كجمهور تتأثر حياتنا بشكل مباشر بما يحدث لنهر النيل في الآونة الأخيرة من ناحية أخرى.</p>
+
+                    <p>في ظل الندرة الشديدة للمعلومات عن ما يحدث للنهر وتعتيم أكثر فجاجة من جانب الإعلام والصحافة، يصبح معرض «مُغمر» محاولة غاية في الأهمية لخلق تلك المساحة دون افتراض موقف سياسي أو حكمي مباشر ومحدد.</p>
+
+                    <div class="section-heading">الفيضان الأخير</div>
+
+                    <!-- Image 2 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-04-2.jpg" alt="الفيضان الأخير">
+                            <p class="image-caption">الفيضان الأخير - الصورة: مركز الصورة المعاصرة</p>
+                        </div>
+                    </div>
+
+                    <p>تراوحت الأعمال في المعرض بين البساطة والمباشرة، على سبيل المثال تجهيز علياء مسلم وآلاء يونس، «الفيضان الأخير» (2018)، والذي يناقش تاريخ السد العالي كمشروع وطني له أبعاد سياسية بالأساس (ترسيخ دولة الاستقلال الوطني طريقًا إلى التقدم والتنمية)، وفي ذات الوقت تفاصيل تقنية وعملية كثيرة تتراوح بين الخطط الهندسية إلى العمال الذين يعود لهم الفضل بالأساس في بناء السد.</p>
+
+                    <p>وأعمال اتسمت بالتعقيد والتداخل، مثل عمل «أسونثيون مولينوس جوردو» «الزراعة الشبح» (2018)، والتي استخدمت طريقة نسج «الخيامية» التقليدية في صنع «لوح» منسوجة تظهر نتائج بحث جوردو عن أنماط الزراعة والملكية، وكيف تغيرت مع الوقت بين الأراضي الزراعية التقليدية في الدلتا والأراضي التي جرى استصلاحها، إذ نرى أن المسطحات المزروعة في الدلتا تزداد صغرًا في الحجم مع مرور الزمن، نتيجة تغير أنماط الملكية ومصادر الري وزيادة مساحات الأراضي المستصلحة، رغم صعوبة استصلاح الأراضي الصحراوية وتكلفتها الباهظة وعدم قدرتها على استيعاب كل الاحتياجات الغذائية للمصريين.</p>
+
+                    <!-- Image 3 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-04-3.jpg" alt="الزراعة الشبح">
+                            <p class="image-caption">الزراعة الشبح - الصورة: مركز الصورة المعاصرة</p>
+                        </div>
+                    </div>
+
+                    <p>لم يخلُ المعرض من أعمال استلهمت تلك الشعرية بصريًّا، مثل فيلم هاشم النحاس التسجيلي «النيل أرزاق» (1972) وفيلم ماريان فهمي «إلى ما تصبح عليه الأمور» (2018).</p>
+
+                    <div class="highlight-text">
+                        استخدم النحاس لغة سينمائية بسيطة مغرقة في الرمزية، لمحاولة إظهار مدى تعقيد تداخل النيل كمصدر أساسي للإعاشة (للزراعة، الصيد، البناء.. إلخ) للسواد الأعظم للشعب المصري، وفي نفس الوقت مساحة للترويح عن النفس لفصيل مجتمعي حضري بالأساس.
+                    </div>
+
+                    <p>يتماهي البعد السياسي لمثل تلك السردية (الفلاح والعامل والصياد ممثلين للمجتمع الاشتراكي في دولة يوليو) مع رؤية النحاس الفنية، وتكثيف مشاهد الفيلم حول أعمال أو أفعال قد تبدو بسيطة (تجديف قارب أو حمل الطوب الأحمر)، ولكن مفعمة بالرموز.</p>
+
+                    <!-- Image 4 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-04-4.jpg" alt="عرض فيلم هاشم النحاس">
+                            <p class="image-caption">عرض فيلم هاشم النحاس «النيل أرزاق» (1972) - الصورة: مركز الصورة المعاصرة</p>
+                        </div>
+                    </div>
+
+                    <p>تمزج ماريان فهمي مواد تسجيلية لغرق كورنيش الإسكندرية بمشاهد مركبة عن مستقبل الدلتا وغرقها، مع تخيل ماذا يمكن أن يحدث في ظل سيناريو مثل هذا.</p>
+
+                    <p>تمتزج الحقيقة مع الخيال والأساطير ليصبح فيلم ماريان متتاليات بصرية تدعو للتأمل عن كونها مادة تسجيلية أو حتى فيلمية فقط، تتأرجح بين الخيال العلمي وكونها انعكاسًا مباشرًا لواقع لا يمكن تجاهله أو التأثير في نتائجه.</p>
+
+                    <!-- Image 5 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-04-5.jpg" alt="لقطة من فيلم ماريان فهمي">
+                            <p class="image-caption">لقطة من فيلم ماريان فهمي «إلى ما تصبح عليه الأمور» (2018) - الصورة: مركز الصورة المعاصرة</p>
+                        </div>
+                    </div>
+
+                    <p>بينما جمع عملا «كارولينا كايسيدو»: مقطعا فيديو «أرض الأصدقاء» (2015) و«ليس هذا ماء» (2015)، الحديث عن آثار بناء السد وعمليات التعدين على نهر ماجدالينا (النهر الرئيسي في كولومبيا)، بين جماليات الفيلم التسجيلي ومحاولة استخدام «المونتاج» وأدوات التحرير الفيلمي لتقديم عمل بصري يوازي تعقيد مسألة تغيير طبيعة النهر وطبيعة علاقة ساكنيه ومستخدميه.</p>
+
+                    <div class="highlight-text">
+                        مثله مثل النيل، كان لنهر ماجدالينا تاريخ معقد مع السكان الأصليين، وما خلفه هذا من آثار وميراث ثقافي واجتماعي من ناحية، ومن ناحية أخرى ارتبطت أنشطة السكان الاقتصادية بطبيعة النهر (الزراعة، الصيد، التجارة.. إلخ)، ويصبح كل ذلك مهددًا بتغيير جذري بسبب تلك المشروعات العملاقة التي ترغب في التحكم في النهر لهدف محدد (إنتاج الطاقة على سبيل المثال) دون النظر لتاريخ النهر وأهميته أو مستقبله الفعلي.
+                    </div>
+
+                    <!-- Image 6 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-04-6.jpg" alt="لقطة من فيلم كارولينا كايسيدو">
+                            <p class="image-caption">لقطة من فيلم كارولينا كايسيدو «أرض الأصدقاء» (2014) - الصورة: مركز الصورة المعاصرة</p>
+                        </div>
+                    </div>
+
+                    <p>فيما تحاول كايسيدو من خلال فيديو «أرض الأصدقاء»، جمع كل تلك التفاصيل المركبة عن أهمية النهر للسكان من خلال مقابلات يحكي فيها السكان عن تاريخ علاقتهم بالنهر، مع عرض مادة تسجيلية عن مسار النهر، وكيف سيؤثر فيه السد، وكذلك الطبيعة الجغرافية والمناخية للنهر.</p>
+
+                    <p>في غرفة موازية يُعرض فيديو «ليس هذا ماء» الذي يبدو مقطعًا لأغنية مصورة من الثمانينيات، مع موسيقى تستخدم نوعًا من المزمار التقليدي في كولومبيا. يحاول الفيديو كسر تنميط الصور التقليدية عن شكل النهر، من خلال تصوير أحد الشلالات ومعالجتها بأشكال مختلفة، لتصبح مادة بصرية لها احتمالات عدة بعيدة عن التصور التقليدي أو الشائع لصورة النهر.</p>
+
+                    <!-- Image 7 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-04-7.jpg" alt="لقطة من فيديو كارولينا كايسيدو">
+                            <p class="image-caption">لقطة من فيديو كارولينا كايسيدو «هذا ليس ماء» (2015) - الصورة: مركز الصورة المعاصرة</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-text">
+                        لا يمكن تجاهل السياق الحالي من حالة الترقب والتوتر حول ما يجري تداوله في المجال العام، في ما يخص الشأن العام أو حتى التعتيم غير المتوقَّع حول قضية مصيرية مثل نهر النيل.
+                    </div>
+
+                    <p>تصبح هناك رغبة مُلحة للتعاطي مع تلك القضايا المعقدة الشائكة، بطريقة لا تختزل موضوعها في مجرد تقديم معلومات أو اقتراح حلول، لكن من خلال ذلك المزج بين ما هو موضوعي ونقدي، وما يمكن تصوره أو تخيله لربط تلك القضايا ببعضها وبتجارب أخرى (تجربة نهر ماجدالينا على سبيل المثال) أو حتى برؤى خيالية (فيلم ماريان فهمي).</p>
+
+                    <p>رغم اختلاف طبيعة الأعمال بين ما هو بسيط ومباشر، وما هو معقد وملغز بشكل ما، فإن الطرح العام، في عرض تلك الأعمال الفنية، يجعل معرض «مُغمر» تجربة خاصة في محاولة الاشتباك مع الواقع، من خلال أعمال واعية بسياقها وبموضوعها، وفي ذات الوقت لديها مقترَب ومنهج جمالي محدد دون ابتذال ما هو سياسي أو تحييده. هذا في حد ذاته إنجاز غير يسير.</p>
+
+                </div>
+
+                <!-- Back Navigation -->
+                <div class="back-navigation">
+                    <a href="../index.html" class="back-link">← العودة إلى المراجعات</a>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 إسماعيل فايد. جميع الحقوق محفوظة.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصالون الـ29 للشباب: كثير من الحب، قليل من الفن - Notes From Over There</title>
+    <meta name="description" content="مراجعة للصالون الـ29 للشباب الذي أقيم بمركز قصر الفنون في دار الأوبرا المصرية بالقاهرة">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation - Keep LTR for consistency */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .review-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .review-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .review-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .review-text p strong {
+            font-weight: 700;
+        }
+
+        .review-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .review-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-right: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .review-content {
+                padding: 2rem;
+            }
+
+            .review-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .review-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../english/index.html">English</a>
+                <a href="../../arabic/index.html" class="active">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../about.html">About</a>
+                <a href="../../Portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>الصالون الـ29 للشباب: كثير من الحب، قليل من الفن</h1>
+            <p class="section-description">مراجعة • <em>نشرت هذه المقالة لأول مرة على موقع منشور 2 يناير 2019</em></p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="review-content">
+                <div class="review-text">
+                    <p>بقلم إسماعيل فايد</p>
+
+                    <p>يبدو من الوهلة الأولى، بعد التجول في الدور الأسفل لمعرض صالون الشباب الذي أقيم بمركز قصر الفنون في دار الأوبرا المصرية بالقاهرة، أن المعرض عبارة عن علاقة عاطفية انتهت، وأن الأعمال الفنية ما هي إلا نتاج ذلك الانفصال أو نهاية تلك العلاقة.</p>
+
+                    <!-- Featured Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-1.jpg" alt="صورة من الصالون الـ29 للشباب">
+                            <p class="image-caption">من الصالون الـ29 للشباب - الصورة: إسماعيل فايد</p>
+                        </div>
+                    </div>
+
+                    <p>ما إن تخطو بضع خطوات في بهو القاعة حتى يستقبلك تجهيز محمد عيد أحمد، بموسيقاه الحزينة التي تتكرر بشكل مستمر، وترى «المرجيحة» ذات السيقان المعلقة، ووراءها جدار تختبئ خلفه أعمال فنية أكثر طفولية وسذاجة، تثير خليطًا غربيًا من مشاعر الارتياب والدهشة.</p>
+
+                    <p>ماذا تعني «المرجيحة»؟ وماذا يمكن أن تعنيه تلك الطريقة الطفولية في الرسم؟ لا يوجد أي معلومات عن الفنان أو العمل أو حتى اسم العمل، باستثناء أعمال قليلة في المعرض، وتبقى الأغلبية الكاسحة دون عنوان أو شرح، ولو بسيط، عن ماهية اللوحة ومغزاها.</p>
+
+                    <p>دون أن يدري المُشاهد، يصبح تجهيز محمد عيد أحمد مفتاح المعرض، فغالبية الأعمال وقعت في نفس الفخ: تمجيد ما هو مباشر ونمطي، وإغفال أي نوع من التعاطي مع وجود احتمالات أخرى ومعانٍ أخرى لتلك الصور المباشرة: نهاية علاقة عاطفية ،أو فقدان حبيب أو عزيز.</p>
+
+                    <p>لطالما تساءلتُ عن تلك الفجوة بين قطاع الفنون التشكيلية ومشهد الفن المستقل الذي أخذ في التطور والتشكل منذ نهايات التسعينيات، رغم أن كثيرًا من الفنانين المعاصرين (هاني راشد، ومنى مرزوق، ووائل شوقي، وأحمد عسقلاني، وغيرهم) كانت لهم إسهامات في صالون الشباب، خصوصًا في بداياته، إذ كان الحدث الأكثر أهمية لكل الأفكار والأساليب «الجديدة» (أيًّا ما تعنيه كلمة جديدة) لشباب الفنانين في بداية مسيرتهم الفنية.</p>
+
+                    <p>لكن فور أن تبدأ في التجول في قاعة العرض حتى تظهر تلك الفجوة، فلا يعوز الفنانين مهارة تقنية (غالبيتهم على الأقل)، ولا يفتقدون الإمكانات، لكن تبقى هناك طبقات وطبقات من المعاني والرموز التي يجري تنحيتها جانبًا في سبيل شكل أكثر نمطية، سهل الفهم ومثير لمشاعر الشفقة (Pathos) بشكل خاص، في حالة من استدرار المشاعر على حساب تحدي الإثارة الفنية للمُشاهِد، بشكل يحرك العاطفة ولا يشل التفكير في ذات الوقت.</p>
+
+                    <!-- Image Grid 1 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-2.jpg" alt="لوحة مريم رشدي شفيق">
+                            <p class="image-caption">لوحة مريم رشدي شفيق - الصورة: إسماعيل فايد</p>
+                        </div>
+                    </div>
+
+                    <p>الاطلاع على أعمال الفنانين الآخرين يفتح الباب أمام أسئلة بدهية عن أساليب التشكيل أو لغته أو حتى منهج التفكير.</p>
+
+                    <p>هناك حقيقة لا يمكن الهروب منها: الفن لا يمكن عزله عن سياقه.</p>
+
+                    <p>جماليات الفنانين الشباب في ذلك الإصدار من صالون الشباب محكومة بما أُسميه «جماليات يوسف فرنسيس»: ذلك الأسلوب المقترن بـ«ما قبل الرفائيلية» المتأخرة، التي دائمًا ما كانت في حالة صدمة مع واقعها، في مزيج من الرومانسية والكلاسيكية المستجَدة، التي تُظهِر نساء ذوات أجساد نحيفة وشفافة في حالة ذهول وحزن من قسوة الحياة.</p>
+
+                    <p>عادةً ما تكون تلك الجماليات مرتبطة بالثقافة البصرية لهؤلاء الفنانين، وما يسمى «عادات النظر»، وإن كانت الثقافة البصرية التي تشمل مجمل الإنتاج البصري من تلفزيون وسينما وصحافة ودعاية وإعلان وأعمال فنية كذلك، لا تتجاوز تلك الرومانسية المصدومة دائمًا في واقعها الأليم، فإن تلك الأعمال «الرومانسية»، المليئة بشعور «الحب المفقود»، لهي أصدق تعبير عن واقعها بكل سذاجتها ومباشرتها.</p>
+
+                    <!-- Image Grid 2 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-3.jpg" alt="لوحة آلاء أحمد حلمي">
+                            <p class="image-caption">لوحة آلاء أحمد حلمي - الصورة: إسماعيل فايد</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-4.jpg" alt="لوحة آلاء يسري محمود">
+                            <p class="image-caption">لوحة آلاء يسري محمود - الصورة: إسماعيل فايد</p>
+                        </div>
+                    </div>
+
+                    <p>ليس الهدف من هذه المراجعة الذم أو القدح في الفنانين وأعمالهم، فأنا أدرك جيدًا صعوبة التفكير في عمل فني والمراحل المختلفة التي تنطوي عليها عملية الإنتاج الفني. لكن يجب علينا أن نُسائل أنفسنا: لماذا تسيطر تلك الجماليات على الفن المعاصر المنتَج عبر منظومة قطاع الفنون التشكيلية، بكل ما يعنيه ويعانيه القطاع من مشكلات مرتبطة بإدارته واستخدام موارده والتعامل معه، حتى مع وجود مشهد مستقل على الجانب الآخر من النهر، مفتوح للجمهور ولديه تراكم تاريخي تجاوز العقدين من الزمن؟</p>
+
+                    <p>حتى إذا تجاهلنا المشهد المستقل وما يُنتَج منذ صعوده، يبقى السؤال: ألَا يستطيع أحد من هؤلاء الفنانين البحث عن أعمال فنية معاصرة من باب الفضول والاطلاع؟</p>
+
+                    <p>ليس الهدف من السؤال مطالبة هؤلاء الفنانين بمحاكاة أعمال المعاصرين الآخرين، لكن الاطلاع على أعمال الفنانين الآخرين في حد ذاته يفتح الباب أمام أسئلة بدهية عن أساليب التشكيل أو لغته أو حتى منهج تفكيره، الذي من الممكن أن يفتح آفاقًا مختلفة تتجاوز أساليب سياق التعليم وعرض الفن في القطاع الحكومي.</p>
+
+                    <!-- Image Grid 3 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-5.jpg" alt="لوحة أفنان سمير متولي">
+                            <p class="image-caption">لوحة أفنان سمير متولي - الصورة: إسماعيل فايد</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-6.jpg" alt="لوحة روشان أحمد القرشي">
+                            <p class="image-caption">لوحة روشان أحمد القرشي - الصورة: إسماعيل فايد</p>
+                        </div>
+                    </div>
+
+                    <p>المعرض امتداد لنفس المنهج والأسلوب الذي ينتهجه القطاع مع المعارض الأخرى.</p>
+
+                    <p>باستثناء أفنان سمير متولي وروشان أحمد القرشي، اللتين قدمتا أكثر عملين مميزين تقنيًّا وجماليًّا، فإن مَن لم يقع في فخ الرومانسية المغدورة أبدى قدرًا لا بأس به من الوجودية، تراوحت بين التعبيرية (أمنية السيد أحمد، مصطفى ربيع صديق، أحمد محمود سليمان، صلاح الدين أحمد)، والتجريد في أشكاله المختلفة (فاطمة رمضان، السيد عرفات السيد «غرافيك»، بسمة بركات أبو بكر «غرافيك»، روضة نور الدين علي «غرافيك»).</p>
+
+                    <p>ينقل ذلك الشعور عن ذاتية تتفسخ عناصرها كما تتفكك عناصر التشكيل في حالة من التوتر وعدم التوازن من ناحية، ومن السخط واليأس من ناحية أخرى، ليطابق ذلك الواقع بطريقة ما.</p>
+
+                    <p>لعل ذلك الأسلوب أكثر تعقيدًا وصدقًا من الرومانسية المغدورة التي ميزت كثيرًا من الأعمال.</p>
+
+                    <!-- Image Grid 4 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-7.jpg" alt="لوحة أمنية السيد محمد">
+                            <p class="image-caption">لوحة أمنية السيد محمد - الصورة: إسماعيل فايد</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-8.jpg" alt="لوحة مصطفى ربيع صديق">
+                            <p class="image-caption">لوحة مصطفى ربيع صديق - الصورة: إسماعيل فايد</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-9.jpg" alt="لوحة أحمد محمود سليمان">
+                            <p class="image-caption">لوحة أحمد محمود سليمان - الصورة: إسماعيل فايد</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Grid 5 -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-10.jpg" alt="لوحة فاطمة رمضان">
+                            <p class="image-caption">لوحة فاطمة رمضان - الصورة: إسماعيل فايد</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-11.jpg" alt="لوحة بسمة بركات أبو بكر">
+                            <p class="image-caption">لوحة بسمة بركات أبو بكر - الصورة: إسماعيل فايد</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="../../assets/full/mrj-02-12.jpg" alt="لوحة روضة نور الدين">
+                            <p class="image-caption">لوحة روضة نور الدين - الصورة: إسماعيل فايد</p>
+                        </div>
+                    </div>
+
+                    <p>لا يعنيني سيطرة ذوقية دون الأخرى، سواء كانت ما قبل الرفائيلية أو التعبيرية، وأُدرك أن لكثير من المشاركين في الصالون تعلُّق حقيقي بأسلوب أو منهج بعينه. لكن باقتراب العام الثلاثين لصالون الشباب، يصبح لدينا سؤال: هل نجح في كسر هيمنة ذوقية معينة على شباب الفنانين التشكيليين، أم صار امتدادًا لنوعية المعارض الاعتيادية التي يقيمها قطاع الفنون التشكيلية؟</p>
+
+                    <p>تبدو الإجابة أن المعرض، بخلاف قلة قليلة من المشاركين، امتداد لنفس المنهج والأسلوب الذي ينتهجه القطاع مع المعارض الأخرى، لتصبح الأقدمية أو موالاة النظام (انظر مقدمة كتالوغ صالون الشباب الدورة الـ27 على سبيل المثال) أو البيروقراطية الحكومية وسيطرة الأساتذة هي العناصر الحاكمة لإحدى الفرص القليلة المتاحة أمام شباب الفنانين لعرض أعمالهم على قطاع واسع من الجمهور.</p>
+
+                    <p>يفرض علينا ذلك تساؤل عن جدوى رفض هذه الجماليات أو وصفها بأنها «قديمة» أو لا تواكب معطيات اللحظة الراهنة، بل يبدو لنا أن هذه الجماليات تجيب عن أسئلة تشغل هؤلاء الفنانين بشكل أو بآخر، وتظهر تعبيرًا صادقًا، ليس فقط عن الثقافة البصرية لأولئك الفنانين، بل أيضًا عن الأفكار والأساليب الفنية التي درسوها.</p>
+
+                    <p>بعيدًا عن إشكاليات تعليم الفن في مصر، يبدو أن رفضنا تلك الجماليات نابع من وعي بأن هؤلاء الفنانين لم تتح لهم الفرصة للخروج من محدودية التجربة التعليمية (كلية الفنون الجميلة أو الفنون التطبيقية على سبيل المثال)، أو من سيطرة رؤية جمالية أو ذوقية خاصة بالقائمين على قطاع الفنون التشكيلية، مع الأخذ في الاعتبار أن الصالون الشباب جرى تطويره كمحاولة للخروج من تلك المحدودية وتسلطها في بادئ الأمر.</p>
+
+                </div>
+
+                <!-- Back Navigation -->
+                <div class="back-navigation">
+                    <a href="../index.html" class="back-link">← العودة إلى المراجعات</a>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 إسماعيل فايد. جميع الحقوق محفوظة.</p>
+            <p><a href="../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>
