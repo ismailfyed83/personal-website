@@ -1,117 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews & Interviews - Notes From Over There</title>
-    <meta name="description" content="Reviews and interviews by Ismail Fayed on visual arts, film, and literature">
+    <meta name="description" content="Reviews and interviews covering modern & contemporary visual and performing arts, cinema, and literature">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../../index.html" class="nav-logo">Notes From Over There</a>
-            <div class="nav-links">
-                <a href="../../index.html">Home</a>
-                <a href="../index.html">English</a>
-                <a href="../../arabic/index.html">العربية</a>
-                <a href="../../blog/index.html">Blog</a>
-                <a href="../../about.html">About</a>
-                <a href="../../portfolio.html">Portfolio</a>
-                <a href="../../contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-        <div class="container">
-            <a href="../../index.html">Home</a> > 
-            <a href="../index.html">English</a> > 
-            <a href="../index.html">Writing</a> > 
-            <span>Reviews & Interviews</span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="section-header">
-        <div class="container">
-            <h1>Reviews & Interviews</h1>
-            <p class="section-description">This section showcases highlights of the reviews and interviews of modern & contemporary visual and performing arts, as well as cinema & literature.</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <div class="categories-grid">
-                
-                <!-- Visual and Performing Arts -->
-                <section class="category-section">
-                    <div class="category-content">
-                        <h2>Visual & Performing Arts</h2>
-                        <p>This section features highlights of interviews and conversations with dancers, choreographers and artists as well as a wide range of reviews of exhibitions and events.</p>
-                        <div class="articles-list">
-                            <div class="sample-article">
-                                <p><strong>36 reviews and interviews</strong> covering contemporary art exhibitions, theater festivals, dance performances, and gallery shows from Egypt and internationally.</p>
-                            </div>
-                        </div>
-                        <a href="visual-performing/index.html" class="view-all-link">View All Visual & Performing Arts</a>
-                    </div>
-                    <div class="category-thumbnail">
-                        <img src="../../assets/images/reviews/visual-performing-thumb.png" alt="Visual & Performing Arts" class="thumbnail-image">
-                    </div>
-                </section>
-
-                <!-- Film -->
-                <section class="category-section">
-                    <div class="category-content">
-                        <h2>Film</h2>
-                        <p>This is a collection of some of the reviews that were written as part of Mada Masr's 'Cinematic Gems' series, in addition to a few essays on modern Egyptian cinema.</p>
-                        <div class="articles-list">
-                            <div class="sample-article">
-                                <p><em>Film reviews and interviews will be added here...</em></p>
-                            </div>
-                        </div>
-                        <a href="film/index.html" class="view-all-link">View All Film Reviews</a>
-                    </div>
-                    <div class="category-thumbnail">
-                        <img src="../../assets/images/reviews/film-thumb.png" alt="Film" class="thumbnail-image">
-                    </div>
-                </section>
-
-                <!-- Literature -->
-                <section class="category-section">
-                    <div class="category-content">
-                        <h2>Literature</h2>
-                        <p>This series of reviews covers mainly contemporary and modern Arabic literature.</p>
-                        <div class="articles-list">
-                            <div class="sample-article">
-                                <p><em>Literature reviews and interviews will be added here...</em></p>
-                            </div>
-                        </div>
-                        <a href="literature/index.html" class="view-all-link">View All Literature Reviews</a>
-                    </div>
-                    <div class="category-thumbnail">
-                        <img src="../../assets/images/reviews/literature-thumb.png" alt="Literature" class="thumbnail-image">
-                    </div>
-                </section>
-
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2022 Ismail Fayed. All rights reserved.</p>
-            <p><a href="../../index.html">Notes From Over There</a></p>
-        </div>
-    </footer>
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -120,10 +17,12 @@
         }
 
         body {
-            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
             line-height: 1.6;
             color: #333;
             background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
         }
 
         .container {
@@ -140,6 +39,7 @@
             top: 0;
             width: 100%;
             z-index: 1000;
+            direction: ltr;
         }
 
         .nav-container {
@@ -156,6 +56,7 @@
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
         }
 
         .nav-links {
@@ -169,37 +70,19 @@
             text-decoration: none;
             transition: opacity 0.3s;
             font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
         }
 
-        .nav-links a:hover {
+        .nav-links a:hover,
+        .nav-links a.active {
             opacity: 0.7;
-        }
-
-        /* Breadcrumb */
-        .breadcrumb {
-            background: transparent;
-            padding: 1rem 0;
-            margin-top: 60px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .breadcrumb a {
-            color: #FA8072;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .breadcrumb span {
-            color: #666;
         }
 
         /* Header */
         .section-header {
             background: transparent;
-            padding: 3rem 0;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
             text-align: center;
         }
 
@@ -207,13 +90,18 @@
             font-size: 2.5rem;
             color: #333;
             margin-bottom: 1rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
         }
 
         .section-description {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #666;
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
+            line-height: 1.6;
         }
 
         /* Main Content */
@@ -221,89 +109,83 @@
             padding: 4rem 0;
         }
 
+        /* Categories Grid */
         .categories-grid {
             display: grid;
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 2rem;
         }
 
-        .category-section {
-            display: flex;
-            background: transparent;
-            border-radius: 8px;
+        .category-card {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
             overflow: hidden;
             border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 1.5rem;
             transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
         }
 
-        .category-section:hover {
-            transform: translateY(-2px);
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-color: rgba(250, 128, 114, 0.3);
         }
 
-        .category-thumbnail {
-            width: 138px;
-            min-width: 138px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            margin-left: 2rem;
-        }
-
-        .thumbnail-image {
+        .category-image {
             width: 100%;
-            height: 138px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .category-image img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            object-position: center;
-            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover .category-image img {
+            transform: scale(1.05);
         }
 
         .category-content {
-            flex: 1;
+            padding: 2rem;
         }
 
-        .category-content h2 {
-            font-size: 1.8rem;
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 700;
             color: #333;
             margin-bottom: 1rem;
-            border-bottom: 2px solid #FA8072;
-            padding-bottom: 0.5rem;
         }
 
-        .category-content > p {
+        .category-description {
+            font-size: 1rem;
             color: #666;
-            margin-bottom: 2rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
         }
 
-        .articles-list {
-            margin-bottom: 2rem;
-        }
-
-        .sample-article {
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            border-left: 4px solid rgba(250, 128, 114, 0.5);
-            margin-bottom: 1rem;
-        }
-
-        .sample-article p {
-            color: #666;
-            font-style: italic;
-        }
-
-        .view-all-link {
+        .category-button {
             display: inline-block;
-            padding: 0.8rem 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(250, 128, 114, 0.1);
+            color: #FA8072;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .category-button:hover {
             background: #FA8072;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .view-all-link:hover {
-            background: #E55B4D;
+            border-color: #FA8072;
         }
 
         /* Footer */
@@ -317,6 +199,7 @@
         .main-footer a {
             color: #333;
             text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
         }
 
         .main-footer a:hover {
@@ -336,7 +219,8 @@
                 justify-content: center;
             }
 
-            .breadcrumb {
+            .section-header {
+                padding: 5rem 0 2rem 0;
                 margin-top: 120px;
             }
 
@@ -344,36 +228,23 @@
                 font-size: 2rem;
             }
 
-            .category-section {
-                flex-direction: column;
-                padding: 1rem;
+            .container {
+                padding: 0 1rem;
             }
 
-            .category-thumbnail {
-                width: 100%;
-                min-width: auto;
-                height: 120px;
-                margin-left: 0;
-                margin-top: 1rem;
-                order: 2;
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
             .category-content {
-                order: 1;
-            }
-
-            .container {
-                padding: 0 1rem;
+                padding: 1.5rem;
             }
         }
 
         @media (max-width: 480px) {
             .section-header h1 {
-                font-size: 1.5rem;
-            }
-
-            .category-section {
-                padding: 1rem;
+                font-size: 1.7rem;
             }
 
             .nav-links {
@@ -382,10 +253,94 @@
                 gap: 0.5rem;
             }
 
-            .category-content h2 {
-                font-size: 1.5rem;
+            .categories-grid {
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .category-content {
+                padding: 1rem;
             }
         }
     </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../../english/index.html" class="active">English</a>
+                <a href="../../arabic/index.html">العربية</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../about.html">About</a>
+                <a href="../portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Reviews & Interviews</h1>
+            <p class="section-description">This section showcases highlights of the reviews and interviews of modern & contemporary visual and performing arts, as well as cinema & literature.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="categories-grid">
+                
+                <!-- Visual & Performing Arts -->
+                <a href="/english/writing/reviews/visual-performing-arts/index.html" class="category-card">
+                    <div class="category-image">
+                        <img src="../../../assets/thumbnails/writing-visual-performing-thumb.jpg" alt="Visual & Performing Arts">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="category-title">Visual & Performing Arts</h2>
+                        <p class="category-description">This section features highlights of interviews and conversations with dancers, choreographers and artists as well as a wide range of reviews of exhibitions and events</p>
+                        <span class="category-button">Read more</span>
+                    </div>
+                </a>
+
+                <!-- Film -->
+                <a href="/english/writing/reviews/film/index.html" class="category-card">
+                    <div class="category-image">
+                        <img src="../../../assets/thumbnails/writing-film-thumb.jpg" alt="Film">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="category-title">Film</h2>
+                        <p class="category-description">This is a collection of some of the reviews that were written as part of Mada Masr's 'Cinematic Gems' series, in addition to a few essays on modern Egyptian cinema</p>
+                        <span class="category-button">Read more</span>
+                    </div>
+                </a>
+
+                <!-- Literature -->
+                <a href="/english/writing/reviews/literature/index.html" class="category-card">
+                    <div class="category-image">
+                        <img src="../../../assets/thumbnails/writing-literature-thumb.jpg" alt="Literature">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="category-title">Literature</h2>
+                        <p class="category-description">This series of reviews covers mainly contemporary and modern Arabic literature</p>
+                        <span class="category-button">Read more</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Ismail Fayed. All rights reserved.</p>
+            <p><a href="../../../index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
 </body>
 </html>
