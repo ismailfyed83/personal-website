@@ -1,237 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posionous Roses 2018</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Poison into medicine: On watching Poisonous Roses - Notes From Over There</title>
+    <meta name="description" content="A film review exploring Ahmed Fawzi Saleh's Poisonous Roses (2018) and its examination of marginalization and gender in Egyptian society">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        .essay-text em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-left: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 3px solid #FA8072;
+        }
+
+        /* Author byline */
+        .author-byline {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Posionous Roses 2018</h1>
-        <p class="meta">Published on: Thu, 04 Aug 2022 23:39:04 +0000 by No Creator</p>
-        <div class="content">
-            <article class="sections" id="sections" data-page-sections="62d2a4385992c6343f42e38c">
-  
-  
-    
-    
-
-
-  
-  
-
-
-<section
-  data-test="page-section"
-  
-  data-section-theme=""
-  class='page-section 
-    
-      layout-engine-section
-    
-    background-width--full-bleed
-    
-      section-height--medium
-    
-    
-      content-width--medium
-    
-    horizontal-alignment--left
-    vertical-alignment--middle
-    
-      
-    
-    
-    '
-  
-  data-section-id="62d6ab5a876cfe394d7b6f56"
-  
-  data-controller="SectionWrapperController"
-  data-current-styles="{
-  &quot;imageOverlayOpacity&quot;: 0.15,
-  &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-  &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
-  &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--left&quot;,
-  &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-  &quot;contentWidth&quot;: &quot;content-width--medium&quot;,
-  &quot;sectionTheme&quot;: &quot;&quot;,
-  &quot;sectionAnimation&quot;: &quot;none&quot;,
-  &quot;backgroundMode&quot;: &quot;image&quot;
-}"
-  data-current-context="{
-  &quot;video&quot;: {
-    &quot;playbackSpeed&quot;: 0.5,
-    &quot;filter&quot;: 1,
-    &quot;filterStrength&quot;: 0,
-    &quot;zoom&quot;: 0,
-    &quot;videoSourceProvider&quot;: &quot;none&quot;
-  },
-  &quot;backgroundImageId&quot;: null,
-  &quot;backgroundMediaEffect&quot;: null,
-  &quot;divider&quot;: null,
-  &quot;typeName&quot;: null
-}"
-  data-animation="none"
-  
-   
-  
-  
->
-  <div
-    class="section-border"
-    
-  >
-    <div class="section-background">
-    
-      
-    
-    </div>
-  </div>
-  <div
-    class='content-wrapper'
-    style='
-      
-        
-      
-    '
-  >
-    <div
-      class="content"
-      
-    >
-      
-      
-      
-      
-      
-      
-      
-      
-      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-62d6ab5a876cfe394d7b6f56"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-0cd9681ac75ad08fdd7d"><div class="sqs-block-content">
-
-
-  
-      <img src="https://images.squarespace-cdn.com/content/v1/62c0901aab021124ec695730/7f9dcba8-da25-47a8-b336-bf366b681a15/Picture20.png?format=original" alt=""/>
-  
-
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-d83088ba70014eb374e0"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <h3 style="white-space:pre-wrap;">Poison into medicine: On watching Poisonous Roses</h3><p class="sqsrte-small" style="white-space:pre-wrap;"><em>This text was originally published in Mada Masr on 10 December 2018</em></p><p class="" style="white-space:pre-wrap;">By Ismail Fayed</p><p class="" style="white-space:pre-wrap;">It is nothing short of remarkable that in a<a href="https://www.theguardian.com/environment/2018/dec/03/david-attenborough-collapse-civilisation-on-horizon-un-climate-summit"> <span style="text-decoration:underline">very apocalyptic moment</span></a>, one fraught with authoritarianism and extreme political polarization, artists find ways to challenge us, as audiences and as human beings. Of all the artistic practices taking place in Egypt right now, cinema seems to be where the bulk of the interesting work is being done, posing important questions and opening up new ways of seeing. From<a href="https://www.imdb.com/title/tt4355392/"> <span style="text-decoration:underline">groundbreaking docudramas</span></a> to<a href="https://www.imdb.com/title/tt5424898/"> <span style="text-decoration:underline">autobiographical musings</span></a>, Egyptian cinema is trailblazing at a time when freedom of expression and creativity is<a href="https://afteegypt.org/en/afte_releases/2018/10/16/16036-afteegypt.html"> <span style="text-decoration:underline">profoundly suppressed</span></a>.</p><p class="" style="white-space:pre-wrap;">Enter Ahmed Fawzi Saleh’s debut feature film,<a href="https://www.imdb.com/title/tt7866918/?ref_=ttfc_fc_tt"> <span style="text-decoration:underline"><em>Ward Masmoum</em></span></a> (Poisonous Roses), winner of the<a href="http://english.ahram.org.eg/NewsContent/5/32/318196/Arts--Culture/Film/Awards-of-the-th-Cairo-International-Film-Festival.aspx"> <span style="text-decoration:underline">best Arab film prize at this year’s Cairo International Film Festival</span></a>. In the film, Saleh continues his exploration of Egypt’s quasi-industrial tanneries — a subject he addressed in his 2011 documentary<a href="https://www.imdb.com/title/tt1784524/?ref_=nm_knf_t1"> <span style="text-decoration:underline"><em>Gild Hay</em></span></a> (Living Skin) — this time through an adaptation of Ahmed Zaghloul al-Shiti’s novel <em>Wuroud Samma li Saqr</em> (Poisonous Roses for Saqr, 1990). While the film does not adhere to Shiti’s novel per se, it incorporates similar narrative tropes and motifs, blending fiction with the reality of the tanneries and their inhabitants.</p><p class="" style="white-space:pre-wrap;">Although this is a feature film, it retains a bit of a documentary feel, with its minimal dialogue (which could, however, have been developed further) and its attempts to capture a sense of the everyday — mediated, of course, by the stunning cinematography of Maged Nader. The discipline of Nader’s meandering camera is cleverly concealed by its agility in tracking the labyrinthine alleys of the tanneries. A lot can and will be written on the photography and shooting of the film, the aestheticization of the mundane and the horrid in ingenious ways. Who would have thought that towers of drying glue blocks could make for a dizzying geometric composition, creating an eerie sense of confinement while also evoking the thrill of physically going up and down the tower steps? No less impressive is the way the running wastewater that comes from processing cattle hides acts as a visual and sonic anchor to frame after frame of <em>tableaux vivants</em>, washed in tones of gray and blue, creating a sensory feast that is nevertheless not completely devoid of dreariness.</p><p class="" style="white-space:pre-wrap;">But the film doesn’t only offer stunning visuals; it does something even more interesting. It examines a deeply problematic case of sibling fixation (a reworked incest complex that is emotionally intelligible but remains erotically unconscious throughout) against the backdrop of entrenched sexism and misogyny in Egypt’s most marginalized and deprived areas. We are completely enmeshed in the brooding, weary, daily struggle of Taheya (the female protagonist, played by a stoic and sensitive Koky), and the claustrophobia of her longing for and fixation on her brother, Saqr (Ibrahim El-Nagari), as he becomes the signifier for father, husband, lover and God.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1658235668617_6770"><div class="sqs-block-content">
-
-
-  
-      <img src="https://images.squarespace-cdn.com/content/v1/62c0901aab021124ec695730/33d1819b-6566-420a-9c3b-8442acfa64d3/Picture21.jpg?format=original" alt=""/>
-  
-
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-yui_3_17_2_1_1658235668617_7555"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <p class="" style="white-space:pre-wrap;">As the main provider for her family — her mother, her brother and herself — Taheya is seen mourning the death and absence of her father, witnessing the harrowing reality of married women in her own social class (spousal abuse, economic uncertainty, objectification and exploitation, etc.) and trying to deal with the agony of her deep-seated, misdirected desire for love. In her attempts to hold on to the anchor of her emotional and psychological longing, she will do whatever it takes, even if it means negotiating with the “devil.” Here, the devil comes in different manifestations: it is the state, the patriarchy, and also an actual trickster, played by a charming, mischievous Mahmoud Hemeida. Taheya doesn’t hesitate to sabotage her brother’s romantic prospects or even his plan to illegally emigrate (going as far as to report him to the authorities). It is painful to watch at times, but so is the reality of many women in Egypt.</p><p class="" style="white-space:pre-wrap;">Taheya’s desperation is not just claustrophobic; it is lonely, and Saleh brilliantly demonstrates to us, the viewers, just how lonely such a fixation can be, how empty and emptying. In all her striving, we see Taheya alone: she is alone when she goes to work, alone when she visits her father’s grave, alone when she’s cooking and even alone when bringing food to her brother, every day. And maybe the consciousness of this emptiness is the only way out of her fixation: As we see in the final scene, even in her moment of joy, Taheya is alone.</p><p class="" style="white-space:pre-wrap;">Saleh, along with Nader and sound designer Sara Kaddouri, constructs parallel rhythms that accentuate each other, creating a certain hypnotic effect. When we are not engrossed in Taheya’s routine of walking back and forth across the back alleys of the tanneries and crisscrossing the vast city, we are mesmerized by the rising and falling cadence of the horse carts and the machines, the industrial noise that manifests a spatial depth beyond the screen. Such aesthetic density does not aim to render what is ugly beautiful, but rather shows that seeing is an act of revealing the multilayered nature of the truth — an infinitely more difficult task.</p><p class="" style="white-space:pre-wrap;">The reference to poison in the title has both a literal (tanning is a highly toxic process) and a metaphorical dimension, with the latter extending to us: the audience. We have to swallow the “poison” of witnessing the horrific injustice that women endure, and the profound inequality that enables us to retain our prized goods and sustain our indulgent levels of consumption. How often do we get to know or see which processes prop up the service sector, for example? Or what it takes, in terms of human cost, to produce the prized leather products we covet? Taheya is not alone in being poisoned by her loneliness and the oppression she faces — we, too, have to stomach the unsavory reality of poverty, injustice and marginalization endemic to our society.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1658235668617_7920"><div class="sqs-block-content">
-
-
-  
-      <img src="https://images.squarespace-cdn.com/content/v1/62c0901aab021124ec695730/866d4192-94a5-4fb0-b78e-194a5bb10774/Picture22.jpg?format=original" alt=""/>
-  
-
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-yui_3_17_2_1_1658235668617_8712"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <p class="" style="white-space:pre-wrap;">As we submit to the intense viewing experience provided by this layered artwork, we are struck by how difficult it is to reveal such multi-faceted realities without falling into the traps of stereotyping and the clichés of realist cinema. Taheya could be any woman we meet on the streets of Cairo; her story is not unusual. But it is in making Taheya completely human — heroic but misguided, loving but cruel, good but capable of inflicting harm, able to see tremendous beauty in the world around her but reconciled to terrible ugliness as well — that is where Saleh’s accomplishment lies. His film blends politically charged observations with deeply personal and psychological insights, all through the prism of a unique visual language that takes us to the fine line where medicine turns to poison and poison turns to medicine, reminding us that, sometimes, we need a little bit of poison to be able to see what we’re too afraid to see.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-</div></div></div></div></div>
-    </div>
-  
-  </div>
-  
-</section>
-
-  
-</article>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html" class="active">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">portfolio</a>
+                <a href="/contact.html">Contact</a>
+            </div>
         </div>
-        <p><a href="/posionous-roses-2018">Original Link</a></p>
-    </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Poison into medicine: On watching Poisonous Roses</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/film-03-1.png" alt="Poisonous Roses poster">
+                            <p class="image-caption">Ahmed Fawzi Saleh's <em>Ward Masmoum</em> (Poisonous Roses, 2018)</p>
+                        </div>
+                    </div>
+
+                    <div class="source-note">
+                        This text was originally published in Mada Masr on 10 December 2018
+                    </div>
+
+                    <p class="author-byline">By Ismail Fayed</p>
+
+                    <p>It is nothing short of remarkable that in a <a href="https://www.theguardian.com/environment/2018/dec/03/david-attenborough-collapse-civilisation-on-horizon-un-climate-summit">very apocalyptic moment</a>, one fraught with authoritarianism and extreme political polarization, artists find ways to challenge us, as audiences and as human beings. Of all the artistic practices taking place in Egypt right now, cinema seems to be where the bulk of the interesting work is being done, posing important questions and opening up new ways of seeing. From <a href="https://www.imdb.com/title/tt4355392/">groundbreaking docudramas</a> to <a href="https://www.imdb.com/title/tt5424898/">autobiographical musings</a>, Egyptian cinema is trailblazing at a time when freedom of expression and creativity is <a href="https://afteegypt.org/en/afte_releases/2018/10/16/16036-afteegypt.html">profoundly suppressed</a>.</p>
+
+                    <p>Enter Ahmed Fawzi Saleh's debut feature film, <a href="https://www.imdb.com/title/tt7866918/?ref_=ttfc_fc_tt"><em>Ward Masmoum</em></a> (Poisonous Roses), winner of the <a href="http://english.ahram.org.eg/NewsContent/5/32/318196/Arts--Culture/Film/Awards-of-the-th-Cairo-International-Film-Festival.aspx">best Arab film prize at this year's Cairo International Film Festival</a>. In the film, Saleh continues his exploration of Egypt's quasi-industrial tanneries — a subject he addressed in his 2011 documentary <a href="https://www.imdb.com/title/tt1784524/?ref_=nm_knf_t1"><em>Gild Hay</em></a> (Living Skin) — this time through an adaptation of Ahmed Zaghloul al-Shiti's novel <em>Wuroud Samma li Saqr</em> (Poisonous Roses for Saqr, 1990). While the film does not adhere to Shiti's novel per se, it incorporates similar narrative tropes and motifs, blending fiction with the reality of the tanneries and their inhabitants.</p>
+
+                    <div class="highlight-text">
+                        Although this is a feature film, it retains a bit of a documentary feel, with its minimal dialogue and its attempts to capture a sense of the everyday — mediated, of course, by the stunning cinematography of Maged Nader.
+                    </div>
+
+                    <p>The discipline of Nader's meandering camera is cleverly concealed by its agility in tracking the labyrinthine alleys of the tanneries. A lot can and will be written on the photography and shooting of the film, the aestheticization of the mundane and the horrid in ingenious ways. Who would have thought that towers of drying glue blocks could make for a dizzying geometric composition, creating an eerie sense of confinement while also evoking the thrill of physically going up and down the tower steps? No less impressive is the way the running wastewater that comes from processing cattle hides acts as a visual and sonic anchor to frame after frame of <em>tableaux vivants</em>, washed in tones of gray and blue, creating a sensory feast that is nevertheless not completely devoid of dreariness.</p>
+
+                    <!-- Second Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/film-03-2.png" alt="Still from Poisonous Roses">
+                            <p class="image-caption">Still from <em>Poisonous Roses</em> showing the tannery environment</p>
+                        </div>
+                    </div>
+
+                    <p>But the film doesn't only offer stunning visuals; it does something even more interesting. It examines a deeply problematic case of sibling fixation (a reworked incest complex that is emotionally intelligible but remains erotically unconscious throughout) against the backdrop of entrenched sexism and misogyny in Egypt's most marginalized and deprived areas. We are completely enmeshed in the brooding, weary, daily struggle of Taheya (the female protagonist, played by a stoic and sensitive Koky), and the claustrophobia of her longing for and fixation on her brother, Saqr (Ibrahim El-Nagari), as he becomes the signifier for father, husband, lover and God.</p>
+
+                    <p>As the main provider for her family — her mother, her brother and herself — Taheya is seen mourning the death and absence of her father, witnessing the harrowing reality of married women in her own social class (spousal abuse, economic uncertainty, objectification and exploitation, etc.) and trying to deal with the agony of her deep-seated, misdirected desire for love. In her attempts to hold on to the anchor of her emotional and psychological longing, she will do whatever it takes, even if it means negotiating with the "devil." Here, the devil comes in different manifestations: it is the state, the patriarchy, and also an actual trickster, played by a charming, mischievous Mahmoud Hemeida. Taheya doesn't hesitate to sabotage her brother's romantic prospects or even his plan to illegally emigrate (going as far as to report him to the authorities). It is painful to watch at times, but so is the reality of many women in Egypt.</p>
+
+                    <blockquote>
+                        Taheya's desperation is not just claustrophobic; it is lonely, and Saleh brilliantly demonstrates to us, the viewers, just how lonely such a fixation can be, how empty and emptying. In all her striving, we see Taheya alone: she is alone when she goes to work, alone when she visits her father's grave, alone when she's cooking and even alone when bringing food to her brother, every day.
+                    </blockquote>
+
+                    <p>And maybe the consciousness of this emptiness is the only way out of her fixation: As we see in the final scene, even in her moment of joy, Taheya is alone.</p>
+
+                    <p>Saleh, along with Nader and sound designer Sara Kaddouri, constructs parallel rhythms that accentuate each other, creating a certain hypnotic effect. When we are not engrossed in Taheya's routine of walking back and forth across the back alleys of the tanneries and crisscrossing the vast city, we are mesmerized by the rising and falling cadence of the horse carts and the machines, the industrial noise that manifests a spatial depth beyond the screen. Such aesthetic density does not aim to render what is ugly beautiful, but rather shows that seeing is an act of revealing the multilayered nature of the truth — an infinitely more difficult task.</p>
+
+                    <!-- Third Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/film-03-3.png" alt="Still from Poisonous Roses">
+                            <p class="image-caption">Taheya desperately seeking her brother in <em>Poisonous Roses</em></p>
+                        </div>
+                    </div>
+
+                    <p>The reference to poison in the title has both a literal (tanning is a highly toxic process) and a metaphorical dimension, with the latter extending to us: the audience. We have to swallow the "poison" of witnessing the horrific injustice that women endure, and the profound inequality that enables us to retain our prized goods and sustain our indulgent levels of consumption. How often do we get to know or see which processes prop up the service sector, for example? Or what it takes, in terms of human cost, to produce the prized leather products we covet? Taheya is not alone in being poisoned by her loneliness and the oppression she faces — we, too, have to stomach the unsavory reality of poverty, injustice and marginalization endemic to our society.</p>
+
+                    <div class="highlight-text">
+                        As we submit to the intense viewing experience provided by this layered artwork, we are struck by how difficult it is to reveal such multi-faceted realities without falling into the traps of stereotyping and the clichés of realist cinema.
+                    </div>
+
+                    <p>Taheya could be any woman we meet on the streets of Cairo; her story is not unusual. But it is in making Taheya completely human — heroic but misguided, loving but cruel, good but capable of inflicting harm, able to see tremendous beauty in the world around her but reconciled to terrible ugliness as well — that is where Saleh's accomplishment lies. His film blends politically charged observations with deeply personal and psychological insights, all through the prism of a unique visual language that takes us to the fine line where medicine turns to poison and poison turns to medicine, reminding us that, sometimes, we need a little bit of poison to be able to see what we're too afraid to see.</p>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="/english/writing/reviews/film/index.html" class="back-link">← Back to Film Reviews</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2018 Ismail Fayed. All rights reserved.</p>
+            <p><a href="/index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
