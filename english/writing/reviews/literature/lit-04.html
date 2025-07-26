@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Italian: Some insights, but homophobia and misogyny galore - Notes From Over There</title>
+    <meta name="description" content="A critical literary review of Shukri al-Mabkhout's award-winning novel The Italian (2015)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        .essay-text em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-left: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 3px solid #FA8072;
+        }
+
+        /* Author byline */
+        .author-byline {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html" class="active">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>The Italian: Some insights, but homophobia and misogyny galore</h1>
+           
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/lit-04.jpg" alt="Shukri al-Mabkhout's The Italian book cover">
+                            <p class="image-caption">Cover of Shukri al-Mabkhout's <em>Al-Talyani</em> (The Italian, 2015)</p>
+                        </div>
+                    </div>
+
+                    <div class="source-note">
+                        This text was originally published in Mada Masr on 2 January 2016
+                    </div>
+
+                    <p class="author-byline">By Ismail Fayed</p>
+
+                    <p>Beauty might be skin deep, but its effect is apparently powerful enough to construct a whole novel on the good looks of its protagonist. Shukri al-Mabkhout's <em>Al-Talyani</em> (The Italian 2015), the winner of this year's International Prize for Arabic Fiction, is a tale of the life and times of a narcissist nicknamed "the Italian" for his looks, which are the reason for his downfall and the elaborate sexual encounters that take up about 40 percent of the novel.</p>
+
+                    <p>Set against the backdrop of Tunisia on the eve of the 1987 coup, the story meanders restlessly through the ensuing two decades under the rule of the late dictator Zine al-Abidine Ben Ali. It leaves the reader right at the point where we expect a mention of the "Jasmine revolution." Sadly there is none.</p>
+
+                    <div class="highlight-text">
+                        The novel is a classic tale of the consequence of hubris. The Italian's real name is Abdel Nasser, and he sees the entire world as an extension of himself – even the coup is experienced as a projection of his fear of "the end." One is tempted to believe that Mabkhout himself is the almost anonymous self-effacing narrator (we come to understand that he is a "friend" of the Italian), who's so engrossed with the charm, attractiveness and intelligence of his protagonist that he doesn't realize his entire story reads as a long love letter justifying the inexplicable selfishness of this character.
+                    </div>
+
+                    <p>Mabkhout, who currently heads Tunisia's university of Manouba, starts his first novel with interesting tension between the old social order of the ousted Habib Bourguiba (the first president of Tunisia and the architect of its modernization), and the rising classes of Ben Ali's neoliberal state, who are described as petty thieves and drug dealers. Yet, for all intents and purpose, this tension quickly dissipates and a long-winded digression into the history of the student movement in Tunisia circa 1970 takes up as much as 40 pages.</p>
+
+                    <p>When he is not saving the day for the student movement through his foresight and quick wit, Abdel Nasser is courting the affections of many women, principally the bewitching Zeina, his intellectual match and a rough Southern girl (Tunisia seems to suffer a very similar bias toward its Southern population as Egypt does). The writer spares nothing in exalting the virtues of Zeina – she is dedicated, fiercely intelligent and hard-working (almost obsessively so) – and for these virtues he punishes her ruthlessly. Indeed, he falls for the oldest cliché of the intelligent woman – the shrew. Just as he glorifies her, he ascribes her innumerable vices (she is selfish, uncaring, almost cruel, ungrateful, hypocritical, and so on) and a tragic fate. It's hard to believe in this day and age that intelligent female characters are still doomed just because they are perceived as intelligent or ambitious. Or, as in the case of Zeina, both.</p>
+
+                    <blockquote>
+                        Zeina is not the only character Makhbout punishes. Nearly all the female characters face tragic fates. Abdel Nasser's mother is a tyrannical, hypocritical, nonsensical matriarch. His neighbor, praised for her beauty, her ravishing scents (like thyme and clover) and her generosity with her affections and body, descends into notoriety for soliciting sexual favours from young boys to fulfil her insatiable needs. Misogyny is palpable throughout the novel, and all the women, who at first glance look powerful and beautiful, are soon discarded to the worst fate possible without reasonable explanation.
+                    </blockquote>
+
+                    <p>Abdel Nasser is not exactly an angel. He has many moments of wanton cruelty and selfishness, and many others where his judgement is compromised by dark motives or impulses. We never quite understand why gets away with it and the women don't.</p>
+
+                    <p>Mabkhout basks in his glowing prose of the male hero's sexual encounters. His writing is as agile and inventive as his protagonist is. There is little doubt that he is master of Arabic prose, and his grip over its complex lexicon is perhaps the novel's greatest achievement. No other author in recent memory has written intimate scenes with such subtlety and choreographic grace. If there's a great writer of contemporary Arabic erotic literature, Mabkhout is it. It is terribly unfortunate that such writing is marred by the pervasive misogyny that colors his prose and analogies. From the usual stereotypes of women as "conquests," to the protagonist's love interest described as a "mare" and to marriage being summed up by one of the marginal characters as "why buy the cow, when the milk is available on the market?"</p>
+
+                    <div class="highlight-text">
+                        But my biggest beef with <em>The Italian</em> is the homophobia that effectively shapes the novel's opening and end. Two key scenes are Abdel Nasser's encounter as a child with a neighbor who tries to sexually assault him and his subsequent attack on this neighbor. This is the only LGBT character in the novel, although at some point rumors that Abdel Nasser slept his way to becoming a journalist (by seducing the editor-in-chief) are dismissed by the anonymous narrator as malicious and completely unfounded gossip.
+                    </div>
+
+                    <p>It is very hard to comprehend why Mabkhout uses the word <em>luti</em> (sodomite) and <em>shaz</em> (pervert) for "homosexual." <a href="http://www.huffingtonpost.com/2015/09/25/tunisia-gay-rights_n_8195736.html">Tunisia is perhaps the only country in the Middle East and the Arab world with a recognizable LGBT movement</a> and one of the very few that have called for the decriminalization of homosexuality. It's a surprise therefore that Mabkhout is old-fashioned and conservative enough to not only equate paedophilia with homosexuality but to use very derogatory terms to describe it. And it's sad for the nth time to read an Arabic novel with only one LGBT character, and one who is described as a pervert, paedophile and menace to society.</p>
+
+                    <p>When it is not maligning women and LGBT characters, <em>The Italian</em> is insightful on the contemporary history of Tunisia and the inner workings of its post-independent state and its one-party system. It gives a historical overview of a profoundly tumultuous time for the region – the three decades preceding the "Arab Spring." In passing moments of analytical brilliance, Mabkhout paints an absorbing portrait of how <a href="http://cepr.net/documents/publications/debt_1999_04.htm">the IMF and World Bank structural adjustment programs of the 1980s and the doctrine of economic liberalization mixed with an extremely authoritarian and corrupt state did little to relieve any hardships</a>. In fact, they did exactly the opposite. The neoliberal state dismantled whatever social gains the post-independent state had managed to deliver and impoverished the majority of its population while giving rise to a parasitic class of corrupt officials and businessmen.</p>
+
+                    <blockquote>
+                        The frustrations of Makhbout's characters (when they are not frolicking around in sexual bliss) at the bleak authoritarianism of Ben Ali and its ubiquitous corruption resonates with any reader from the Arab world who grew up in the shadow of a similar dictator and government. It's a shame that such insights are overshadowed by narcissism, sexism and homophobia.
+                    </blockquote>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="/english/writing/reviews/literature/index.html" class="back-link">← Back to Literary Reviews</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2016 Ismail Fayed. All rights reserved.</p>
+            <p><a href="/index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>
