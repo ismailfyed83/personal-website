@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ecstatic madness of the Mahdiyya - Notes From Over There</title>
+    <meta name="description" content="A literary review of Hammour Ziada's novel The Longing of the Dervish (2014)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        .essay-text em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-left: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 3px solid #FA8072;
+        }
+
+        /* Author byline */
+        .author-byline {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html" class="active">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>The ecstatic madness of the Mahdiyya</h1>
+           
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/lit-05.jpg" alt="The Mahdi's rebuilt grave">
+                            <p class="image-caption">The Mahdi's rebuilt grave - Courtesy: Sven-Steffen Arndt. Licensed under public domain via commons.</p>
+                        </div>
+                    </div>
+
+                    <div class="source-note">
+                        This text was originally published in Mada Masr on 27 November 2015
+                    </div>
+
+                    <p class="author-byline">By Ismail Fayed</p>
+
+                    <p>The puritanical rhetoric of the Mahdi and his "dervishes" in Hammour Ziada's tragic epic on the rise of the Mahdiyya in 19th-century Sudan is uncomfortably reminiscent of statements released by the Islamic State. Throughout his second novel Ziada depicts murderous zeal, ruthless destruction of "Western"-style civilization, and spectacular displays of violence. Perhaps if the Mahdi was alive today, he would release videos of elaborate beheadings and amputations the same way the Islamic State does.</p>
+
+                    <div class="highlight-text">
+                        <em>Shawq al-Dawriah</em> (The Longing of the Dervish, 2014), set against the tyrannical Turko-Egyptian rule of Sudan, in part justifies the rise of such an extreme, fervent revival as the Mahdiyya, and in part attempts to reconcile the deeply troubling racial violence unleashed against the hapless residents of the west and south of Sudan by all parties involved – Turks, Egyptians and British – through a mystical encounter between a former slave and a Greek missionary.
+                    </div>
+
+                    <p>The love affair spans two decades of Egyptian and Sudanese history, specifically through the Mahdi rebellion (1881-1885) that ensued after the Mahdi (Mohamed Ahmed) proclaimed himself the messianic redeemer of the Islamic faith, and the subsequent formation of the Mahdi state (1885-1898). The fascinating tragedy unravels through hypnotic story-telling over 400 plus pages and dozens of characters and subplots.</p>
+
+                    <p>Ziada, who is a journalist as well as a novelist and short story writer, writes a beautiful historical survey of his country and its cities. Of how the cosmopolitan Khartoum was established by Korshid Pasha in 1830, with its beautiful palaces and gardens. Of the fearsome port of Sawkin, the one the jinn of prophet Soliman inhabited until they were driven underground by human settlers. And of the city of the Mahdi, Omdurman, with its red earth and desolate atmosphere of religious fervor. Even the far western mountains and the region's strange tongue receive a mention, via the former slave Bikhit, who originally comes from there.</p>
+
+                    <blockquote>
+                        The turbulent waters of the Nile and its many tributaries take cue from the protagonists as they twist and turn through the immense landscape of Sudan, at times treacherous and terrifying, at others docile and picturesque. In painting a portrait of early modern Sudan with its cities, ports and diverse inhabitants, Ziada rouses the curiosity of the reader (specifically perhaps the Egyptian reader) to challenge his or her assumptions and ideas about Sudan and its history, in a way that is as riveting as it is informative.
+                    </blockquote>
+
+                    <p>He does not shrug off some of the darkest aspects of war and Sudanese history. He goes into detail about the role of the Arabs and Turks in entrenching slavery as an economic practice and inevitably a caste system entirely pivoted on "color," and further the impact of British colonialism in bringing to Sudan the "white" heathens who defiled the land with their presence and ways of life. Ziada exemplifies this injustice through many aspects of the plot, for example the sexual exploitation of slaves (Bikhit is sexually exploited by his white European master and then his Turkish mistress), the violence enacted against darker inhabitants, the exorbitant taxes, the unjust punitive system, slave labor, and so on. The inevitable outcome from the Turko-Egyptian and British administrations was widespread injustice and inequality — and the eventual rise of the messianic movement of the Mahdi.</p>
+
+                    <p>The Mahdi rebellion, which witnesses the exhilarating defeat of the combined forces of the Egyptian, Turkish and British troops, also sees a much darker side. The siege of Khartoum, the famine it caused (including a story of infant cannibalism), the mass killings of white Christians and the imprisonment or enslavement of those who remained are all at the heart of the history Ziada tries to capture.</p>
+
+                    <p>He tries to offer a balanced view of those deeply polarizing views. We hear the story of how the "dervishes" who supported the Mahdi saw the events, and at the same time we see how the white European Christians – through the perspective of the missionary, Theodora – saw the Mahdi and his followers. Both sides come across as morally corrupt, unprincipled, heartless savages. Theodora, the nymph-like, devout Christian and the object of Bikhit's adoration, comes across as racist, petty and hypocritical, along with much of her race. It would seem as if love should triumph somehow – or this is what Ziada keeps hinting at.</p>
+
+                    <div class="highlight-text">
+                        Mysticism is central to the development of religion in Sudan and equally central to the novel. Ziada constructs his tale along cryptic lines, inserting quotes from grand Sufi masters from Ibn Arabi to al-Hallaj and even one from the Gospel of St. John. But in the same way that the charismatic Mahdi was a member of a Sufi order who ended up suppressing all Sufi movements, Ziada turns Sufism against itself by reducing its elaborate logic to whimsical love exchanges between Bikhit and Theodora.
+                    </div>
+
+                    <p>With a Muslim black slave falling in love with the white Christian missionary, Ziada walks a fine line between facile interracial eroticism and an actual engagement with Sufi ideas about radical equality, the impossibility of knowing the other, and the omnipotence of love. To the detriment of his endeavour, he does not always succeed in showing us how these liberating Sufi tenets can reshape our understanding of encounters like the one his protagonists go through.</p>
+
+                    <p>I was reminded of Egyptian scholar and novelist Youssef Zeidan failing unceremoniously to revolutionize our understanding of modes of human relatedness via the progressive potential of many of those Sufi ideals in <em>Mohal</em> (2012), instead slipping into superficial cliches and unhappy excuses to write bad sex scenes.</p>
+
+                    <blockquote>
+                        Throughout the novel, Ziada clearly attempts to recreate the effect mystical prose has on the reader, with the multiplicity of meanings each word may have and how each meaning can reveal just one facet of the truth. But he slips into a didactic tone every now and then, via his protagonists, preaching rather than wondering or asking us to wonder. And here lies one of the biggest challenges of contemporary Arab literature: tackling the legacy of mystical writing without slipping into an edifying or sermonic tone.
+                    </blockquote>
+
+                    <p>Ziada picks an unlikely couple to fall in love, and through the historical context of early modern Sudan he tells a tale of savage religiosity, ugly imperialism, misogyny, racial violence and ecstatic madness. If the novel, which won last year's Naguib Mahfouz Medal for Literature in 2014 and was shortlisted for this year's International Prize for Arabic Fiction and should soon appear in English, should be called out for its superficial dabbling with Sufism and mysticism and a problematic premise of a love story, it cannot be faulted for his masterful storytelling, which remains spellbinding till the very end.</p>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="/english/writing/reviews/literature/index.html" class="back-link">← Back to Literary Reviews</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2015 Ismail Fayed. All rights reserved.</p>
+            <p><a href="/index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>
