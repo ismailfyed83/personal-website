@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary gems: Gone are the Days of the Pearls - Notes From Over There</title>
+    <meta name="description" content="A literary review of Ihsan Abdel Quddous' novel Gone are the Days of the Pearls (1984)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        .essay-text em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-left: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 3px solid #FA8072;
+        }
+
+        /* Author byline */
+        .author-byline {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html" class="active">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">Portfolio</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Literary gems: Gone are the Days of the Pearls</h1>
+          
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/lit-03.jpg" alt="Gone are the Days of the Pearls book cover">
+                            <p class="image-caption">The original cover of the 1984 edition of <em>Gone are the Days of the Pearls</em></p>
+                        </div>
+                    </div>
+
+                    <div class="source-note">
+                        This text was originally published in Mada Masr on 18 August 2016
+                    </div>
+
+                    <p class="author-byline">By Ismail Fayed</p>
+
+                    <p>We find it almost impossible to romanticize anything about Gulf societies as we know them today. It seems that every time an Egyptian thinks of the Gulf, we conjure up a vivid fantasy of towers of glass and steel springing from the middle of nowhere, against the backdrop of endless desert, bottomless oil fields, and an insatiable consumerism that is deeply at odds with a conservative traditionalism and religiosity. Nearly all our stereotypes are shrouded in the mystique of nomadism, instant wealth and lack of cultural heritage, and we largely dismiss contemporary attempts at cultural patronage as making up for lost time.</p>
+
+                    <p>It is also no secret that modern Egyptian literature was entirely Egypt-centric and rarely took notice of the rest of the Arab world, especially the Gulf. For both these reasons it is rare indeed to find an Egyptian writer preoccupied with the history of the Gulf pre-oil, and with the cataclysmic changes oil was effecting on Gulf societies and peoples by the early 1960s — beyond the influence they had on Egypt.</p>
+
+                    <div class="highlight-text">
+                        This makes Ihsan Abdel Quddous' <em>Gone are the Days of the Pearls</em> (1984) an unusual novel, especially by a writer from his generation — the generation of Tawfik al-Hakim, Taha Hussein, and Naguib Mahfouz. More of a novella (at 152 pages) formed as a series of collected conversations, the story opens in the Sheraton Hotel, overlooking the Nile.
+                    </div>
+
+                    <p>Over a meal of spaghetti, we are introduced to the narrator — a famous writer — and his infatuation with a woman from the Gulf who is sitting at a nearby table. Unsurprisingly, she soon requests to meet him and share her tragic tale. Over clandestine meetings orchestrated by her Egyptian friend, the nameless Gulfie protagonist, who occasionally gives a false name, such as Noaf or Wadud, narrates the history of her family in one of the states overlooking the Persian Gulf over the past century or so.</p>
+
+                    <p>Abdel Quddous does little to mask his own identity as writer and projects his obsessive yet shallow interest in psychoanalysis, constantly referring to himself as psychiatrist and Noaf as his patient. This was not his first dabbling in psychology or psychoanalysis. He wrote extensively about psychoanalysis and writing in earlier works, such as <em>Thuqub fi Thawb al-Aswad</em> (Holes in a Black Dress, 1962), <em>Bi'r al-Hirman</em> (Well of Longing, 1962), <em>Anf wTthalathat Auyun</em> (A Nose and Three Eyes, 1964), and <em>Al-Azraa w al-Shaar al-Abyad</em> (The Virgin and White Hair, 1977).</p>
+
+                    <p>In <em>Gone are the Days of the Pearls</em>, written when Abdel Quddous was in his mid-60s, he writes at length about his moral and ethical duty as an established writer to listen to his readers' problems and seek inspiration from their stories, although the latter seems at odds with that claim of being dutifully helpful. For him, there doesn't seem to be a problem in rehashing stories readers entrust him with as bestselling novels. So strong is his desire to listen to the story of this exotic Gulfie woman, that we feel that Abdel Quddous, or the famous writer, is living vicariously through her story, parasitizing on her memories of her family and people.</p>
+
+                    <blockquote>
+                        Abdel Quddous posits a rather clumsy and superficial deployment of psychological catharsis: by merely talking about her troubling history, his protagonist will be released from the weight of all the contradictions history has imposed on her. He follows this idea throughout the novel by showing how Noaf slowly transforms just by telling her story.
+                    </blockquote>
+
+                    <p>Yet despite the semi-clinical setting and the psychiatry metaphor, Abdel Quddous still manages to make us uncomfortable with his constant hints at his repressed desire to "claim" Noaf for his own. The weakest parts of the novel are probably those where he justifies his writer's predatory instincts towards the psychologically fragile Noaf. He even goes as far as saying that sometimes patients need to have sexual relations with their physicians as part of the therapeutic experience, raising serious questions about his understanding of what constitutes psychiatric practice and the ethical parameters of helping others.</p>
+
+                    <p>Aside from its pseudo-psychological premise and uncomfortable sexual dynamic, <em>Gone are the Days of the Pearls</em> offers an Egyptian's serious re-imagining of the lives of Gulf residents lived before the oil boom. We hear about the vibrant trade routes, the pearl-hunting industry and the commercially prosperous ports that peppered the Persian Gulf. Although still portraying Gulf societies as conservative and undermining the agency and rights of women and children, Abdel Quddous' narration gives insight to <a href="http://www.uaeinteract.com/history/trad/trd08.asp">a society whose economy and way of life endured for centuries as part of a wider commercial and cultural network that reached all the way to Sri Lanka</a>. He writes of sea-faring Gulf societies that engaged in <a href="https://books.google.com.eg/books?id=TtE4DAAAQBAJ&pg=PA191&lpg=PA191&dq=indian+rupee+trucial+states&source=bl&ots=wb1-oJiZ2f&sig=lxltYqtVu0GWQYu0NQcmZ3ZLjc4&hl=en&sa=X&ved=0ahUKEwiLgfLslsHOAhVGcBoKHU_PDo04ChDoAQgZMAA#v=onepage&q=indian%20rupee%20trucial%20states&f=false">wide trade and commercial networks closely linked to the Indian Ocean, and who used the Indian rupee as their currency until 1950s</a>.</p>
+
+                    <div class="highlight-text">
+                        The collapse of the pearling economy during the 1930s and expansion of commercial oil drilling during the 1950s profoundly undermined these livelihoods and many cultural traditions. In a long plaintive soliloquy, Noaf bitterly laments how the new wealth only reinforced a more conservative world view and retrenched various forms of oppression and narrow-mindedness.
+                    </div>
+
+                    <p>Noaf's — or rather Ihsan's — censure does not rise to a well-thought-out critique, nor go so far as to criticize the Gulf monarchs and their politics, but points out the moral hypocrisy Gulf societies have been accused of, again and again: The embrace of rampant capitalism and a lavish consumerist lifestyle, the complete repression of women and minorities, and control over all media and press.</p>
+
+                    <p>One shortcoming is that the book exclusively points at gender inequality, rather than the broader problems of oil-fueled dictatorships. There is no mistake about the degree of injustice leveled against women in Gulf societies, and Noaf's grievances about her family and the men in her life feel real and still relevant. But one cannot isolate misogyny from a larger system of inequality, or from oil-driven consumerism and its effects on Gulf societies and their relationships to the outside world.</p>
+
+                    <p>In a sub-plot and in many passing references, Ihsan points out the parasitic relationship many Egyptians developed with the people of the Gulf. With references to rich old Gulfie men "buying off" younger Egyptian brides, through Egyptians befriending Gulf visitors in hopes of securing some kind of business, to the simple expectation that all people from the Gulf are all potential business ventures. Both parties deserve condemnation for perpetuating this dehumanizing dynamic, and Abdel Quddous tries to show this, though his final resolution in this regard leaves a lot to be desired.</p>
+
+                    <p>In his attempt to free Noaf from her bewildered frustration at her society's moral hypocrisy, he explains that "The only difference between one Arab society and the other is who encountered Europe first!" This is historically inaccurate — most states bordering the Persian Gulf, "encountered" Europe as early as the 15th Century and had treaties with Britain as early as 1820, quite early even by Egyptian standards — and it does not help to address the root of the problem. In fact, the historical forms of government of Noaf's society were never resonant with that of the modern European nation-state. With the exception of Saudi Arabia, no Gulf society attempted a state-building project before World War II.</p>
+
+                    <blockquote>
+                        But overall Noaf's nostalgia for her grandfather's pearling adventures across the Indian Ocean and her dismay at vapid consumerism is a welcome change from the prevalent narratives we have about Gulf societies and their histories. It might be undermined by Abdel Quddous' sloppy psychologisms, but it's an unusual precedent that forces us to go beyond facile stereotypes and racist misconceptions.
+                    </blockquote>
+
+                    <p>Abdel Quddous' beleaguered protagonist relates his history of the Gulf in intimate conversations with the "famous writer" during a vacation in Egypt, during which she's enjoying the nocturnal diversions Cairo had to offer. The conversational mode and the secrecy surrounding the two main characters is a hallmark of Abdel Quddous' style, where as reader we always feel we're witnessing something we shouldn't. This both excites a sense of voyeurism and curiosity, and remains immensely entertaining because of its light, gossipy tone. Ihsan spent years training and then editing his mother's salacious left-leaning magazine Rose al-Yusuf, acquiring the skills to write catchy pieces that were higher in entertainment value than literary merit. Never one to shy away from controversy, <a href="http://www.albawabhnews.com/300841">Abdel Quddous was deemed by many contemporaries as a sensationalist, obscene writer, with poet and literary critic Abbas Akkad describing his novels as "bedroom literature"</a> in reference to his graphic descriptions of sex. For many he was a guilty pleasure, rife with bourgeois romanticism and softcore porn — perfect, perhaps, for a light summer read. Yet Abdel Quddous always aligned his novels with social causes, including an approximation of feminism, such as in <em>Gone are the Days of the Pearls</em>.</p>
+
+                    <p>And even at its most journalistic and sensational, <em>Gone are the Days of the Pearls</em> raises crucial questions about our complex relationship with one of the most significant phenomena in the past half-century — the rise of oil monarchies — and what this tells us about these societies and about ourselves, beyond the pearls, the oil and our own sense of false grandiosity.</p>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="/english/writing/reviews/literature/index.html" class="back-link">← Back to Literary Reviews</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2016 Ismail Fayed. All rights reserved.</p>
+            <p><a href="/index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>
