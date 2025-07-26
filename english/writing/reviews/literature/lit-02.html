@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary gems: Nawal Saadawi's The Fall of the Imam - Notes From Over There</title>
+    <meta name="description" content="A literary review of Nawal Saadawi's controversial novel The Fall of the Imam (1987)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        .essay-text em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-left: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Scene styling */
+        .scene-text {
+            background: rgba(250, 128, 114, 0.08);
+            padding: 1.2rem;
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            font-style: italic;
+            border-radius: 5px;
+            color: #444;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 3px solid #FA8072;
+        }
+
+        /* Author byline */
+        .author-byline {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html" class="active">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">portfolio</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Literary gems: Nawal Saadawi's The Fall of the Imam</h1>
+            
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/lit-02.jpg" alt="Nawal Saadawi's The Fall of the Imam book cover">
+                            <p class="image-caption">Nawal Saadawi's <em>The Fall of the Imam</em> (1987)</p>
+                        </div>
+                    </div>
+
+                    <div class="source-note">
+                        This text was originally published in Mada Masr on 8 March 2017
+                    </div>
+
+                    <p class="author-byline">By Ismail Fayed</p>
+
+                    <div class="scene-text">
+                        <strong>Scene I:</strong> <em>She runs in the darkness, somewhere between the river and the sea, on a high plateau where she was born. The camera zooms in on her back. A shot is fired. Its echo fills the space. She falls to her death. A voice-over starts, and she identifies herself as Bint Allah.</em>
+                    </div>
+
+                    <p>It was 2001, during my second year in college, when I first read Nawal Saadawi's <em>The Fall of the Imam</em> (1987), and I was shocked to open the novel and find the words "bint" and "Allah" (daughter, God) juxtaposed, then follow a protagonist who believes she is God's daughter flee from evil forces. Almost two decades later, reading the novel again, I still find that opening chapter radical. Its unorthodox premise evaded scrutiny for decades, but Al-Azhar banned the book in 2004. After that, you could only find editions from Beirut-based publisher Al-Saqi.</p>
+
+                    <p>It was Saadawi's sixth novel, and, despite its quasi-mythical setting in an imaginary Arabic-speaking Muslim-majority nation and its highly allegorical language, it very much reflected the politics of its time. The debt crisis of the late 1980s, the Chernobyl Nuclear Catastrophe of 1986 and the Islamic finance debacle (specifically Ahmed al-Rayan's notorious Ponzi scheme) leave traces in the strikingly metaphorical prose with its elliptical style.</p>
+
+                    <div class="highlight-text">
+                        Saadawi has long been recognized as a pioneering feminist and a mediocre novelist. She is appreciated for her scathing critiques of the moral hypocrisy – or bankruptcy – of Egyptian society when it comes to women and their rights, but she is not so much relished by the critics for her literary contributions.
+                    </div>
+
+                    <p>Maybe someone who is continually subverting authority and the language of power is not someone interested in literary style or the craft of writing. Indeed, she doesn't seem interested in either. Her prose is jumpy and feverish, her narrative uneven, and, at times, <em>The Fall of the Imam</em> lacks any cohesion at all. I find it can be better be understood as cinematically constructed agitprop with an extraordinary conceptual framework and a story that can be understood visually more than anything else — as reflected in the three scenes I have written to frame this response.</p>
+
+                    <p>The novel pivots around three main scenes, two murders and a judgement, that are repeatedly re-enacted for about 160 pages, each time revealing a different aspect, in the mode of Akira Kurosawa's celebrated 1950 film <em>Rashomon</em>, where a single scene is told five times by a different narrator, each adapting the story to their own perspective and slightly changing it, creating a mesmerizing kaleidoscope of the same story's truths and visual possibilities. Saadawi uses the technique to create a hypnotic effect that reflects the inexhaustible potentialities of her theme.</p>
+
+                    <div class="scene-text">
+                        <strong>Scene II:</strong> <em>A panned-out shot: a leader giving a speech from an elevated podium in front of adoring masses. The glaring sun washes over the entire scene with fierce white tones. A gunshot is heard. The leader falls, and the ensuing commotion reveals the leader was already dead before the shot.</em>
+                    </div>
+
+                    <p>In an extraordinary literary tactic, Saadawi transmutes the assassination of late president Anwar Sadat — with whom the titular imam shares attributes such as shaved head, the nickname "leader of the faithful," a foreign wife — as symbolic patricide that is continually reenacted like his murder of the protagonist, the impossibly conceived Bint Allah, so called after the son of God. Unsurprisingly, everyone wants Saadawi's "female divine" murdered for the very thought that she exists.</p>
+
+                    <p>The narrative has a Manichean bent: the imam is both God and Satan. A national leader and a mythical figure, he consolidates political power through war and propaganda and hijacks religious power by allying with a group of religious fanatics. He is the benevolent hero of war and peace (a stab, no doubt, at Sadat and his 1973 war) and the celebrated guardian of faith, and, at the same, a diabolical tyrant who imprisons, tortures and wreaks havoc in the name of faith and victory. This duality is the novel's weakest aspect and the reason why some of the criticism directed at Saadawi merits consideration. She takes the real-life moral hypocrisy of Islamists and Sadat to its logical extreme: God is reduced to an angry patriarch, and the Imam and his entourage are hedonistic alcoholics who amass fortunes through corruption, marry multiple wives and use women as sexual currency, in the mode of king Shahryār of <em>Arabian Nights</em> (a reference Saadawi uses throughout). This image of God as a destructive women-punishing force lacks nuance and only plays into the Islamists' materialist and literalist notions of the divine. It becomes a shallow parody, a caricature that carries some truth but leaves a lot of questions. We never get to understand why the Islamists' god is so one-dimensional and misogynistic. We keenly feel the systematic, nonsensical attacks on women, but the lengthy paraphrasing from Islamist discourse serves mainly to dramatize the internal dissonance of their rhetoric and the implicit violence and irrationality of its extremist tendencies rather than to engage or critique.</p>
+
+                    <blockquote>
+                        While some may worry that the book could feed the Islamophobia that is currently rampant, Saadawi wrote it at the height of the neoliberal Islamist threat in Egypt, and the book criticizes a particular understanding of Islam by warning of the perils of enforcing it on society as a whole. I believe it is necessary to critique radical versions of Islam, if we are to stay true to the religion and to critical thinking, justice, liberty and freedom.
+                    </blockquote>
+
+                    <div class="scene-text">
+                        <strong>Scene III:</strong> <em>A large hall with low-hanging clouds. The camera moves center stage, where a tall man with a shaved head, wearing a white garment, stands looking confused. At one end of the hall, two women stand, as if guarding a gate, and, from the other end, another female figure, Bint Allah, emerges. With her black eyes fixated on the man, she walks slowly toward the two other women as the camera zooms in on the wound on her back.</em>
+                    </div>
+
+                    <p>Colorful blasphemy is Saadawi's hallmark, and one that is specifically designed to offend both Muslims and Christians. She uses psychoanalytic concepts and religious symbolism to frame her abstract-mythical narrative, constructing two parallel triads — God/imam/homeland (all masculine, powerful, triumphant) versus mother/daughter/wife (all subservient, weak, oppressed) — that are constantly played against each other. Seeing that the only way for her patriarchal triad to survive is by subduing and eventually annihilating the feminine, the novel is nothing more than an investigation of the possibility of feminine apotheosis in the face of a hostile, murderous patriarchy. Although her concern is not strictly theological, and she has repeatedly stated in interviews that she has no interest in affiliation with organized religion, this is an elaborate account of an immaculately conceived girl whose birth is both sacred and sacrilegious, divine and illegitimate. She transforms from wife to sister to daughter to lover, destabilizing not only our expectations of what she is and what she does, but also stirring our deepest fears of inbreeding, incest and blasphemy.</p>
+
+                    <p>The triads exist and exercise power through multiple binaries: house of pleasure/house of worship, hospital/war trench, school/prison. State bureaucracy and social institutions function in this matrix of power to continuously find ways to subjugate women (and men — Saadawi doesn't shy away from pointing out that man are also victims of patriarchy) to fit into an engineered, corrupt social order. These binaries become loci for Saadawi's symbolic character study to unravel, and, using the <em>Arabian Nights</em> structure, her characters undergo constant metamorphosis in the same way the story does: "the beginning dissolves in the ending, like the day dissolves in the night."</p>
+
+                    <div class="highlight-text">
+                        There is a scene in which the feminine triad are finally reunited, and they embrace, becoming one and nothing — beyond gender, beyond the male gaze, beyond oppression, their embrace encompasses the whole universe. It is thrilling to read that in Arabic and remains truly liberating for me to envision this remarkable symbolic idea.
+                    </div>
+
+                    <p>Despite the fact that <em>The Fall of the Imam</em> primarily aimed at critiquing Sadat's neoliberal, patriarchal dystopia, Saadawi's imagining of the possibility of a female divine is a radical feminist achievement.</p>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="/english/writing/reviews/literature/index.html" class="back-link">← Back to Literary Reviews</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2022 Ismail Fayed. All rights reserved.</p>
+            <p><a href="/index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
+</body>
+</html>
