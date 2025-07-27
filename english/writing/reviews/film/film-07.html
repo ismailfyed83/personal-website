@@ -1,237 +1,431 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Over the Pyramid Plateau  1986</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Egypt's cinematic gems: Love Over the Pyramid Plateau - Notes From Over There</title>
+    <meta name="description" content="A film review exploring Atef al-Tayeb's Love Over the Pyramid Plateau (1986) and its critique of 1980s Egyptian society">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: transparent;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        .essay-text em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-left: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 3px solid #FA8072;
+        }
+
+        /* Author byline */
+        .author-byline {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Love Over the Pyramid Plateau  1986</h1>
-        <p class="meta">Published on: Thu, 04 Aug 2022 23:21:39 +0000 by No Creator</p>
-        <div class="content">
-            <article class="sections" id="sections" data-page-sections="62d2a22ae2628b1e3bc832e9">
-  
-  
-    
-    
-
-
-  
-  
-
-
-<section
-  data-test="page-section"
-  
-  data-section-theme=""
-  class='page-section 
-    
-      layout-engine-section
-    
-    background-width--full-bleed
-    
-      section-height--medium
-    
-    
-      content-width--medium
-    
-    horizontal-alignment--left
-    vertical-alignment--middle
-    
-      
-    
-    
-    '
-  
-  data-section-id="62d6a7932764200a832cf0a7"
-  
-  data-controller="SectionWrapperController"
-  data-current-styles="{
-  &quot;imageOverlayOpacity&quot;: 0.15,
-  &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-  &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
-  &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--left&quot;,
-  &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-  &quot;contentWidth&quot;: &quot;content-width--medium&quot;,
-  &quot;sectionTheme&quot;: &quot;&quot;,
-  &quot;sectionAnimation&quot;: &quot;none&quot;,
-  &quot;backgroundMode&quot;: &quot;image&quot;
-}"
-  data-current-context="{
-  &quot;video&quot;: {
-    &quot;playbackSpeed&quot;: 0.5,
-    &quot;filter&quot;: 1,
-    &quot;filterStrength&quot;: 0,
-    &quot;zoom&quot;: 0,
-    &quot;videoSourceProvider&quot;: &quot;none&quot;
-  },
-  &quot;backgroundImageId&quot;: null,
-  &quot;backgroundMediaEffect&quot;: null,
-  &quot;divider&quot;: null,
-  &quot;typeName&quot;: null
-}"
-  data-animation="none"
-  
-   
-  
-  
->
-  <div
-    class="section-border"
-    
-  >
-    <div class="section-background">
-    
-      
-    
-    </div>
-  </div>
-  <div
-    class='content-wrapper'
-    style='
-      
-        
-      
-    '
-  >
-    <div
-      class="content"
-      
-    >
-      
-      
-      
-      
-      
-      
-      
-      
-      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-62d6a7932764200a832cf0a7"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-d557ebe0fbe9fbb08693"><div class="sqs-block-content">
-
-
-  
-      <img src="https://images.squarespace-cdn.com/content/v1/62c0901aab021124ec695730/d536ac0a-4dca-4364-936f-51bffae8f2c1/Picture15.jpg?format=original" alt=""/>
-  
-
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-e07eeecb54bafedd65f9"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <h3 style="white-space:pre-wrap;">Egypt’s cinematic gems: Love Over the Pyramid Plateau</h3><p class="sqsrte-small" style="white-space:pre-wrap;"><em>This text was originally published in Mada on 19 May 2017</em></p><p class="" style="white-space:pre-wrap;">By Ismail Fayed</p><p class="" style="white-space:pre-wrap;">Based on a short story written by<a href="https://www.madamasr.com/topic/naguib-mahfouz/"> <span style="text-decoration:underline">Naguib Mahfouz</span></a>, published as part of a collection of short stories in 1979,<a href="https://www.madamasr.com/en/topic/atef-al-tayeb/"> <span style="text-decoration:underline">Atef al-Tayeb</span></a>‘s sixth feature film, <em>Al-Hob Fawqa Hadabit al-Haram</em> (Love Over the Pyramid Plateau, 1986), charts out a young man’s desperate attempt to fulfill his sexual desires without slipping into sin or running afoul of the law.</p><p class="" style="white-space:pre-wrap;">Although Tayeb’s film is set a decade later than Mahfouz’s story (adapted for the screen by Mostafa Moharam), they both trace out the crushing economic crisis of the 1980s to its original source: the reckless, corrupt and incompetent liberalization Anwar Sadat initiated in the early 1970s. Indeed, almost all of Tayeb’s films explore the resulting decimation of the middle class that had risen under Gamal Abdel Nasser’s expansion of welfare, access to education, healthcare, employment and public services. Sadat’s desire to create a new class that was complicit with his policies — which essentially meant reliance on self-enrichment without regard for its social or economic impact — was logical as the political fealty of the middle class lay with Nasser, many of whose policies were beginning to become economically unviable for the state.</p><p class="" style="white-space:pre-wrap;">Two iconic scenes bookend <em>Love Over the Pyramid Plateau</em>. In both, the protagonist Aly (played in a suitably angry and self-righteous manner by<a href="https://www.madamasr.com/en/topic/ahmed-zaki/"> <span style="text-decoration:underline">Ahmed Zaki</span></a>) is showering, and we see a close-up of Zaki’s torso, the soap foaming as he lathers his body and the water cascades from the shower head. In the first instance, at the beginning of the film, he is woken by his mother from a dream in which he is hitching a ride with an older lady who takes him to the pyramids as a relatively private place for an amorous dalliance. The implication is that he may be continuing to pleasure himself in the privacy of the shower. In the second scene, at the nudging of his friend, Aly tries to consummate his fantasy with an older woman, but after a night of drinking and smoking hashish he fails, and the shower scene is imbued with the sense of a purifying ritual, casting away the smudge of alcohol and reckless behavior.</p><p class="" style="white-space:pre-wrap;">Eroticizing the male body in this way seems significant, and the fact Zaki that was one of comparatively few dark-skinned lead actors, frequently presented as a stereotypical underdog early in his career (there is no racial continuity in the film — Aly’s parents and siblings are light-skinned), raises the stakes further. These scenes raise questions about what we think is attractive and why, and the power dynamics underlying these desires.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1658234761750_7033"><div class="sqs-block-content">
-
-
-  
-      <img src="https://images.squarespace-cdn.com/content/v1/62c0901aab021124ec695730/294d7085-9449-4831-8f9d-2add906c6a84/Picture16.png?format=original" alt=""/>
-  
-
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-yui_3_17_2_1_1658234761750_7379"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <p class="" style="white-space:pre-wrap;">Between the two shower scenes,<em> Love Over the Pyramid Plateau</em> effects a triple-pronged attack on the state, its laws and society for repressing any possibility of relationships outside of the patriarchal moral order as mediated by capitalist interests. By pointing out its inherent moral hypocrisy, the film shows how society in collusion with the police state controls the bodies and sexualities of its subjects. It also points out the misery of the erstwhile middle class through several clear and damning statements. It is a deeply political film, even if its premise is sexual frustration and failed romance.</p><p class="" style="white-space:pre-wrap;">Aly is a frustrated law graduate employed in a public sector company who falls for his colleague Rajaa (played by apparently naturally silly and timid Athar al-Hakim), who is given more of a role than in Mahfouz’s original story. They try throughout the film to get married and consummate their love, in spite of financial obstacles in the form of the petty demands of proper marriage (trousseau, dowry, wedding ring) and the declining economic statuses of their families (both their fathers are former state bureaucrats). In a subplot, told without much judgement, Aly’s sister Noha (the immortally oppressed Hanan Soliman) ends up marrying their neighborhood plumber Ahmed (a delightful Nagah al-Mugy), who, despite being of a lower social class, has benefited from the rising informal economy of the time.</p><p class="" style="white-space:pre-wrap;">As in his previous film,<a href="https://www.madamasr.com/en/2017/03/24/feature/culture/egypts-cinematic-gems-the-piper/"> <em>Al-Zammar</em> (The Piper, 1985)</a>, Tayeb is more adept at capturing external scenes than internal ones, though with the aid of cinematographer Said al-Shimi, rather than Mahmoud Abdelsamie. The film’s setting is downtown Cairo, and we are presented with a city that looks as unflatteringly decrepit, dusty and world-weary as its inhabitants. Most external scenes were shot in actual locations in downtown, with casual pedestrians looking back at his camera in bewilderment mixed with curiosity and ennui. Whether or not Tayeb intended to shock the walking public, it reinforces the voyeuristic feeling of gazing at something one shouldn’t. The sense of intrusion on Aly and Rajaa as they navigate the unforgiving city and its inhabitants is highlighted by the grimy, congested streets. A desire to escape the city and its reality becomes inevitable and the couple start talking about emigration (to the Gulf, of course), but instead opt for the pyramids as somewhere less congested and therefore suitable for their long-awaited intimate moment, leading to the film’s climax.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1658234761750_8567"><div class="sqs-block-content">
-
-
-  
-      <img src="https://images.squarespace-cdn.com/content/v1/62c0901aab021124ec695730/7d69d7a1-dba6-4fa4-92fe-8b5c2a8507fe/Picture17.jpg?format=original" alt=""/>
-  
-
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-yui_3_17_2_1_1658234761750_8907"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <p class="" style="white-space:pre-wrap;">The film invokes, by content not by name, article 278 of the Penal Code, which to this day defines acts of public indecency and makes them punishable by one year in prison or a fine of LE300. This section of the penal code, which involves laws pertaining to the criminalization of rape, adultery and public indecency, is among the most regressive and morally authoritarian. It stipulates that even if an act was not witnessed by anyone, as long as it took place somewhere public with the potential of being seen, the “perpetrators” can be indicted and sentenced. And Egyptian courts have often wielded a very broad interpretation of what constitutes a public offence. In 2015, for example, the former head of the Court of Cassation, Abdel Moniem al-Seihemy,<a href="http://www.dotmsr.com/details/%5F%5F%5F%5F-%5F%5F-%5F%5F%5F%5F%5F%5F-%5F%5F%5F-%5F%5F%5F%5F-%5F%5F-%5F%5F-%5F%5F%5F%5F%5F"> <span style="text-decoration:underline">said</span></a> an act of public indecency could be something as trivial as a kiss.</p><p class="" style="white-space:pre-wrap;">Tayeb lambastes the absurdity of forbidding acts of intimacy and yet making more acceptable arrangements, such as marriage, almost impossible. Right up until the biting humor of the final scenes — the ending is much darker than that of the short story —<em> Love Over the Pyramid Plateau</em> is a powerful tragicomic tale about a city that has no place for love.<br></p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-</div></div></div></div></div>
-    </div>
-  
-  </div>
-  
-</section>
-
-  
-</article>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf">portfolio target="_blank">portfolio</a>
+                <a href="../contact.html">Contact</a>
+            </div>
         </div>
-        <p><a href="/love-over-the-pyramid-plateau-1986">Original Link</a></p>
-    </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Egypt's cinematic gems: Love Over the Pyramid Plateau</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/film-07-1.png" alt="Love Over the Pyramid Plateau poster">
+                            <p class="image-caption">Atef al-Tayeb's <em>Al-Hob Fawqa Hadabit al-Haram</em> (Love Over the Pyramid Plateau, 1986)</p>
+                        </div>
+                    </div>
+
+                    <div class="source-note">
+                        This text was originally published in Mada on 19 May 2017
+                    </div>
+
+                    <p class="author-byline">By Ismail Fayed</p>
+
+                    <p>Based on a short story written by <a href="https://www.madamasr.com/topic/naguib-mahfouz/">Naguib Mahfouz</a>, published as part of a collection of short stories in 1979, <a href="https://www.madamasr.com/en/topic/atef-al-tayeb/">Atef al-Tayeb</a>'s sixth feature film, <em>Al-Hob Fawqa Hadabit al-Haram</em> (Love Over the Pyramid Plateau, 1986), charts out a young man's desperate attempt to fulfill his sexual desires without slipping into sin or running afoul of the law.</p>
+
+                    <p>Although Tayeb's film is set a decade later than Mahfouz's story (adapted for the screen by Mostafa Moharam), they both trace out the crushing economic crisis of the 1980s to its original source: the reckless, corrupt and incompetent liberalization Anwar Sadat initiated in the early 1970s. Indeed, almost all of Tayeb's films explore the resulting decimation of the middle class that had risen under Gamal Abdel Nasser's expansion of welfare, access to education, healthcare, employment and public services. Sadat's desire to create a new class that was complicit with his policies — which essentially meant reliance on self-enrichment without regard for its social or economic impact — was logical as the political fealty of the middle class lay with Nasser, many of whose policies were beginning to become economically unviable for the state.</p>
+
+                    <div class="highlight-text">
+                        Two iconic scenes bookend <em>Love Over the Pyramid Plateau</em>. In both, the protagonist Aly (played in a suitably angry and self-righteous manner by Ahmed Zaki) is showering, and we see a close-up of Zaki's torso, the soap foaming as he lathers his body and the water cascades from the shower head.
+                    </div>
+
+                    <p>In the first instance, at the beginning of the film, he is woken by his mother from a dream in which he is hitching a ride with an older lady who takes him to the pyramids as a relatively private place for an amorous dalliance. The implication is that he may be continuing to pleasure himself in the privacy of the shower. In the second scene, at the nudging of his friend, Aly tries to consummate his fantasy with an older woman, but after a night of drinking and smoking hashish he fails, and the shower scene is imbued with the sense of a purifying ritual, casting away the smudge of alcohol and reckless behavior.</p>
+
+                    <p>Eroticizing the male body in this way seems significant, and the fact Zaki that was one of comparatively few dark-skinned lead actors, frequently presented as a stereotypical underdog early in his career (there is no racial continuity in the film — Aly's parents and siblings are light-skinned), raises the stakes further. These scenes raise questions about what we think is attractive and why, and the power dynamics underlying these desires.</p>
+
+                    <!-- Second Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/film-07-2.png" alt="Ahmed Zaki in Love Over the Pyramid Plateau">
+                            <p class="image-caption">Ahmed Zaki as Aly, the frustrated protagonist</p>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        Between the two shower scenes, <em>Love Over the Pyramid Plateau</em> effects a triple-pronged attack on the state, its laws and society for repressing any possibility of relationships outside of the patriarchal moral order as mediated by capitalist interests.
+                    </blockquote>
+
+                    <p>By pointing out its inherent moral hypocrisy, the film shows how society in collusion with the police state controls the bodies and sexualities of its subjects. It also points out the misery of the erstwhile middle class through several clear and damning statements. It is a deeply political film, even if its premise is sexual frustration and failed romance.</p>
+
+                    <p>Aly is a frustrated law graduate employed in a public sector company who falls for his colleague Rajaa (played by apparently naturally silly and timid Athar al-Hakim), who is given more of a role than in Mahfouz's original story. They try throughout the film to get married and consummate their love, in spite of financial obstacles in the form of the petty demands of proper marriage (trousseau, dowry, wedding ring) and the declining economic statuses of their families (both their fathers are former state bureaucrats). In a subplot, told without much judgement, Aly's sister Noha (the immortally oppressed Hanan Soliman) ends up marrying their neighborhood plumber Ahmed (a delightful Nagah al-Mugy), who, despite being of a lower social class, has benefited from the rising informal economy of the time.</p>
+
+                    <p>As in his previous film, <a href="https://www.madamasr.com/en/2017/03/24/feature/culture/egypts-cinematic-gems-the-piper/"><em>Al-Zammar</em> (The Piper, 1985)</a>, Tayeb is more adept at capturing external scenes than internal ones, though with the aid of cinematographer Said al-Shimi, rather than Mahmoud Abdelsamie. The film's setting is downtown Cairo, and we are presented with a city that looks as unflatteringly decrepit, dusty and world-weary as its inhabitants. Most external scenes were shot in actual locations in downtown, with casual pedestrians looking back at his camera in bewilderment mixed with curiosity and ennui. Whether or not Tayeb intended to shock the walking public, it reinforces the voyeuristic feeling of gazing at something one shouldn't. The sense of intrusion on Aly and Rajaa as they navigate the unforgiving city and its inhabitants is highlighted by the grimy, congested streets. A desire to escape the city and its reality becomes inevitable and the couple start talking about emigration (to the Gulf, of course), but instead opt for the pyramids as somewhere less congested and therefore suitable for their long-awaited intimate moment, leading to the film's climax.</p>
+
+                    <!-- Third Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/film-07-3.png" alt="Scene at the pyramids">
+                            <p class="image-caption">The pyramids as the setting for the film's climactic scene</p>
+                        </div>
+                    </div>
+
+                    <p>The film invokes, by content not by name, article 278 of the Penal Code, which to this day defines acts of public indecency and makes them punishable by one year in prison or a fine of LE300. This section of the penal code, which involves laws pertaining to the criminalization of rape, adultery and public indecency, is among the most regressive and morally authoritarian. It stipulates that even if an act was not witnessed by anyone, as long as it took place somewhere public with the potential of being seen, the "perpetrators" can be indicted and sentenced. And Egyptian courts have often wielded a very broad interpretation of what constitutes a public offence. In 2015, for example, the former head of the Court of Cassation, Abdel Moniem al-Seihemy, <a href="http://www.dotmsr.com/details/%5F%5F%5F%5F-%5F%5F-%5F%5F%5F%5F%5F%5F-%5F%5F%5F-%5F%5F%5F%5F-%5F%5F-%5F%5F-%5F%5F%5F%5F%5F">said</a> an act of public indecency could be something as trivial as a kiss.</p>
+
+                    <div class="highlight-text">
+                        Tayeb lambastes the absurdity of forbidding acts of intimacy and yet making more acceptable arrangements, such as marriage, almost impossible. Right up until the biting humor of the final scenes — the ending is much darker than that of the short story — <em>Love Over the Pyramid Plateau</em> is a powerful tragicomic tale about a city that has no place for love.
+                    </div>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="/english/writing/reviews/film/index.html" class="back-link">← Back to Film Reviews</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2017 Ismail Fayed. All rights reserved.</p>
+            <p><a href="/index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
