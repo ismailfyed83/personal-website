@@ -1,163 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Want Solution 1975</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Egypt's cinematic gems: I Want a Solution - Notes From Over There</title>
+    <meta name="description" content="A film review exploring Said Marzouk's I Want a Solution (1975) and its groundbreaking critique of Egypt's divorce laws">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FDE5D6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+      /* Navigation */
+.main-nav {
+    background: rgba(253, 229, 214, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    direction: ltr;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.7;
+        }
+
+        /* Header */
+        .section-header {
+            background: transparent;
+            padding: 6rem 0 3rem 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+        .essay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .essay-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .essay-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .essay-text p strong {
+            font-weight: 700;
+        }
+
+        .essay-text a {
+            color: #FA8072;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 128, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .essay-text a:hover {
+            border-bottom-color: #FA8072;
+        }
+
+        .essay-text em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Highlighted Text */
+        .highlight-text {
+            background: rgba(250, 128, 114, 0.1);
+            padding: 1rem;
+            border-left: 4px solid #FA8072;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: rgba(250, 128, 114, 0.1);
+            border-left: 4px solid #FA8072;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Source Note */
+        .source-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            border-left: 3px solid #FA8072;
+        }
+
+        /* Author byline */
+        .author-byline {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Back Navigation */
+        .back-navigation {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            border-left: 4px solid #FA8072;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .main-footer {
+            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .section-header {
+                padding: 5rem 0 2rem 0;
+                margin-top: 120px;
+            }
+
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .essay-content {
+                padding: 2rem;
+            }
+
+            .essay-text {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .essay-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .image-caption {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>I Want Solution 1975</h1>
-        <p class="meta">Published on: Fri, 05 Aug 2022 22:28:57 +0000 by No Creator</p>
-        <div class="content">
-            <article class="sections" id="sections" data-page-sections="62d2a1c7212d85347e742295">
-  
-  
-    
-    
-
-
-  
-  
-
-
-<section
-  data-test="page-section"
-  
-  data-section-theme=""
-  class='page-section 
-    
-      layout-engine-section
-    
-    background-width--full-bleed
-    
-      section-height--medium
-    
-    
-      content-width--medium
-    
-    horizontal-alignment--left
-    vertical-alignment--middle
-    
-      
-    
-    
-    '
-  
-  data-section-id="62d6a908419f4448f0815bf8"
-  
-  data-controller="SectionWrapperController"
-  data-current-styles="{
-  &quot;imageOverlayOpacity&quot;: 0.15,
-  &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-  &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
-  &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--left&quot;,
-  &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-  &quot;contentWidth&quot;: &quot;content-width--medium&quot;,
-  &quot;sectionTheme&quot;: &quot;&quot;,
-  &quot;sectionAnimation&quot;: &quot;none&quot;,
-  &quot;backgroundMode&quot;: &quot;image&quot;
-}"
-  data-current-context="{
-  &quot;video&quot;: {
-    &quot;playbackSpeed&quot;: 0.5,
-    &quot;filter&quot;: 1,
-    &quot;filterStrength&quot;: 0,
-    &quot;zoom&quot;: 0,
-    &quot;videoSourceProvider&quot;: &quot;none&quot;
-  },
-  &quot;backgroundImageId&quot;: null,
-  &quot;backgroundMediaEffect&quot;: null,
-  &quot;divider&quot;: null,
-  &quot;typeName&quot;: null
-}"
-  data-animation="none"
-  
-   
-  
-  
->
-  <div
-    class="section-border"
-    
-  >
-    <div class="section-background">
-    
-      
-    
-    </div>
-  </div>
-  <div
-    class='content-wrapper'
-    style='
-      
-        
-      
-    '
-  >
-    <div
-      class="content"
-      
-    >
-      
-      
-      
-      
-      
-      
-      
-      
-      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-62d6a908419f4448f0815bf8"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-39429bc285e0ba8e8742"><div class="sqs-block-content">
-
-
-  
-      <img src="https://images.squarespace-cdn.com/content/v1/62c0901aab021124ec695730/89d770c6-fcfb-46f8-8c2f-ad2c3eaf74cb/Picture18.png?format=original" alt=""/>
-  
-
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-1eeff4e2bb979f2e1e78"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <h3 style="white-space:pre-wrap;">Egypt’s cinematic gems: I Want a Solution </h3><p class="sqsrte-small" style="white-space:pre-wrap;"><em>This text was originally published in Mada on 28 April 2017</em> </p><p class="" style="white-space:pre-wrap;">By Ismail Fayed</p><p class="" style="white-space:pre-wrap;">It is really impossible for me to believe that something as self-evident and clear as someone’s earnest desire to end their relationship with their partner could be subject to approval or disapproval by a third party, be it a court or otherwise. So watching <em>Uridu Hallan</em> (I Want a Solution, 1975) by Said Marzouk, starring Faten Hamama and Rushdy Abaza, is an exercise in suspending my judgement, common sense and gag reflex.</p><p class="" style="white-space:pre-wrap;">Inspired by a true story publicized by journalist Hosn Shah, the idea for the film was championed by Hamama, who approached Marzouk as the director and wrote it together with him. The result, produced by cinema polymath and erstwhile police officer, Salah Zulfikar, is a character-based drama about the desperate attempts of Doreya (Hamama) to divorce her cheating, drunk and abusive husband, Medhat (Rushdy Abaza) while navigating the complex and draconian legal codes of Egypt’s then personal status laws, issued in 1920 and amended in 1929.</p><p class="" style="white-space:pre-wrap;">Hamama, then 44, and Marzouk, then 35, clearly shared a political sensibility. Hamama’s reputation for typically upper-class mannerisms and dress belied her politics, and she had recently returned to Egypt in 1971 after a self-imposed five-year exile, having said she was harassed in the 1960s after refusing to cooperate with the Egyptian intelligence service. She made a series of films that decade reflecting her sense of social commitment, such as<a href="https://www.madamasr.com/en/2014/05/17/feature/culture/egypts-cinematic-gems-mouths-and-rabbits/"> <span style="text-decoration:underline"><em>Afwah we Araneb (Mouths and Rabbits, 1977)</em></span></a>, in which she plays a poor rural woman forced to marry to support her family, and <em>La Azaa lil Sayydat</em> (No Consolation for Women, 1979), which also deals with society’s tolerance of a tyrannical husband’s behavior.</p><p class="" style="white-space:pre-wrap;"><em>I Want a Solution</em> was Marzouk’s third feature film. He had already distinguished himself with his take on Othello,<a href="https://www.madamasr.com/en/2016/07/13/feature/culture/cinematology-7-loneliness-lust-and-doubt-in-my-wife-and-the-dog/"> <span style="text-decoration:underline"><em>Zawgaty w al-Kalb (My Wife and the Dog, 1971)</em></span></a>, and<a href="https://www.madamasr.com/en/2014/10/04/feature/culture/egypts-cinematic-gems-a-place-for-love/"> <span style="text-decoration:underline"><em>Makan lil Hub (A Place for Love, 1972)</em></span></a>, a love story set in the aftermath of the 1967 war in Suez, and would go to direct two of his most memorable films,<a href="https://www.madamasr.com/en/2014/06/07/feature/culture/egypts-cinematic-gems-the-guilty/"> <span style="text-decoration:underline"><em>Al-Muthnibun (The Guilty, 1975)</em></span></a> and <em>Hikaya Wara kol Bab</em> (A Take Behind Every Door, 1979), also starring Hamama, both of which were concerned with showing the injustices women face in a traditional, patriarchal society.</p><p class="" style="white-space:pre-wrap;">The film starts with Doreya requesting divorce, and through flashbacks we understand that her ultra-traditional family saw marriage as a social transaction to rid themselves off the potential threat of a daughter dishonoring them. They put forward Medhat, a former diplomat of aristocratic background who was laid off when Gamal Abdel Nasser came to power, and suppressed her objections to his character. But the husband’s villainy knows no bounds — indeed, it’s one of the most malicious roles of Rushdy Abaza’s career: He openly cheats on his wife, physically and verbally abuses her, and makes it clear that he sees her as part of the furniture. When confronted by Doreya’s wish for divorce, Medhat’s indignity is not just that he is being rejected by something he owns — the fact that his wife might want another man damages his sense of patriarchal control and domination.</p><p class="" style="white-space:pre-wrap;">As the law forbids a wife to request divorce except for very specific, mostly humiliating reasons, such as a husband’s sexual inadequacy, perversity or lack of economic support, and as Doreya does not want to splash her personal life in front of an entire courthouse, she simple reasons that she can no longer stand living with her husband, and believes that should be reason enough for her to be granted a divorce by the court. Her insistence on ignoring the postulates of the law results in her case dragging on for years in Egypt’s congested legal system, but her husband is not the least bit affected by this open legal battle, and goes on living his life as he always did.</p><p class="" style="white-space:pre-wrap;">The craning shots in the labyrinthine courthouse — which Marzouk shot on location — are one of the most technically remarkable features of the film, with the director spending weeks in courthouses observing real cases of divorce and alimony. In many instances we feel that Doreya is an extension of the camera, of Marzouk himself gazing unto the miseries unfolding in court: Women battered and abused, some suing for alimony, some divorced and kicked out onto the street. A particularly heartbreaking example in the film is Amina Rizq’s famous cameo, where her husband divorces her and refuses to pay alimony. The camera snakes its way through the court’s gloomy hallways, descending and ascending its spiral stairs, mirroring an architecture designed to dehumanize and oppress, as if Doreya is trapped in the serpentine halls and their unforgiving legal codes and procedures. Every time she steps into the courthouse, that vertiginous sense of helplessness overwhelms the screen, visually and psychologically.</p><p class="" style="white-space:pre-wrap;">Arguably the rest of the film doesn’t hold up to these memorable courthouse scenes. The dialogue is sometimes borders on didactic, and the music is melodramatic. Aside from Doreya and Medhat, the characters are poorly developed and mostly result in token performances. Doreya’s brother, an aspiring artist, is bland and gives bizarrely little reaction to his sister’s plight. Her friends are frivolous and monotonous. The only other memorable characters are the minor characters that inhabit the netherworld of the courthouse, and indeed Marzouk is very sensitive in capturing moments where women are exploited or abused. He would have done well to expand on that ability to capture fleeting human suffering rather than give Doreya a backstory that takes over the entire film, which falters in contrast to the urgency of her own plight and that of others women living under such laws.</p><p class="" style="white-space:pre-wrap;">To his and Hamama’s credit, the film did rouse a lot interest, and is considered one of the few films to influence Egypt’s rigid, unyielding laws. Anwar Sadat’s wife, Jehan al-Sadat — who had already proved politically ambitious and pushed for a state-sponsored agenda for law reform — is said to have been moved by the film, adopting the cause of amending the law and pushing for her husband to ratify the amendments while the Parliament was in recession in 1979. The personal status law, which became known as Jehan’s Law, added articles stipulating the wife’s right to divorce in the event that both sides fail to prove the other’s culpability. It was struck down as unconstitutional in 1985, because the president had not presented the law to Parliament after it reconvened its sessions, and replaced by the very similar Law 100/1985. Jehan’s law was effectively a precursor to the 2000 <em>khula </em>law, which is still in effect today and grants women the right to demand a “no-fault” divorce, provided they forfeit their right to their alimony and dowry.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-</div></div></div></div></div>
-    </div>
-  
-  </div>
-  
-</section>
-
-  
-</article>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf">Portfolio target="_blank">portfolio</a>
+                <a href="/contact.html">Contact</a>
+            </div>
         </div>
-        <p><a href="/i-want-solution-1975">Original Link</a></p>
-    </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section-header">
+        <div class="container">
+            <h1>Egypt's cinematic gems: I Want a Solution</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="essay-content">
+                <div class="essay-text">
+                    
+                    <!-- Image -->
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="../../../../assets/full/film-08-1.png" alt="I Want a Solution 1975 film still">
+                            <p class="image-caption">Said Marzouk's <em>Uridu Hallan</em> (I Want a Solution, 1975) starring Faten Hamama</p>
+                        </div>
+                    </div>
+
+                    <div class="source-note">
+                        This text was originally published in Mada on 28 April 2017
+                    </div>
+
+                    <p class="author-byline">By Ismail Fayed</p>
+
+                    <p>It is really impossible for me to believe that something as self-evident and clear as someone's earnest desire to end their relationship with their partner could be subject to approval or disapproval by a third party, be it a court or otherwise. So watching <em>Uridu Hallan</em> (I Want a Solution, 1975) by Said Marzouk, starring Faten Hamama and Rushdy Abaza, is an exercise in suspending my judgement, common sense and gag reflex.</p>
+
+                    <p>Inspired by a true story publicized by journalist Hosn Shah, the idea for the film was championed by Hamama, who approached Marzouk as the director and wrote it together with him. The result, produced by cinema polymath and erstwhile police officer, Salah Zulfikar, is a character-based drama about the desperate attempts of Doreya (Hamama) to divorce her cheating, drunk and abusive husband, Medhat (Rushdy Abaza) while navigating the complex and draconian legal codes of Egypt's then personal status laws, issued in 1920 and amended in 1929.</p>
+
+                    <div class="highlight-text">
+                        Hamama, then 44, and Marzouk, then 35, clearly shared a political sensibility. Hamama's reputation for typically upper-class mannerisms and dress belied her politics, and she had recently returned to Egypt in 1971 after a self-imposed five-year exile, having said she was harassed in the 1960s after refusing to cooperate with the Egyptian intelligence service.
+                    </div>
+
+                    <p>She made a series of films that decade reflecting her sense of social commitment, such as <a href="https://www.madamasr.com/en/2014/05/17/feature/culture/egypts-cinematic-gems-mouths-and-rabbits/"><em>Afwah we Araneb (Mouths and Rabbits, 1977)</em></a>, in which she plays a poor rural woman forced to marry to support her family, and <em>La Azaa lil Sayydat</em> (No Consolation for Women, 1979), which also deals with society's tolerance of a tyrannical husband's behavior.</p>
+
+                    <p><em>I Want a Solution</em> was Marzouk's third feature film. He had already distinguished himself with his take on Othello, <a href="https://www.madamasr.com/en/2016/07/13/feature/culture/cinematology-7-loneliness-lust-and-doubt-in-my-wife-and-the-dog/"><em>Zawgaty w al-Kalb (My Wife and the Dog, 1971)</em></a>, and <a href="https://www.madamasr.com/en/2014/10/04/feature/culture/egypts-cinematic-gems-a-place-for-love/"><em>Makan lil Hub (A Place for Love, 1972)</em></a>, a love story set in the aftermath of the 1967 war in Suez, and would go to direct two of his most memorable films, <a href="https://www.madamasr.com/en/2014/06/07/feature/culture/egypts-cinematic-gems-the-guilty/"><em>Al-Muthnibun (The Guilty, 1975)</em></a> and <em>Hikaya Wara kol Bab</em> (A Take Behind Every Door, 1979), also starring Hamama, both of which were concerned with showing the injustices women face in a traditional, patriarchal society.</p>
+
+                    <p>The film starts with Doreya requesting divorce, and through flashbacks we understand that her ultra-traditional family saw marriage as a social transaction to rid themselves off the potential threat of a daughter dishonoring them. They put forward Medhat, a former diplomat of aristocratic background who was laid off when Gamal Abdel Nasser came to power, and suppressed her objections to his character. But the husband's villainy knows no bounds — indeed, it's one of the most malicious roles of Rushdy Abaza's career: He openly cheats on his wife, physically and verbally abuses her, and makes it clear that he sees her as part of the furniture. When confronted by Doreya's wish for divorce, Medhat's indignity is not just that he is being rejected by something he owns — the fact that his wife might want another man damages his sense of patriarchal control and domination.</p>
+
+                    <blockquote>
+                        As the law forbids a wife to request divorce except for very specific, mostly humiliating reasons, such as a husband's sexual inadequacy, perversity or lack of economic support, and as Doreya does not want to splash her personal life in front of an entire courthouse, she simple reasons that she can no longer stand living with her husband, and believes that should be reason enough for her to be granted a divorce by the court.
+                    </blockquote>
+
+                    <p>Her insistence on ignoring the postulates of the law results in her case dragging on for years in Egypt's congested legal system, but her husband is not the least bit affected by this open legal battle, and goes on living his life as he always did.</p>
+
+                    <p>The craning shots in the labyrinthine courthouse — which Marzouk shot on location — are one of the most technically remarkable features of the film, with the director spending weeks in courthouses observing real cases of divorce and alimony. In many instances we feel that Doreya is an extension of the camera, of Marzouk himself gazing unto the miseries unfolding in court: Women battered and abused, some suing for alimony, some divorced and kicked out onto the street. A particularly heartbreaking example in the film is Amina Rizq's famous cameo, where her husband divorces her and refuses to pay alimony. The camera snakes its way through the court's gloomy hallways, descending and ascending its spiral stairs, mirroring an architecture designed to dehumanize and oppress, as if Doreya is trapped in the serpentine halls and their unforgiving legal codes and procedures. Every time she steps into the courthouse, that vertiginous sense of helplessness overwhelms the screen, visually and psychologically.</p>
+
+                    <div class="highlight-text">
+                        Arguably the rest of the film doesn't hold up to these memorable courthouse scenes. The dialogue is sometimes borders on didactic, and the music is melodramatic. Aside from Doreya and Medhat, the characters are poorly developed and mostly result in token performances.
+                    </div>
+
+                    <p>Doreya's brother, an aspiring artist, is bland and gives bizarrely little reaction to his sister's plight. Her friends are frivolous and monotonous. The only other memorable characters are the minor characters that inhabit the netherworld of the courthouse, and indeed Marzouk is very sensitive in capturing moments where women are exploited or abused. He would have done well to expand on that ability to capture fleeting human suffering rather than give Doreya a backstory that takes over the entire film, which falters in contrast to the urgency of her own plight and that of others women living under such laws.</p>
+
+                    <p>To his and Hamama's credit, the film did rouse a lot interest, and is considered one of the few films to influence Egypt's rigid, unyielding laws. Anwar Sadat's wife, Jehan al-Sadat — who had already proved politically ambitious and pushed for a state-sponsored agenda for law reform — is said to have been moved by the film, adopting the cause of amending the law and pushing for her husband to ratify the amendments while the Parliament was in recession in 1979. The personal status law, which became known as Jehan's Law, added articles stipulating the wife's right to divorce in the event that both sides fail to prove the other's culpability. It was struck down as unconstitutional in 1985, because the president had not presented the law to Parliament after it reconvened its sessions, and replaced by the very similar Law 100/1985. Jehan's law was effectively a precursor to the 2000 <em>khula</em> law, which is still in effect today and grants women the right to demand a "no-fault" divorce, provided they forfeit their right to their alimony and dowry.</p>
+
+                    <!-- Back Navigation -->
+                    <div class="back-navigation">
+                        <a href="/english/writing/reviews/film/index.html" class="back-link">← Back to Film Reviews</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2017 Ismail Fayed. All rights reserved.</p>
+            <p><a href="/index.html">Notes From Over There</a></p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
