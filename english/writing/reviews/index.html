@@ -33,13 +33,14 @@
 
         /* Navigation */
         .main-nav {
-            background: transparent;
+            backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
             direction: ltr;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .nav-container {
@@ -205,19 +206,38 @@
         .main-footer a:hover {
             text-decoration: underline;
         }
+         .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-container {
+             .menu-toggle {
+    display: block;
+  }
+
+          .nav-container {
                 padding: 0 1rem;
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .nav-links {
-                gap: 1rem;
-                justify-content: center;
-            }
+         .nav-links {
+             display: none;
+             flex-direction: column;
+             gap: 1rem;
+          justify-content: center;
+    margin-top: 1rem;
+}   
+
+.nav-links.active {
+    display: flex;
+}
 
             .section-header {
                 padding: 5rem 0 2rem 0;
@@ -268,16 +288,18 @@
 <body>
     <!-- Navigation -->
     <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../../../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-container">
+            <a href="index.html" class="nav-logo">Notes From Over There</a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <div class="nav-links">
                 <a href="/index.html">Home</a>
-                <a href="/english/index.html" class="active">English</a>
+                <a href="/english/index.html">English</a>
                 <a href="/arabic/index.html">العربية</a>
-                <a href="/blog/index.html">Blog</a>
+                <a href="/blog/index.html" class="active">Blog</a>
                 <a href="/about.html">About</a>
                 <a href="/portfolio.pdf" target="_blank">portfolio</a>
                 <a href="/contact.html">Contact</a>
+                 <a href="https://instagram.com/notes_fromoverthere" target="_blank" class="https://www.instagram.com/notes_fromoverthere/">IG</a>
             </div>
         </div>
     </nav>
@@ -342,5 +364,13 @@
             <p><a href="../../../index.html">Notes From Over There</a></p>
         </div>
     </footer>
+         <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
