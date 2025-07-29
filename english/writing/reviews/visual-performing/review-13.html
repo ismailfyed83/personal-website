@@ -12,16 +12,18 @@
 <body>
     <!-- Navigation -->
     <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">Notes From Over There</a>
+      <div class="nav-container">
+            <a href="index.html" class="nav-logo">Notes From Over There</a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../english/index.html" class="active">English</a>
-                <a href="../arabic/index.html">العربية</a>
-                <a href="../blog/index.html">Blog</a>
-                <a href="../about.html">About</a>
-                <a href="../Portfolio.pdf" target="_blank">Portfolio</a>
-                <a href="../contact.html">Contact</a>
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html" class="active">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">portfolio</a>
+                <a href="/contact.html">Contact</a>
+                 <a href="https://instagram.com/notes_fromoverthere" target="_blank" class="https://www.instagram.com/notes_fromoverthere/">IG</a>
             </div>
         </div>
     </nav>
@@ -31,7 +33,7 @@
         <div class="container">
             <h1>Art contending with memory and tragic contexts</h1>
             <h2>But a Storm Is Blowing from Paradise: Contemporary Art of the Middle East and North Africa</h2>
-            <p class="section-description">Review • <em>Originally published in Mada Masr on 25 October 2016</em></p>
+        
         </div>
     </header>
 
@@ -40,6 +42,7 @@
         <div class="container">
             <article class="review-content">
                 <div class="review-text">
+                        <p class="section-description"> <em>Originally published in Mada Masr on 25 October 2016</em></p>
                     <p>By Ismail Fayed</p>
 
                     <p><strong>NEW YORK, USA</strong> — The Middle East North Africa show at the Guggenheim Museum, which was curated by Sara Raza and ran from April 29 to October 5, largely succeeded where every other survey of contemporary art from the region failed — that is, by thematically linking artworks beyond geographic commonality. And yet <em>But a Storm Is Blowing from Paradise: Contemporary Art of the Middle East and North Africa</em> left some important questions unsaid, specifically about the choice to display the chosen works in the context of the Guggenheim.</p>
@@ -136,12 +139,15 @@
 
         /* Navigation */
         .main-nav {
-            background: transparent;
+           background: rgba(253, 229, 214, 0.95);
+            backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
+            direction: ltr;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .nav-container {
@@ -320,20 +326,38 @@
         .main-footer a:hover {
             text-decoration: underline;
         }
+        .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-container {
+             .menu-toggle {
+    display: block;
+  }
+
+          .nav-container {
                 padding: 0 1rem;
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .nav-links {
-                gap: 1rem;
-                justify-content: center;
-            }
+         .nav-links {
+             display: none;
+             flex-direction: column;
+             gap: 1rem;
+          justify-content: center;
+    margin-top: 1rem;
+}   
 
+.nav-links.active {
+    display: flex;
+}
             .section-header {
                 padding: 5rem 0 2rem 0;
                 margin-top: 120px;
@@ -403,5 +427,13 @@
             }
         }
     </style>
+         <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
