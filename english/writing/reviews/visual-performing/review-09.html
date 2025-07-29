@@ -12,16 +12,18 @@
 <body>
     <!-- Navigation -->
     <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">Notes From Over There</a>
+            <div class="nav-container">
+            <a href="index.html" class="nav-logo">Notes From Over There</a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../english/index.html" class="active">English</a>
-                <a href="../arabic/index.html">العربية</a>
-                <a href="../blog/index.html">Blog</a>
-                <a href="../about.html">About</a>
-                <a href="../Portfolio.pdf" target="_blank">Portfolio</a>
-                <a href="../contact.html">Contact</a>
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html" class="active">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">portfolio</a>
+                <a href="/contact.html">Contact</a>
+                 <a href="https://instagram.com/notes_fromoverthere" target="_blank" class="https://www.instagram.com/notes_fromoverthere/">IG</a>
             </div>
         </div>
     </nav>
@@ -31,7 +33,7 @@
         <div class="container">
             <h1>Competitive patronage and an "international focus"</h1>
             <h2>Art and Liberty: Rupture, War and Surrealism in Egypt (1938–1948) </h2>
-            <p class="section-description">Review • <em>Originally published in Mada Masr on 8 February 2017</em></p>
+          
         </div>
     </header>
 
@@ -40,6 +42,7 @@
         <div class="container">
             <article class="review-content">
                 <div class="review-text">
+                     <p class="section-description"> <em>Originally published in Mada Masr on 8 February 2017</em></p> 
                     <p>By Ismail Fayed</p>
 
                     <!-- Opening Image -->
@@ -111,12 +114,15 @@
 
         /* Navigation */
         .main-nav {
-            background: transparent;
+            background: rgba(253, 229, 214, 0.95);
+            backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
+            direction: ltr;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .nav-container {
