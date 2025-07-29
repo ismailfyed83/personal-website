@@ -234,33 +234,33 @@
                         
                       <!-- Sculpture Works -->   
                     <div class="image-item">
-                            <img src="../../../../assets/full/review-01-29.jpg" alt="Ahmed Mohammed Abdallah">
-                            <p class="image-caption">Ahmed Mohammed Abdallah, Polyester, two parts, 110 x 50 x 60 cm each (from the 33rd edition catalogue)</p>
+                            <img src="../../../../assets/full/review-01-29.jpg" alt="Mohammed Mahmoud El Shazly">
+                            <p class="image-caption">Mohammed Mahmoud El Shazly (a still from the 30th edition catalogue)</p>
                         </div>
                         
                         <div class="image-item">
-                            <img src="../../../../assets/full/review-01-30.jpg" alt="Amr Atef Darwish">
-                            <p class="image-caption">Amr Atef Darwish, <em>Heroes of Steel</em>, white Egyptian clay colored with dyes, 100 x 64 x 35 cm, 2024</p>
+                            <img src="../../../../assets/full/review-01-30.jpg" alt="Marwa Magdy Abdel Ghany">
+                            <p class="image-caption">Marwa Magdy Abdel Ghany (a still from the 31st edition catalogue)</p>
                         </div>
 
                           <div class="image-item">
-                            <img src="../../../../assets/full/review-01-31.jpg" alt="Amr Atef Darwish">
-                            <p class="image-caption">Amr Atef Darwish, <em>Heroes of Steel</em>, white Egyptian clay colored with dyes, 100 x 64 x 35 cm, 2024</p>
+                            <img src="../../../../assets/full/review-01-31.jpg" alt="Ahmed Mohammed Abdallah">
+                            <p class="image-caption">Ahmed Mohammed Abdallah, Polyester, two parts, 110 c 50 x 60 cm each  (a still from the 33th edition catalogue)</p>
                         </div>
 
                           <div class="image-item">
-                            <img src="../../../../assets/full/review-01-32.jpg" alt="Amr Atef Darwish">
-                            <p class="image-caption">Amr Atef Darwish, <em>Heroes of Steel</em>, white Egyptian clay colored with dyes, 100 x 64 x 35 cm, 2024</p>
+                            <img src="../../../../assets/full/review-01-32.jpg" alt="Nadine Said Ezz Edine">
+                            <p class="image-caption">Nadine Said Ezz Edine, <em>Personal Sail Boat</em>, polyester, base 59 x 15 x 7.5 cm, statue 32 x 18 x 12 cm, 2023 (a still from the 34th edition catalogue)</p>
                         </div>
 
                           <div class="image-item">
-                            <img src="../../../../assets/full/review-01-33.jpg" alt="Amr Atef Darwish">
-                            <p class="image-caption">Amr Atef Darwish, <em>Heroes of Steel</em>, white Egyptian clay colored with dyes, 100 x 64 x 35 cm, 2024</p>
+                            <img src="../../../../assets/full/review-01-33.jpg" alt="Rothan Ashraf Adwan">
+                            <p class="image-caption">Rothan Ashraf Adwan, Weakness Upon Weakness, colored clay, 120 x 60 cm, 2023 (a still from the 34th edition catalogue)</p>
                         </div>
 
                           <div class="image-item">
                             <img src="../../../../assets/full/review-01-34.jpg" alt="Amr Atef Darwish">
-                            <p class="image-caption">Amr Atef Darwish, <em>Heroes of Steel</em>, white Egyptian clay colored with dyes, 100 x 64 x 35 cm, 2024</p>
+                            <p class="image-caption">Amr Atef Darwish, Heroes of Steel, white Egyptian clay colored with dyes, 100 x 64 x 35 cm, 2024 (a still from the 35th edition catalogue)</p>
                         </div>
 
                     </div>
@@ -308,12 +308,15 @@
 
         /* Navigation */
         .main-nav {
-            background: transparent;
+            background: rgba(253, 229, 214, 0.95);
+            backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
+            direction: ltr;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .nav-container {
@@ -492,20 +495,38 @@
         .main-footer a:hover {
             text-decoration: underline;
         }
+        .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-container {
+             .menu-toggle {
+    display: block;
+  }
+
+          .nav-container {
                 padding: 0 1rem;
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .nav-links {
-                gap: 1rem;
-                justify-content: center;
-            }
+         .nav-links {
+             display: none;
+             flex-direction: column;
+             gap: 1rem;
+          justify-content: center;
+    margin-top: 1rem;
+}   
 
+.nav-links.active {
+    display: flex;
+}
             .section-header {
                 padding: 5rem 0 2rem 0;
                 margin-top: 120px;
