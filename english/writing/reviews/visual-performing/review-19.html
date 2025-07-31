@@ -13,15 +13,17 @@
     <!-- Navigation -->
     <nav class="main-nav">
         <div class="nav-container">
-            <a href="../index.html" class="nav-logo">Notes From Over There</a>
+            <a href="index.html" class="nav-logo">Notes From Over There</a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../english/index.html" class="active">English</a>
-                <a href="../arabic/index.html">العربية</a>
-                <a href="../blog/index.html">Blog</a>
-                <a href="../about.html">About</a>
-                <a href="../Portfolio.pdf" target="_blank">Portfolio</a>
-                <a href="../contact.html">Contact</a>
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html" class="active">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">portfolio</a>
+                <a href="/contact.html">Contact</a>
+                 <a href="https://instagram.com/notes_fromoverthere" target="_blank" class="https://www.instagram.com/notes_fromoverthere/">IG</a>
             </div>
         </div>
     </nav>
@@ -30,7 +32,7 @@
     <header class="section-header">
         <div class="container">
             <h1>Existentialism as hope: The 57th Cairo Salon</h1>
-            <p class="section-description">Review • <em>Originally published in Mada Masr on 16 March 2016</em></p>
+
         </div>
     </header>
 
@@ -39,13 +41,14 @@
         <div class="container">
             <article class="review-content">
                 <div class="review-text">
+                    <p class="section-description"> <em>Originally published in Mada Masr on 16 March 2016</em></p>
                     <p>By Ismail Fayed</p>
 
                     <!-- Opening Image -->
                     <div class="image-grid">
                         <div class="image-item">
                             <img src="../../../../assets/full/review-19-1.jpg" alt="57th Cairo Salon exhibition view">
-                            <p class="image-caption">Exhibition view from the 57th Cairo Salon at Palace of the Arts</p>
+                            <p class="image-caption">A view of Reham al-Saadany's triptych</p>
                         </div>
                     </div>
 
@@ -98,7 +101,7 @@
 
                     <p>There were also other styles of abstraction, the most memorable being Mahmoud Hamdy's series of brightly colored, organic cellular forms or organelles. It was unusual in its smoothness and freshness. Less interesting was Gihan Soliman's and Mohamed Banawy's stark geometric semi-abstraction of residential buildings and chairs, which felt empty and unconvinced.</p>
 
-                    <p>The few women artists in the salon engaged with the subject of representing women, some in rather subtle ways, like Reeham Abdel Baqi, others in a more ostentatious, Pop-like style like Riham al-Saadani's series (top). Saadani's portrait triptych of three women at different stages of their lives seemed like it might be an attempt at a feminist statement. Yet the mix of photorealism and clear compositional mistakes (such as symmetrical alignment of facial features, distorted perspective and patchy tonal harmony) put into question such ambition. The three women look primarily bourgeois, with the oldest wearing an antique brooch and a string of pearls.</p>
+                    <p>The few women artists in the salon engaged with the subject of representing women, some in rather subtle ways, like Reeham Abdel Baqi, others in a more ostentatious, Pop-like style like Reham al-Saadany's series (top). Saadany's portrait triptych of three women at different stages of their lives seemed like it might be an attempt at a feminist statement. Yet the mix of photorealism and clear compositional mistakes (such as symmetrical alignment of facial features, distorted perspective and patchy tonal harmony) put into question such ambition. The three women look primarily bourgeois, with the oldest wearing an antique brooch and a string of pearls.</p>
 
                     <p>The salon did veer away from the trend of recycling the works of Egyptian modernists, yet it also fell victim to the usual insistence on painting as the true and proper medium of fine art. The overwhelming majority of displayed works were oil or acrylic on canvas. There were only about five installations in a total of six galleries and these mostly used sculpture extensively, such as Ayman al-Sami's bizarre team of wooden horses laminated in plastic with Arabic calligraphy printed all over them. Kamal al-Fiqy's sculptural installation stood out. Its kitschy, colored mini-sculptures of distorted human figures, led by a larger towering figure, were fun yet suggest the sinister side of the trappings of power and control.</p>
 
@@ -125,7 +128,7 @@
 
                 <!-- Back Navigation -->
                 <div class="back-navigation">
-                    <a href="../english/reviews/" class="back-link">← Back to Reviews</a>
+                    <a href="/english/writing/reviews/visual-performing/index.html" class="back-link">← Back to Reviews</a>
                 </div>
 
             </article>
@@ -162,12 +165,15 @@
 
         /* Navigation */
         .main-nav {
-            background: transparent;
+            background: rgba(253, 229, 214, 0.95);
+            backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
+            direction: ltr;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .nav-container {
@@ -346,19 +352,39 @@
         .main-footer a:hover {
             text-decoration: underline;
         }
+        .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-container {
+             .menu-toggle {
+    display: block;
+  }
+
+          .nav-container {
                 padding: 0 1rem;
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .nav-links {
-                gap: 1rem;
-                justify-content: center;
-            }
+         .nav-links {
+             display: none;
+             flex-direction: column;
+             gap: 1rem;
+          justify-content: center;
+    margin-top: 1rem;
+}   
+
+.nav-links.active {
+    display: flex;
+}
+    
 
             .section-header {
                 padding: 5rem 0 2rem 0;
@@ -429,5 +455,14 @@
             }
         }
     </style>
+         <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  });
+</script>
+</body>
 </body>
 </html>
