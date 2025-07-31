@@ -13,15 +13,17 @@
     <!-- Navigation -->
     <nav class="main-nav">
         <div class="nav-container">
-            <a href="../index.html" class="nav-logo">Notes From Over There</a>
+            <a href="index.html" class="nav-logo">Notes From Over There</a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../english/index.html" class="active">English</a>
-                <a href="../arabic/index.html">العربية</a>
-                <a href="../blog/index.html">Blog</a>
-                <a href="../about.html">About</a>
-                <a href="../Portfolio.pdf" target="_blank">Portfolio</a>
-                <a href="../contact.html">Contact</a>
+                <a href="/index.html">Home</a>
+                <a href="/english/index.html">English</a>
+                <a href="/arabic/index.html">العربية</a>
+                <a href="/blog/index.html" class="active">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.pdf" target="_blank">portfolio</a>
+                <a href="/contact.html">Contact</a>
+                 <a href="https://instagram.com/notes_fromoverthere" target="_blank" class="https://www.instagram.com/notes_fromoverthere/">IG</a>
             </div>
         </div>
     </nav>
@@ -30,7 +32,7 @@
     <header class="section-header">
         <div class="container">
             <h1>Synonyms of Seeing</h1>
-            <p class="section-description">Review • <em>Originally published in Nafas Art Magazine February 2015</em></p>
+      
         </div>
     </header>
 
@@ -39,6 +41,7 @@
         <div class="container">
             <article class="review-content">
                 <div class="review-text">
+                          <p class="section-description"> <em>Originally published in Nafas Art Magazine February 2015</em></p>
                     <p>By Ismail Fayed</p>
 
                     <p>"With cities, it is as with dreams: everything imaginable can be dreamed.. Cities, like dreams, are made of desires and fears, even if the thread of their discourse is secret, their rules are absurd, their perspectives deceitful, and everything conceals something else." Perhaps it is Calvino's description of the city that closely echoes the practice of Rana ElNemr. From her photographic series of extravagant and often kitschy resort gates' by the Mediterranean Coast in <em>Coastline</em> (2005), to her installation/collage of the fronts of residential balconies all over Cairo <em>Telekinesis</em> (2007), to her visual escapades as she drives along the city in <em>Giza Threads</em> (2011), ElNemr is set out to explore the many ways we relate, understand and 'see' the city. In doing so she doesn't only reveal the many possibilities of seeing the city and creating all possible of scenarios to visually perceive it, but she also raises profound questions on the very practice of photography itself. ElNemr's practice hinges on the dual process of expanding our visual and conceptual understanding of space (immediate space, such as personal residence or studio space to more abstract notions of space, such as the city or even imaginary space), as well as, the materiality and meaning of the image.</p>
@@ -75,7 +78,7 @@
 
                 <!-- Back Navigation -->
                 <div class="back-navigation">
-                    <a href="../english/reviews/" class="back-link">← Back to Reviews</a>
+                    <a href="/english/writing/reviews/visual-performing/index.html" class="back-link">← Back to Reviews</a>
                 </div>
 
             </article>
@@ -112,12 +115,15 @@
 
         /* Navigation */
         .main-nav {
-            background: transparent;
+           background: rgba(253, 229, 214, 0.95);
+            backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
+            direction: ltr;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .nav-container {
@@ -296,19 +302,38 @@
         .main-footer a:hover {
             text-decoration: underline;
         }
+        .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-container {
+             .menu-toggle {
+    display: block;
+  }
+
+          .nav-container {
                 padding: 0 1rem;
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .nav-links {
-                gap: 1rem;
-                justify-content: center;
-            }
+         .nav-links {
+             display: none;
+             flex-direction: column;
+             gap: 1rem;
+          justify-content: center;
+    margin-top: 1rem;
+}   
+
+.nav-links.active {
+    display: flex;
+}
 
             .section-header {
                 padding: 5rem 0 2rem 0;
@@ -379,5 +404,13 @@
             }
         }
     </style>
+         <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
