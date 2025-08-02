@@ -261,16 +261,28 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-container {
+             .menu-toggle {
+    display: block;
+  }
+
+          .nav-container {
                 padding: 0 1rem;
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .nav-links {
-                gap: 1rem;
-                justify-content: center;
-            }
+         .nav-links {
+             display: none;
+             flex-direction: column;
+             gap: 1rem;
+          justify-content: center;
+    margin-top: 1rem;
+}   
+
+.nav-links.active {
+    display: flex;
+}
+   
 
             .section-header {
                 padding: 7rem 0 2rem 0;
