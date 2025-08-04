@@ -32,7 +32,7 @@
     <header class="category-header">
         <div class="container">
             <h1>Teaching</h1>
-            <p class="category-description">Selections of courses taught at the Cairo Institute for Liberal Arts and Sciences</p>
+            <p class="category-description">Selections of courses taught at alternative academic spaces</p>
         </div>
     </header>
 
@@ -43,7 +43,7 @@
                 <!-- Course 1: Can we talk about love? -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../../assets/thumbnails/teach-thumb-01.jpg" alt="Can we talk about love?" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/teach-thumb-01.jpg" alt="Can we talk about love?" class="thumbnail-image">
                     </div>
                     <h2>Can we talk about love?</h2>
                     <p class="review-excerpt">A critical attempt to have a meaningful conversation about ‘love’ through philosophy, psychology, and literature.</p>
@@ -53,7 +53,7 @@
                 <!-- Course 2: Reading the Self -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../../assets/thumbnails/teach-thumb-02.jpg" alt="Reading the Self: Autobiography and the Making and Unmaking of the Modern Subject in Egypt" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/teach-thumb-02.jpg" alt="Reading the Self: Autobiography and the Making and Unmaking of the Modern Subject in Egypt" class="thumbnail-image">
                     </div>
                     <h2>Reading the Self: Autobiography and the Making and Unmaking of the Modern Subject in Egypt</h2>
                     <p class="review-excerpt">Exploring autobiographies of al-Nahda figures as acts of self-making and their relevance today.</p>
@@ -63,7 +63,7 @@
                 <!-- Course 3: On Violence -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../../assets/thumbnails/teach-thumb-03.jpg" alt="On Violence" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/teach-thumb-03.jpg" alt="On Violence" class="thumbnail-image">
                     </div>
                     <h2>On Violence</h2>
                     <p class="review-excerpt">A historical and contemporary overview of intellectual traditions defining and critiquing violence.</p>
@@ -73,7 +73,7 @@
                 <!-- Course 4: Memory, Identity and History -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../../assets/thumbnails/teach-thumb-04.jpg" alt="Memory, Identity and History" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/teach-thumb-04.jpg" alt="Memory, Identity and History" class="thumbnail-image">
                     </div>
                     <h2>Memory, Identity and History</h2>
                     <p class="review-excerpt">Examining cultural memory in post-WWII Egypt, critiquing Western discourses on grievance and history.</p>
