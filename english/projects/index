@@ -40,10 +40,10 @@
     <main class="category-content">
         <div class="container">
             <div class="reviews-grid">
-                <!-- Project 1 -->
+                <!-- Project 4 -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../assets/thumbnails/project-thumb-01.jpg" alt="Project 1 Thumbnail" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/project-thumb-04.jpg" alt="Project 1 Thumbnail" class="thumbnail-image">
                     </div>
                     <h2>Àsìkò Art School 2025 - Cairo Edition</h2>
                     <p class="review-excerpt">The 2025 edition marks Àsìkò’s first time in an Arabic-speaking country, taking place in Cairo, Egypt from 27 April to 25 May, 2025, hosted by ARD Art Institution. The 2025 edition, held under the theme “Holding Memory”, brings together artists and curators for a month-long journey of research, exchange, and collective growth.</p>
@@ -53,7 +53,7 @@
                 <!-- Project 2 -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../assets/thumbnails/project-thumb-02.jpg" alt="Project 2 Thumbnail" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/project-thumb-03.jpg" alt="Project 2 Thumbnail" class="thumbnail-image">
                     </div>
                     <h2>Hamel: Translations, Migrations and Rituals of Care</h2>
                     <p class="review-excerpt">HAMEL. DEEP TIME RIVER, A performance by the YouYou Group, part of De Singel’s Festival CARTA</p>
@@ -63,7 +63,7 @@
                 <!-- Project 3 -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../assets/thumbnails/project-thumb-03.jpg" alt="Project 3 Thumbnail" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/project-thumb-02.jpg" alt="Project 3 Thumbnail" class="thumbnail-image">
                     </div>
                     <h2>Tomatoes, Fibreglass and the Persistence of the Human</h2>
                     <p class="review-excerpt">Textual commission, For magazine and exhibition space, publication No. 4 Local Origins, Propaganda, Persistence 2023 (as part of the exhibition “The six hundred seventy four forms and a dragon” by Yasmine El Meleegy)  </p>
@@ -73,7 +73,7 @@
                 <!-- Project 4 -->
                 <article class="review-card">
                     <div class="review-thumbnail">
-                        <img src="../../assets/thumbnails/project-thumb-04.jpg" alt="Project 4 Thumbnail" class="thumbnail-image">
+                        <img src="../../assets/thumbnails/project-thumb-01.jpg" alt="Project 4 Thumbnail" class="thumbnail-image">
                     </div>
                     <h2>On Rending Bodies Invisible</h2>
                     <p class="review-excerpt">“Bodies, un-protected” was initiated by Mousonturm and curator Sandra Noeth, the text is a contribution to the publication of the project</p>
